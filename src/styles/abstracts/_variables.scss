@@ -16,6 +16,7 @@ $font-w-900: 900;
 
 /************** line-height ***********/
 $line-h-120: 120%;
+$line-h-130: 130%;
 $line-h-140: 140%;
 $line-h-150: 150%;
 $line-h-160: 160%;
@@ -39,7 +40,9 @@ $font-ds-80: 80px;
 //desktop body
 $font-ds-24: 24px;
 $font-ds-20: 20px;
+$font-ds-18: 18px;
 $font-ds-16: 16px;
+$font-ds-15: 15px;
 $font-ds-14: 14px;
 $font-ds-12: 12px;
 
@@ -76,24 +79,24 @@ $font-mb-28: 28px;
 $n-btn-font: 16px;
 
 // btn-color
-$normal-back-color: #6A7E96; //기본 배경
+$normal-back-color: #6a7e96; //기본 배경
 $normal-font-color: #fff; //기본 폰트
-$normal-h-back-color: #32455D; //기본 hover 배경
+$normal-h-back-color: #32455d; //기본 hover 배경
 $normal-a-back-color: #536b82; //기본 active 배경
 $normal-d-back-color: #e0e0e0; //기본 disable 배경
 
-$out-back-color: #FFF; //outline 배경
-$out-font-color: #9BA7BA; //ouline 폰트
-$out-border-color: #CED7E5; //outline 보더
-$out-h-back-color: #E9F0FA; //outline hover 배경
+$out-back-color: #fff; //outline 배경
+$out-font-color: #9ba7ba; //ouline 폰트
+$out-border-color: #ced7e5; //outline 보더
+$out-h-back-color: #e9f0fa; //outline hover 배경
 $out-d-back-color: #ffffff; //outline disable 배경
 $out-d-font-color: #e0e0e0; //outline disable 폰트
 $out-d-border-color: #e0e0e0; //outline disable 보더
 
-$gray-back-color: #C6CDD6; //gray 배경
+$gray-back-color: #c6cdd6; //gray 배경
 $gray-font-color: #fff; //gray 폰트
-$gray-h-back-color: #949BA4; //gray hover 배경
-$gray-a-back-color: #949BA4; //gray active 배경
+$gray-h-back-color: #949ba4; //gray hover 배경
+$gray-a-back-color: #949ba4; //gray active 배경
 $gray-d-back-color: #e0e0e0; //gray disable 배경
 
 /*************** input *************/
@@ -129,14 +132,14 @@ $check-c-bord: #e1e3e6;
 $check-c-font: #222;
 
 // check / radio / toggle disabled color
-$check-disabled-c-bord: #E1E3E6;
+$check-disabled-c-bord: #e1e3e6;
 $check-disabled-c-font: #999;
 
 /*************** select *************/
 
 $sel-font: 15px;
 
-$sel-brd-default: #EBEBEB;
+$sel-brd-default: #ebebeb;
 $sel-brd-focus: #948ea5;
 
 $sel-c-font: #222;
@@ -145,7 +148,7 @@ $sel-c-font: #222;
 
 $txtarea-font: 15px;
 
-$txtarea-brd-default: #EBEBEB;
+$txtarea-brd-default: #ebebeb;
 $txtarea-brd-focus: #948ea5;
 
 $txtarea-c-font: #222;

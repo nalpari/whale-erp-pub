@@ -1,0 +1,96 @@
+@use '../abstracts' as *;
+.lnb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100%;
+  min-height: 100vh;
+  background-color: #282f37;
+  transition: width 0.1s ease-in-out;
+  padding: 0 24px;
+}
+.lnb-toggle-btn {
+  position: absolute;
+  top: 30px;
+  right: -12px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(226, 232, 240, 0.2);
+  border-radius: 50%;
+  background: #282f37 url(/assets/images/ui/lnb_toggle.svg) no-repeat center center / 16px 16px;
+}
+.lnb-header {
+  .lnb-logo {
+    @include flex(10px);
+    align-items: center;
+    padding-top: 46px;
+    img {
+      max-width: 60px;
+    }
+    .lnb-logo-text {
+      span {
+        display: block;
+        @include fontDefinition($font-ds-14, $font-w-400, $line-h-130);
+        color: #c5c8cc;
+        text-transform: capitalize;
+        &.logo-main {
+          font-size: 16px;
+          text-transform: uppercase;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.lnb-menu-info {
+  @include flex(10px);
+  flex-direction: column;
+  align-items: center;
+  padding-top: 36px;
+  .lnb-menu-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    padding: 17px;
+    border-radius: 50%;
+  }
+  .lnb_menu_name {
+    @include fontDefinition($font-ds-18, $font-w-500, $line-h-140);
+    color: #f0f2f5;
+  }
+}
+.lnb-body {
+  .lnb-list {
+    padding: 36px 0;
+  }
+}
+.menu-depth01 {
+  @include flex(12px);
+  align-items: center;
+  padding: 12px 16px;
+  background-image: url(/assets/images/ui/depth_arr.svg);
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 8px 5px;
+  img {
+    max-width: 20px;
+  }
+  .lnb-menu-name {
+    @include fontDefinition($font-ds-15, $font-w-500, $line-h-140);
+    color: #a3a7ac;
+  }
+}
+
+.lnb-list-depth02 {
+  padding-top: 8px;
+  .menu-depth02 {
+    display: block;
+    padding: 9px 20px;
+    span {
+      @include fontDefinition($font-ds-15, $font-w-500, $line-h-140);
+      color: #a3a7ac;
+    }
+  }
+}
