@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import '@/styles/style.scss'
 
 export const metadata: Metadata = {
   title: "Create Next App",

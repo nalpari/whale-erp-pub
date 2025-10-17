@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+
+/******************** wrap *****************/
+.wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  // overflow-x: hidden;
+  .container {
+    flex: 1;
+    .sub-wrap {
+      padding-top: 100px;
+    }
+  }
+}
+
