@@ -9,6 +9,7 @@
   min-width: 1260px;
   min-height: 100vh;
   padding-left: 280px;
+  transition: padding-left 0.25s ease-in-out;
   // overflow-x: hidden;
   .container {
     flex: 1;
@@ -21,5 +22,8 @@
       border-radius: 30px;
       border: 1px solid #ebebeb;
     }
+  }
+  &.sm {
+    padding-left: 86px;
   }
 }
