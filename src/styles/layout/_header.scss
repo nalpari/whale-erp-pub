@@ -19,6 +19,7 @@ header {
   border-radius: 100px;
   border: 1px solid #ebebeb;
   line-height: 48px;
+  z-index: 9000;
   .fulldown-menu-tit {
     position: relative;
     display: block;
@@ -97,6 +98,7 @@ header {
 // my-data
 .my-data {
   position: relative;
+  z-index: 9000;
   &.act {
     .data-arrow {
       transform: rotate(0deg);
@@ -186,6 +188,7 @@ header {
 // service-tab
 .service-tab {
   position: relative;
+  z-index: 9000;
   &.act {
     .service-item {
       &.service-tab {

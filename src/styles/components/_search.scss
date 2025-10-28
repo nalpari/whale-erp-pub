@@ -1,0 +1,47 @@
+@use '../abstracts' as *;
+
+.search-wrap {
+  border-radius: 0 0 6px 6px;
+  &.act {
+    border-bottom: 1px solid #ebebeb;
+    .searh-result-wrap {
+      .search-filed-btn {
+        transform: rotate(0deg);
+      }
+    }
+  }
+}
+.searh-result-wrap {
+  @include flex(0px);
+  align-items: center;
+  padding: 13px 16px;
+  border: 1px solid #ebebeb;
+  border-radius: 6px 6px 0 0;
+  border-bottom: none;
+  .search-result {
+    @include fontDefinition($font-ds-16, $font-w-400, $line-h-140);
+    color: #222;
+    span {
+      font-weight: 600;
+    }
+  }
+  .search-filed-btn {
+    display: block;
+    margin-left: auto;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+    background: url('/assets/images/common/fulldown_arr.svg') no-repeat center;
+    transform: rotate(180deg);
+    transition: all 0.2s ease-in-out;
+  }
+}
+.btn-filed {
+  @include flex(8px);
+  justify-content: flex-end;
+  padding: 10px;
+  border-radius: 0 0 6px 6px;
+  border: 1px solid #ebebeb;
+  border-top: none;
+}

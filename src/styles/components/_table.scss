@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+
+.default-table {
+  width: 100%;
+  table-layout: fixed;
+  box-sizing: border-box;
+  th {
+    width: 120px;
+    padding: 0 16px;
+    @include fontDefinition($font-ds-16, $font-w-500, $line-h-140);
+    color: #888;
+    background-color: #f8f8f8;
+    border: 1px solid #ebebeb;
+    .imp {
+      color: #f00;
+    }
+  }
+  td {
+    padding: 10px;
+    border: 1px solid #ebebeb;
+    .filed-check-flx {
+      @include flex(18px);
+      align-items: center;
+    }
+    .filed-flx {
+      @include flex(10px);
+      align-items: center;
+    }
+  }
+}
