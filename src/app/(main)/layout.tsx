@@ -1,6 +1,8 @@
 'use client'
 import { ReactNode, useState } from 'react'
 import Lnb from '@/components/ui/common/Lnb'
+import Header from '@/components/ui/Header'
+import Location from '@/components/ui/Location'
 
 interface MainLayoutProps {
   children: ReactNode
@@ -11,7 +13,11 @@ export default function MainLayout({ children }: MainLayoutProps) {
     <div className={`wrap ${isOpen ? 'sm' : ''}`}>
       <Lnb isOpen={isOpen} setIsOpen={setIsOpen} />
       <div className="container">
-        <div className="frame">{children}</div>
+        <div className="frame">
+          <Header />
+          <Location />
+          {children}
+        </div>
       </div>
     </div>
   )
