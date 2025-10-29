@@ -138,7 +138,42 @@ export default function MasterData() {
                 </tr>
               </tbody>
             </table>
-            <div style={{ padding: '24px', borderTop: '1px solid #ebebeb' }}>ssss</div>
+            <div className="slide-table-wrap">
+              <h3>계약서 템플릿 목록</h3>
+              <table className="default-table">
+                <colgroup>
+                  <col width="120px" />
+                  <col />
+                  <col width="120px" />
+                  <col />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>매장</th>
+                    <td>
+                      <div>
+                        <select name="" id="" className="select-form">
+                          <option value="">전체</option>
+                        </select>
+                      </div>
+                    </td>
+                    <th>처리여부</th>
+                    <td>
+                      <div className="filed-check-flx">
+                        <div className="radio-form-box">
+                          <input type="radio" name="process" id="process-all" />
+                          <label htmlFor="process-all">전체</label>
+                        </div>
+                        <div className="radio-form-box">
+                          <input type="radio" name="process" id="process-all" />
+                          <label htmlFor="process-all">전체</label>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </AnimateHeight>
       </div>

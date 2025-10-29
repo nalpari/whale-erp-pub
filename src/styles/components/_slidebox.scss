@@ -115,3 +115,12 @@
   border: 1px solid #ebebeb;
   border-top: none;
 }
+
+.slide-table-wrap {
+  border-top: 1px solid #ebebeb;
+  h3 {
+    padding: 20px 16px;
+    @include fontDefinition($font-ds-16, $font-w-500, $line-h-140);
+    color: #222;
+  }
+}
