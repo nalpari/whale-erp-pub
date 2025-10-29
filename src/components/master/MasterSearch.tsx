@@ -6,15 +6,21 @@ export default function MasterSearch() {
   const [searchOpen, setSearchOpen] = useState(true)
   return (
     <div className={`search-wrap ${searchOpen ? '' : 'act'}`}>
-      <div className="searh-result-wrap" onClick={() => setSearchOpen(!searchOpen)}>
+      <div className="searh-result-wrap">
         <div className="search-result">
           검색결과 <span>128건</span>
         </div>
-        <button className="search-filed-btn"></button>
+        <button className="search-filed-btn" onClick={() => setSearchOpen(!searchOpen)}></button>
       </div>
       <AnimateHeight duration={300} height={searchOpen ? 'auto' : 0}>
         <div className="search-filed">
           <table className="default-table">
+            <colgroup>
+              <col width="120px" />
+              <col />
+              <col width="120px" />
+              <col />
+            </colgroup>
             <tbody>
               <tr>
                 <th>매장</th>
