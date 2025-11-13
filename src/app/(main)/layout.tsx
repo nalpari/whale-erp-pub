@@ -1,6 +1,7 @@
 'use client'
 import { ReactNode, useState } from 'react'
 import Lnb from '@/components/ui/common/Lnb'
+import FullDownMenu from '@/components/ui/common/FullDownMenu'
 import Header from '@/components/ui/Header'
 import Location from '@/components/ui/Location'
 
@@ -14,7 +15,10 @@ export default function MainLayout({ children }: MainLayoutProps) {
       <Lnb isOpen={isOpen} setIsOpen={setIsOpen} />
       <div className="container">
         <div className="frame">
-          <Header />
+          <div className="header-wrap">
+            <FullDownMenu />
+            <Header isOpen={isOpen} setIsOpen={setIsOpen} />
+          </div>
           <Location />
           {children}
         </div>

@@ -55,67 +55,37 @@ export default function Lnb({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen:
                 <img src={`/assets/images/ui/${menu.icon}`} alt="menu" />
                 <span className="lnb-menu-name">{menu.name}</span>
               </Link>
-              {!isOpen
-                ? menu.children && (
-                    <AnimateHeight duration={300} height={activeMenu === menu.id ? 'auto' : 0}>
-                      <ul className="lnb-list-depth02">
-                        <div className="sm-tit">{menu.name}</div>
-                        {menu.children.map((child) => (
-                          <li className={`lnb-depth02-item ${activeSubMenu === child.id ? 'act' : ''}`} key={child.id}>
-                            <Link
-                              href={child.link}
-                              className="menu-depth02"
-                              onClick={(e) => handleMenuToggle(child.id, true, child.link === '#' ? true : false, e)}
-                            >
-                              <span className="lnb-menu-name">{child.name}</span>
-                            </Link>
-                            {child.children && (
-                              <AnimateHeight duration={300} height={activeSubMenu === child.id ? 'auto' : 0}>
-                                <ul className="lnb-list-depth03">
-                                  {child.children.map((child) => (
-                                    <li className="lnb-depth03-item" key={child.id}>
-                                      <Link href={child.link} className="menu-depth03">
-                                        <span className="lnb-menu-name">{child.name}</span>
-                                      </Link>
-                                    </li>
-                                  ))}
-                                </ul>
-                              </AnimateHeight>
-                            )}
-                          </li>
-                        ))}
-                      </ul>
-                    </AnimateHeight>
-                  )
-                : menu.children && (
-                    <ul className="lnb-list-depth02">
-                      <div className="sm-tit">{menu.name}</div>
-                      {menu.children.map((child) => (
-                        <li className={`lnb-depth02-item ${activeSubMenu === child.id ? 'act' : ''}`} key={child.id}>
-                          <Link
-                            href={child.link}
-                            className="menu-depth02"
-                            onClick={(e) => handleMenuToggle(child.id, true, child.link === '#' ? true : false, e)}
-                          >
-                            <span className="lnb-menu-name">{child.name}</span>
-                          </Link>
-                          {child.children && (
-                            <AnimateHeight duration={300} height={activeSubMenu === child.id ? 'auto' : 0}>
-                              <ul className="lnb-list-depth03">
-                                {child.children.map((child) => (
-                                  <li className="lnb-depth03-item" key={child.id}>
-                                    <Link href={child.link} className="menu-depth03">
-                                      <span className="lnb-menu-name">{child.name}</span>
-                                    </Link>
-                                  </li>
-                                ))}
-                              </ul>
-                            </AnimateHeight>
-                          )}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
+              {menu.children && (
+                <AnimateHeight duration={300} height={activeMenu === menu.id ? 'auto' : 0}>
+                  <ul className="lnb-list-depth02">
+                    <div className="sm-tit">{menu.name}</div>
+                    {menu.children.map((child) => (
+                      <li className={`lnb-depth02-item ${activeSubMenu === child.id ? 'act' : ''}`} key={child.id}>
+                        <Link
+                          href={child.link}
+                          className="menu-depth02"
+                          onClick={(e) => handleMenuToggle(child.id, true, child.link === '#' ? true : false, e)}
+                        >
+                          <span className="lnb-menu-name">{child.name}</span>
+                        </Link>
+                        {child.children && (
+                          <AnimateHeight duration={300} height={activeSubMenu === child.id ? 'auto' : 0}>
+                            <ul className="lnb-list-depth03">
+                              {child.children.map((child) => (
+                                <li className="lnb-depth03-item" key={child.id}>
+                                  <Link href={child.link} className="menu-depth03">
+                                    <span className="lnb-menu-name">{child.name}</span>
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </AnimateHeight>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </AnimateHeight>
+              )}
             </li>
           ))}
         </ul>
