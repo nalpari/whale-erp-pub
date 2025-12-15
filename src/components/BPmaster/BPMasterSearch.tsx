@@ -20,18 +20,36 @@ export default function MasterSearch() {
               <col />
               <col width="120px" />
               <col />
+              <col width="120px" />
+              <col />
             </colgroup>
             <tbody>
               <tr>
-                <th>매장</th>
+                <th>본사</th>
                 <td>
-                  <div>
+                  <div className="data-filed">
                     <select name="" id="" className="select-form">
                       <option value="">전체</option>
                     </select>
                   </div>
                 </td>
-                <th>처리여부</th>
+                <th>가맹점</th>
+                <td>
+                  <div className="data-filed">
+                    <select name="" id="" className="select-form">
+                      <option value="">전체</option>
+                    </select>
+                  </div>
+                </td>
+                <th>대표자명</th>
+                <td>
+                  <div className="data-filed">
+                    <input type="text" className="input-frame" />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>운영여부</th>
                 <td>
                   <div className="filed-check-flx">
                     <div className="radio-form-box">
@@ -40,8 +58,32 @@ export default function MasterSearch() {
                     </div>
                     <div className="radio-form-box">
                       <input type="radio" name="process" id="process-all" />
-                      <label htmlFor="process-all">전체</label>
+                      <label htmlFor="process-all">상담중</label>
                     </div>
+                    <div className="radio-form-box">
+                      <input type="radio" name="process" id="process-all" />
+                      <label htmlFor="process-all">운영</label>
+                    </div>
+                    <div className="radio-form-box">
+                      <input type="radio" name="process" id="process-all" />
+                      <label htmlFor="process-all">종료</label>
+                    </div>
+                  </div>
+                </td>
+                <th>서비스</th>
+                <td>
+                  <div className="data-filed">
+                    <select name="" id="" className="select-form">
+                      <option value="">전체</option>
+                    </select>
+                  </div>
+                </td>
+                <th>등록일</th>
+                <td>
+                  <div className="date-picker-custom">
+                    <select name="" id="" className="select-form">
+                      <option value="">전체</option>
+                    </select>
                   </div>
                 </td>
               </tr>
