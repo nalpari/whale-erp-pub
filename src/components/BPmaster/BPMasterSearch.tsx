@@ -1,6 +1,7 @@
 'use client'
 import AnimateHeight from 'react-animate-height'
 import { useState } from 'react'
+import DatePicker from '../ui/common/DatePicker'
 
 export default function MasterSearch() {
   const [searchOpen, setSearchOpen] = useState(true)
@@ -53,20 +54,20 @@ export default function MasterSearch() {
                 <td>
                   <div className="filed-check-flx">
                     <div className="radio-form-box">
-                      <input type="radio" name="process" id="process-all" />
-                      <label htmlFor="process-all">전체</label>
+                      <input type="radio" name="status" id="status-all" />
+                      <label htmlFor="status-all">전체</label>
                     </div>
                     <div className="radio-form-box">
-                      <input type="radio" name="process" id="process-all" />
-                      <label htmlFor="process-all">상담중</label>
+                      <input type="radio" name="status" id="status-consulting" />
+                      <label htmlFor="status-consulting">상담중</label>
                     </div>
                     <div className="radio-form-box">
-                      <input type="radio" name="process" id="process-all" />
-                      <label htmlFor="process-all">운영</label>
+                      <input type="radio" name="status" id="status-active" />
+                      <label htmlFor="status-active">운영</label>
                     </div>
                     <div className="radio-form-box">
-                      <input type="radio" name="process" id="process-all" />
-                      <label htmlFor="process-all">종료</label>
+                      <input type="radio" name="status" id="status-closed" />
+                      <label htmlFor="status-closed">종료</label>
                     </div>
                   </div>
                 </td>
@@ -80,10 +81,10 @@ export default function MasterSearch() {
                 </td>
                 <th>등록일</th>
                 <td>
-                  <div className="date-picker-custom">
-                    <select name="" id="" className="select-form">
-                      <option value="">전체</option>
-                    </select>
+                  <div className="date-picker-wrap">
+                    <DatePicker />
+                    <span>~</span>
+                    <DatePicker />
                   </div>
                 </td>
               </tr>
