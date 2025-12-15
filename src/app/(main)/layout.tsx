@@ -17,7 +17,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
         <div className="frame">
           <div className="header-wrap">
             <FullDownMenu />
-            <Header isOpen={isOpen} setIsOpen={setIsOpen} />
+            <Header />
           </div>
           <Location />
           {children}
