@@ -50,7 +50,9 @@ export default function Lnb({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen:
               <Link
                 href={menu.link}
                 className="menu-depth01"
-                onClick={(e) => handleMenuToggle(menu.id, false, menu.link === '#' ? true : false, e)}
+                onClick={(e: React.MouseEvent<HTMLAnchorElement>) =>
+                  handleMenuToggle(menu.id, false, menu.link === '#', e)
+                }
               >
                 <img src={`/assets/images/ui/${menu.icon}`} alt="menu" />
                 <span className="lnb-menu-name">{menu.name}</span>
@@ -64,17 +66,19 @@ export default function Lnb({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen:
                         <Link
                           href={child.link}
                           className="menu-depth02"
-                          onClick={(e) => handleMenuToggle(child.id, true, child.link === '#' ? true : false, e)}
+                          onClick={(e: React.MouseEvent<HTMLAnchorElement>) =>
+                            handleMenuToggle(child.id, true, child.link === '#', e)
+                          }
                         >
                           <span className="lnb-menu-name">{child.name}</span>
                         </Link>
                         {child.children && (
                           <AnimateHeight duration={300} height={activeSubMenu === child.id ? 'auto' : 0}>
                             <ul className="lnb-list-depth03">
-                              {child.children.map((child) => (
-                                <li className="lnb-depth03-item" key={child.id}>
-                                  <Link href={child.link} className="menu-depth03">
-                                    <span className="lnb-menu-name">{child.name}</span>
+                              {child.children.map((subChild) => (
+                                <li className="lnb-depth03-item" key={subChild.id}>
+                                  <Link href={subChild.link} className="menu-depth03">
+                                    <span className="lnb-menu-name">{subChild.name}</span>
                                   </Link>
                                 </li>
                               ))}
