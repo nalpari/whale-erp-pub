@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import AnimateHeight from 'react-animate-height'
 
-export default function MasterData() {
+export default function DataInner() {
   const [slideboxOpen, setSlideboxOpen] = useState(true)
   return (
     <>
@@ -10,9 +10,8 @@ export default function MasterData() {
         <div className="slidebox-header">
           <h2>계약서 템플릿 Header 정보</h2>
           <div className="slidebox-btn-wrap">
-            <button className="slidebox-btn">수정</button>
             <button className="slidebox-btn">삭제</button>
-            <button className="slidebox-btn">저장</button>
+            <button className="slidebox-btn">목록</button>
             <button className="slidebox-btn arr" onClick={() => setSlideboxOpen(!slideboxOpen)}>
               <i className="arr-icon"></i>
             </button>

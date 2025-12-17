@@ -80,3 +80,76 @@
   padding-top: 16px;
   border-top: 1px solid #ebebeb;
 }
+
+// header 정보 공통
+.master-header-data {
+  @include flex(34px);
+  flex-direction: column;
+}
+.header-data-wrap {
+  padding: 10px 24px;
+}
+.header-data-list {
+  @include flex(0px);
+  align-items: center;
+  .header-data-item {
+    position: relative;
+    padding: 0 10px;
+    .header-data-flx {
+      @include flex(5px);
+      align-items: center;
+    }
+    span {
+      @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+      color: #666;
+    }
+    button {
+      @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+      color: #366fe3;
+      text-decoration: underline;
+    }
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+      &:before {
+        display: none;
+      }
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 11px;
+      background-color: #d9d9d9;
+    }
+  }
+}
+.data-option-wrap {
+  @include flex(0px);
+  align-items: center;
+  .data-option-item {
+    position: relative;
+    flex: 1;
+    &:last-child {
+      padding-left: 35px;
+      &:before {
+        display: none;
+      }
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 25px;
+      background-color: #d9d9d9;
+    }
+  }
+}

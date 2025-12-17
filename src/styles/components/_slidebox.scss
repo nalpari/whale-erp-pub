@@ -84,7 +84,7 @@
       background-color: #474f5c;
       border-right: 1px solid #69727f;
       padding: 0 29px;
-      @include fontDefinition($font-ds-16, $font-w-500, 44px);
+      @include fontDefinition($font-ds-15, $font-w-500, 44px);
       color: #f0f2f5;
       transition: all 0.2s ease-in-out;
       &:last-child {

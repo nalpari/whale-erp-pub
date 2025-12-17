@@ -52,3 +52,32 @@
     }
   }
 }
+
+// header 정보 공통
+.header-data-table {
+  width: 100%;
+  table-layout: fixed;
+  box-sizing: border-box;
+  th {
+    padding: 14px 0px 14px 16px;
+    @include fontDefinition($font-ds-15, $font-w-500, $line-h-140);
+    color: #222;
+    border-bottom: 1px solid #ebebeb;
+  }
+  td {
+    padding: 14px 0;
+    @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+    color: #222;
+    border-bottom: 1px solid #ebebeb;
+  }
+  tr {
+    &:last-child {
+      th {
+        border-bottom: none;
+      }
+      td {
+        border-bottom: none;
+      }
+    }
+  }
+}

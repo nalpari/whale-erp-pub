@@ -73,6 +73,22 @@ export default function PublishPage() {
                     <td className="c red">2025-12-17</td>
                   </tr>
                   <tr>
+                    <td>Header 정보 공통</td>
+                    <td>
+                      <div>Business Partner 정보 상세조회</div>
+                      <div>회원 정보 상세조회 </div>
+                      <div>마스터용 메뉴 정보 상세조회</div>
+                      <div>점포용 메뉴 정보 상세조회</div>
+                      <div>점포용 프로모션 가격 정보 상세조회</div>
+                    </td>
+                    <td>
+                      <Link href={'/masterheader'}>MasterHeader.tsx</Link>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td className="c red">2025-12-17</td>
+                  </tr>
+                  <tr>
                     <td>Invitation</td>
                     <td>가맹점 초대</td>
                     <td>
