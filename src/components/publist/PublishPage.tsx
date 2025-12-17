@@ -45,7 +45,7 @@ export default function PublishPage() {
               <table>
                 <colgroup>
                   <col style={{ width: '10%' }} />
-                  <col style={{ width: '10%' }} />
+                  <col style={{ width: '15%' }} />
                   <col />
                   <col style={{ width: '13%' }} />
                   <col style={{ width: '20%' }} />
@@ -64,13 +64,23 @@ export default function PublishPage() {
                 <tbody>
                   <tr>
                     <td>BPmaster</td>
-                    <td></td>
+                    <td>Business Partner Master</td>
                     <td>
                       <Link href={'/BPmaster'}>BPmaster.tsx</Link>
                     </td>
                     <td></td>
                     <td></td>
-                    <td className="c red">2025-06-30</td>
+                    <td className="c red">2025-12-17</td>
+                  </tr>
+                  <tr>
+                    <td>Invitation</td>
+                    <td>가맹점 초대</td>
+                    <td>
+                      <Link href={'/invitation'}>Invitation.tsx</Link>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td className="c red">2025-12-17</td>
                   </tr>
                 </tbody>
               </table>

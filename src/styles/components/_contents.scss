@@ -9,3 +9,74 @@
     align-items: center;
   }
 }
+
+// 가맹점 초대
+.invitation-form {
+  padding: 28px 18px;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 6px;
+}
+.invitation-form-header {
+  @include flex(10px);
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ebebeb;
+  .invitation-select-tit {
+    @include fontDefinition($font-ds-15, $font-w-500, $line-h-140);
+    color: #222;
+  }
+  .invitation-select-box {
+    width: 100%;
+    max-width: 630px;
+  }
+}
+.invitation-form-content {
+  padding: 30px 0 0;
+}
+.invitation-cont-guide {
+  margin-bottom: 30px;
+  .invitation-guide-desc {
+    span {
+      display: block;
+      @include fontDefinition($font-ds-15, $font-w-400, $line-h-150);
+      color: #666;
+      i {
+        color: #366fe3;
+        font-weight: 500;
+      }
+    }
+  }
+}
+.invitation-cont-tit {
+  @include fontDefinition($font-ds-18, $font-w-500, $line-h-140);
+  color: #222;
+  margin-bottom: 16px;
+}
+.invitation-cont-form {
+  margin-bottom: 30px;
+}
+.invitation-flx {
+  @include flex(10px);
+  align-items: center;
+  .invitation-input {
+    width: 100%;
+    max-width: 500px;
+  }
+  .invitation-explain {
+    @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+    margin-left: 8px;
+    color: #222;
+  }
+  .invitation-warning {
+    @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+    color: #f00;
+  }
+}
+.invitation-form-footer {
+  @include flex(10px);
+  align-items: center;
+  justify-content: center;
+  padding-top: 16px;
+  border-top: 1px solid #ebebeb;
+}

@@ -65,7 +65,7 @@
   height: $height;
   padding: 0px $padding;
   border-radius: 6px;
-  @include fontDefinition($font-size, $font-w-500, 135%);
+  @include fontDefinition($font-size, $font-w-500, $height);
   font-family: 'Pretendard', sans-serif;
   letter-spacing: 0;
   transition: all 0.15s ease-in-out;
@@ -87,6 +87,9 @@
 // 데스크탑 small 버튼
 .btn-form {
   @include btn-frame(42px, 24px, $font-ds-15, 24px);
+  &.s {
+    @include btn-frame(42px, 18px, $font-ds-15, 24px);
+  }
 }
 .btn-log-frame {
   @include btn-frame(56px, 10px, $n-btn-font, 24px);
