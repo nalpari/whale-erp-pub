@@ -11,9 +11,12 @@ export default function MasterSearch() {
         <button className="btn-form basic">가맹점 초대</button>
       </div>
       <div className="searh-result-wrap">
-        <div className="search-result">
+        {/* <div className="search-result">
           검색결과 <span>128건</span>
-        </div>
+        </div> */}
+        <ul className="search-result-list">
+          <li></li>
+        </ul>
         <button className="search-filed-btn" onClick={() => setSearchOpen(!searchOpen)}></button>
       </div>
       <AnimateHeight duration={300} height={searchOpen ? 'auto' : 0}>

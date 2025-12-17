@@ -1,4 +1,4 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 // 의미 없음
 .icon {
@@ -34,7 +34,7 @@
   &.hover,
   &:hover {
     background-color: $out-h-back-color;
-    color: #8490A3;
+    color: #8490a3;
     border-color: $out-h-back-color;
   }
   &:disabled {
@@ -43,7 +43,7 @@
     border-color: $out-d-border-color;
   }
 }
-.gray{
+.gray {
   background-color: $gray-back-color;
   color: $gray-font-color;
   &.hover,
@@ -58,7 +58,6 @@
     background-color: $normal-d-back-color;
   }
 }
-
 
 /******************** btn-type 모음 *****************/
 // btn-frame 공통
@@ -87,14 +86,14 @@
 
 // 데스크탑 small 버튼
 .btn-form {
-  @include btn-frame(42px, 16px, $n-btn-font, 24px);
+  @include btn-frame(42px, 24px, $font-ds-15, 24px);
 }
-.btn-log-frame{
+.btn-log-frame {
   @include btn-frame(56px, 10px, $n-btn-font, 24px);
   background-color: #212121;
   font-weight: 600;
   color: #fff;
-  &:hover{
+  &:hover {
     background-color: #323232;
   }
 }
