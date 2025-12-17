@@ -3,8 +3,6 @@ import { ReactNode, useState } from 'react'
 import Lnb from '@/components/ui/common/Lnb'
 import FullDownMenu from '@/components/ui/common/FullDownMenu'
 import Header from '@/components/ui/Header'
-import Location from '@/components/ui/Location'
-
 interface MainLayoutProps {
   children: ReactNode
 }
@@ -19,7 +17,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
             <FullDownMenu />
             <Header />
           </div>
-          <Location />
+
           {children}
         </div>
       </div>

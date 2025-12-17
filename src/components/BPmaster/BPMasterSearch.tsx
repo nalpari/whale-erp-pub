@@ -7,6 +7,9 @@ export default function MasterSearch() {
   const [searchOpen, setSearchOpen] = useState(true)
   return (
     <div className={`search-wrap ${searchOpen ? '' : 'act'}`}>
+      <div className="invite-btn al-r mb10">
+        <button className="btn-form basic">가맹점 초대</button>
+      </div>
       <div className="searh-result-wrap">
         <div className="search-result">
           검색결과 <span>128건</span>
@@ -71,6 +74,38 @@ export default function MasterSearch() {
                     </div>
                   </div>
                 </td>
+                <th>가입 방식</th>
+                <td>
+                  <div className="filed-check-flx">
+                    <div className="radio-form-box">
+                      <input type="radio" name="status" id="status-all" />
+                      <label htmlFor="status-all">전체</label>
+                    </div>
+                    <div className="radio-form-box">
+                      <input type="radio" name="status" id="status-consulting" />
+                      <label htmlFor="status-consulting">플랫폼 등록</label>
+                    </div>
+                    <div className="radio-form-box">
+                      <input type="radio" name="status" id="status-active" />
+                      <label htmlFor="status-active">직접 가입</label>
+                    </div>
+                  </div>
+                </td>
+                <th>임시저장 여부</th>
+                <td>
+                  <div className="filed-check-flx">
+                    <div className="radio-form-box">
+                      <input type="radio" name="status" id="status-all" />
+                      <label htmlFor="status-all">전체</label>
+                    </div>
+                    <div className="radio-form-box">
+                      <input type="radio" name="status" id="status-consulting" />
+                      <label htmlFor="status-consulting">임시저장</label>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
                 <th>서비스</th>
                 <td>
                   <div className="data-filed">
@@ -80,7 +115,7 @@ export default function MasterSearch() {
                   </div>
                 </td>
                 <th>등록일</th>
-                <td>
+                <td colSpan={3}>
                   <div className="date-picker-wrap">
                     <DatePicker />
                     <span>~</span>

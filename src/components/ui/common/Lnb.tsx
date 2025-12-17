@@ -29,7 +29,7 @@ export default function Lnb({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen:
       <button className="lnb-toggle-btn" onClick={() => setIsOpen(!isOpen)}></button>
 
       <div className="lnb-header">
-        <Link href="/" className="lnb-logo">
+        <Link href="/list" className="lnb-logo">
           <Image src="/assets/images/ui/lnb_logo.svg" alt="logo" width={54} height={54} priority />
           <div className="lnb-logo-text">
             <span className="logo-main">whale ERP</span>
@@ -39,7 +39,7 @@ export default function Lnb({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen:
       </div>
       <div className="lnb-menu-info">
         <div className="lnb-menu-icon">
-          <img src="/assets/images/ui/lnb_menu_img01.svg" alt="menu" />
+          <Image src="/assets/images/ui/lnb_menu_img01.svg" alt="menu" fill />
         </div>
         <div className="lnb_menu_name">서비스 네이밍</div>
       </div>
@@ -54,7 +54,7 @@ export default function Lnb({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen:
                   handleMenuToggle(menu.id, false, menu.link === '#', e)
                 }
               >
-                <img src={`/assets/images/ui/${menu.icon}`} alt="menu" />
+                <Image src={`/assets/images/ui/${menu.icon}`} alt="menu" fill />
                 <span className="lnb-menu-name">{menu.name}</span>
               </Link>
               {menu.children && (

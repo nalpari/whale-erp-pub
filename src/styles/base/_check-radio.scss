@@ -1,42 +1,47 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 // check radio 공통
-.check-form-box input[type="checkbox"],
-.radio-form-box input[type="radio"]{
+.check-form-box input[type='checkbox'],
+.radio-form-box input[type='radio'] {
   position: absolute;
   top: 0;
   left: 0;
-  margin-left:0;
+  margin-left: 0;
   opacity: 0;
   z-index: 1;
   flex: 0 0 auto;
   cursor: pointer;
 }
 .check-form-box label,
-.radio-form-box label{
+.radio-form-box label {
   position: relative;
   display: inline-block;
-  margin-bottom:0;
+  margin-bottom: 0;
   line-height: $line-h-140;
   font-size: $check-ds-font;
   color: $check-c-font;
   vertical-align: top;
-  word-break:break-all;
+  word-break: break-all;
   font-weight: $font-w-400;
   cursor: pointer;
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  user-select:none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 // check box
-.check-form-box{
+.check-form-box {
   position: relative;
-  label{
+  &.no-txt {
+    label {
+      padding-left: 20px;
+    }
+  }
+  label {
     padding-left: 28px;
-    &::before{
-      content: "";
+    &::before {
+      content: '';
       display: inline-block;
       position: absolute;
       width: 20px;
@@ -50,8 +55,8 @@
       transition: border 0.15s ease-in-out, color 0.15s ease-in-out, background-color 0.15s ease-in-out;
       cursor: pointer;
     }
-    &::after{
-      content: "";
+    &::after {
+      content: '';
       display: inline-block;
       position: absolute;
       top: -1px;
@@ -61,45 +66,62 @@
       border: 2px solid transparent;
       border-left: none;
       border-top: none;
-      transform: translate(7.75px,4.5px) rotate(45deg);
-      -ms-transform: translate(7.75px,4.5px) rotate(45deg);
+      transform: translate(7.75px, 4.5px) rotate(45deg);
+      -ms-transform: translate(7.75px, 4.5px) rotate(45deg);
       cursor: pointer;
       transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
     }
   }
-  input[type="checkbox"]:checked + label::before{
+  input[type='checkbox']:checked + label::before {
     background-color: $check-c-back;
     border-color: $check-c-back;
   }
-  input[type="checkbox"]:checked + label::after{
-    content: "";
+  input[type='checkbox']:checked + label::after {
+    content: '';
     border-color: #fff;
   }
-  input[type="checkbox"]:disabled + label{
+  input[type='checkbox']:disabled + label {
     cursor: default;
     color: $check-disabled-c-font;
-    &::before{
+    &::before {
       background-color: #fff;
       cursor: default;
     }
-    &:after{
+    &:after {
       cursor: default;
     }
   }
-  input[type="checkbox"]:disabled:checked + label::before{
-    background-color: #A8B6C7;
-    border-color: #A8B6C7;
+  input[type='checkbox']:disabled:checked + label::before {
+    background-color: #a8b6c7;
+    border-color: #a8b6c7;
   }
-
+  &.header {
+    label {
+      &::after {
+        width: 10px;
+        height: 3px;
+        top: 4px;
+        left: -3px;
+        border: none;
+        background-color: #fff;
+        transform: translate(7.75px, 4.5px);
+        -ms-transform: translate(7.75px, 4.5px);
+      }
+    }
+    input[type='checkbox']:checked + label::before {
+      background-color: #b8b8b8;
+      border-color: #b8b8b8;
+    }
+  }
 }
 
 // radio box
-.radio-form-box{
+.radio-form-box {
   position: relative;
-  label{
+  label {
     padding-left: 28px;
-    &::before{
-      content: "";
+    &::before {
+      content: '';
       display: inline-block;
       position: absolute;
       width: 20px;
@@ -110,12 +132,12 @@
       border: 1px solid $check-c-bord;
       border-radius: 100%;
       background-color: #fff;
-      text-align:center;
+      text-align: center;
       transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
       cursor: pointer;
     }
-    &::after{
-      content: "";
+    &::after {
+      content: '';
       display: inline-block;
       position: absolute;
       top: 7px;
@@ -127,30 +149,29 @@
       transition: background-color 0.1s ease-in-out;
     }
   }
-  input[type="radio"]:checked + label::before{
+  input[type='radio']:checked + label::before {
     border-color: $check-c-back;
   }
-  input[type="radio"]:checked + label::after{
+  input[type='radio']:checked + label::after {
     background-color: $check-c-back;
   }
-  input[type="radio"]:disabled + label{
+  input[type='radio']:disabled + label {
     cursor: default;
     color: $check-disabled-c-font;
-    &::before{
+    &::before {
       cursor: default;
     }
-    &::after{
+    &::after {
       cursor: default;
     }
   }
-  input[type="radio"]:disabled:checked + label::before{
-    border-color: #A8B6C7;
+  input[type='radio']:disabled:checked + label::before {
+    border-color: #a8b6c7;
   }
-  input[type="radio"]:disabled:checked + label::after{
-    background-color: #A8B6C7;
+  input[type='radio']:disabled:checked + label::after {
+    background-color: #a8b6c7;
   }
 }
-
 
 //toggle
 .toggle-btn {
@@ -169,7 +190,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #E0E0E0;
+    background-color: #e0e0e0;
     border-radius: 20px;
     text-align: center;
     line-height: $line-h-140;
@@ -178,31 +199,31 @@
     font-weight: $font-w-400;
     text-indent: 54px;
     white-space: nowrap;
-    transition: all .4s ease-in-out;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none;
+    transition: all 0.4s ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     &:before {
       position: absolute;
-      content: "";
+      content: '';
       height: 20px;
       width: 20px;
       left: 2px;
       bottom: 2px;
       background-color: $white-fff;
-      transition: .4s;
+      transition: 0.4s;
       border-radius: 50%;
     }
   }
   input:checked + .slider {
-    background-color: #9BA7BA;
+    background-color: #9ba7ba;
     &:before {
       transform: translateX(20px);
     }
   }
-  &.mb{
-    .slider{
+  &.mb {
+    .slider {
       font-size: $check-mb-font;
       text-indent: 52px;
     }

@@ -5,8 +5,8 @@
   table-layout: fixed;
   box-sizing: border-box;
   th {
-    padding: 0 16px;
-    @include fontDefinition($font-ds-16, $font-w-500, $line-h-140);
+    padding: 20px 16px;
+    @include fontDefinition($font-ds-15, $font-w-500, $line-h-140);
     color: #888;
     background-color: #f8f8f8;
     border: 1px solid #ebebeb;
