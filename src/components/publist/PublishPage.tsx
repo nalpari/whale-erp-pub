@@ -63,10 +63,20 @@ export default function PublishPage() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>BPmaster</td>
-                    <td>Business Partner Master</td>
+                    <td>Grid list 공통</td>
                     <td>
-                      <Link href={'/BPmaster'}>BPmaster.tsx</Link>
+                      <div>Business Partner 목록</div>
+                      <div>회원 목록</div>
+                      <div>마스터용 메뉴 목록</div>
+                      <div>점포용 메뉴 목록</div>
+                      <div>마스터용 가격 목록</div>
+                      <div>마스터용 가격 이력 관리</div>
+                      <div>점포용 가격 목록</div>
+                      <div>점포용 가격 이력 관리</div>
+                      <div>점포용 프로모션 가격 목록</div>
+                    </td>
+                    <td>
+                      <Link href={'/masterlist'}>MasterList.tsx</Link>
                     </td>
                     <td></td>
                     <td></td>
