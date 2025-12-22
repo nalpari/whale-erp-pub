@@ -91,7 +91,7 @@ export default function PublishPage() {
                     <td className="c red">2025-12-17</td>
                   </tr>
                   <tr>
-                    <td rowSpan={3}>MasterData</td>
+                    <td rowSpan={4}>MasterData</td>
                     <td>가맹점 초대</td>
                     <td>
                       <Link href={'/invitation'}>Invitation.tsx</Link>
@@ -117,6 +117,15 @@ export default function PublishPage() {
                     <td>ThumbnailList</td>
                     <td></td>
                     <td className="c red">2025-12-17</td>
+                  </tr>
+                  <tr>
+                    <td>점포 메뉴 추가</td>
+                    <td>
+                      <Link href={'/popup/addmenu'}>AddSotreMenuPop.tsx</Link>
+                    </td>
+                    <td>AddSotreMenuPop</td>
+                    <td></td>
+                    <td className="c red">2025-12-22</td>
                   </tr>
                 </tbody>
               </table>

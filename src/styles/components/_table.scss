@@ -18,18 +18,20 @@
   td {
     padding: 10px;
     border: 1px solid #ebebeb;
-    .filed-check-flx {
-      @include flex(18px);
-      align-items: center;
-    }
-    .filed-flx {
-      @include flex(10px);
-      align-items: center;
-    }
-    .explain {
-      @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
-      color: #222;
-    }
+  }
+}
+table {
+  .filed-check-flx {
+    @include flex(18px);
+    align-items: center;
+  }
+  .filed-flx {
+    @include flex(10px);
+    align-items: center;
+  }
+  .explain {
+    @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+    color: #222;
   }
 }
 

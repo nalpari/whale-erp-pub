@@ -13,3 +13,40 @@
   align-items: center;
   justify-content: center;
 }
+.pop-guide {
+  padding: 0 16px 20px;
+  @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+  color: #333;
+  letter-spacing: -0.375px;
+  border-bottom: 1px solid #ebebeb;
+}
+.pop-table {
+  width: 100%;
+  table-layout: fixed;
+  box-sizing: border-box;
+  th {
+    padding: 20px 16px;
+    @include fontDefinition($font-ds-15, $font-w-500, $line-h-140);
+    color: #222;
+    border-bottom: 1px solid #ebebeb;
+  }
+  td {
+    padding: 0 10px 0 16px;
+    border-bottom: 1px solid #ebebeb;
+  }
+}
+.add-store-list {
+  @include flex(12px);
+  flex-direction: column;
+  padding: 20px 16px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 16px;
+  .add-store-list-item {
+    @include flex(10px);
+    align-items: center;
+    span {
+      @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+      color: #222;
+    }
+  }
+}
