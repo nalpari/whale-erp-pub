@@ -1,7 +1,7 @@
 import AgGrid from '../ui/AgGrid'
 import Pagination from '../ui/Pagination'
 
-export default function BPMasterList() {
+export default function MasterList() {
   return (
     <div className="data-list-wrap">
       <div className="data-list-header">

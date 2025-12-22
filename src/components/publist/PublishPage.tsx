@@ -92,7 +92,7 @@ export default function PublishPage() {
                       <div>점포용 프로모션 가격 정보 상세조회</div>
                     </td>
                     <td>
-                      <Link href={'/masterheader'}>MasterHeader.tsx</Link>
+                      <Link href={'/masterdetail'}>MasterDetail.tsx</Link>
                     </td>
                     <td></td>
                     <td></td>

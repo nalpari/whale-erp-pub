@@ -2,13 +2,13 @@
 import { useState } from 'react'
 import AnimateHeight from 'react-animate-height'
 
-export default function MasterHeaderData() {
+export default function MasterDetailData() {
   const [slideboxOpen, setSlideboxOpen] = useState(true)
   return (
-    <div className="master-header-data">
+    <div className="master-detail-data">
       <div className={`slidebox-wrap ${slideboxOpen ? '' : 'close'}`}>
         <div className="slidebox-header">
-          <h2>메뉴 Header 정보 관리</h2>
+          <h2>메뉴 Detail 정보 관리</h2>
           <div className="slidebox-btn-wrap">
             <button className="slidebox-btn">수정</button>
             <button className="slidebox-btn arr" onClick={() => setSlideboxOpen(!slideboxOpen)}>
@@ -18,8 +18,8 @@ export default function MasterHeaderData() {
         </div>
         <AnimateHeight duration={300} height={slideboxOpen ? 'auto' : 0}>
           <div className="slidebox-body">
-            <div className="header-data-wrap">
-              <table className="header-data-table">
+            <div className="detail-data-wrap">
+              <table className="detail-data-table">
                 <colgroup>
                   <col width="200px" />
                   <col />
@@ -28,12 +28,12 @@ export default function MasterHeaderData() {
                   <tr>
                     <th>운영여부 및 메뉴 그룹</th>
                     <td>
-                      <ul className="header-data-list">
-                        <li className="header-data-item">
-                          <span className="header-data-text">운영</span>
+                      <ul className="detail-data-list">
+                        <li className="detail-data-item">
+                          <span className="detail-data-text">운영</span>
                         </li>
-                        <li className="header-data-item">
-                          <span className="header-data-text">마스터용</span>
+                        <li className="detail-data-item">
+                          <span className="detail-data-text">마스터용</span>
                         </li>
                       </ul>
                     </td>
@@ -41,15 +41,15 @@ export default function MasterHeaderData() {
                   <tr>
                     <th>Business Partner 및 점포</th>
                     <td>
-                      <ul className="header-data-list">
-                        <li className="header-data-item">
-                          <span className="header-data-text">주식회사 따름인 </span>
+                      <ul className="detail-data-list">
+                        <li className="detail-data-item">
+                          <span className="detail-data-text">주식회사 따름인 </span>
                         </li>
-                        <li className="header-data-item">
-                          <span className="header-data-text">을지로3가점</span>
+                        <li className="detail-data-item">
+                          <span className="detail-data-text">을지로3가점</span>
                         </li>
-                        <li className="header-data-item">
-                          <span className="header-data-text">샵힘이나는커피생활 을지로3가점</span>
+                        <li className="detail-data-item">
+                          <span className="detail-data-text">샵힘이나는커피생활 을지로3가점</span>
                         </li>
                       </ul>
                     </td>
@@ -57,12 +57,12 @@ export default function MasterHeaderData() {
                   <tr>
                     <th>메뉴 타입 및 분류</th>
                     <td>
-                      <ul className="header-data-list">
-                        <li className="header-data-item">
-                          <span className="header-data-text">메뉴</span>
+                      <ul className="detail-data-list">
+                        <li className="detail-data-item">
+                          <span className="detail-data-text">메뉴</span>
                         </li>
-                        <li className="header-data-item">
-                          <span className="header-data-text">음료</span>
+                        <li className="detail-data-item">
+                          <span className="detail-data-text">음료</span>
                         </li>
                       </ul>
                     </td>
@@ -70,12 +70,12 @@ export default function MasterHeaderData() {
                   <tr>
                     <th>메뉴명</th>
                     <td>
-                      <ul className="header-data-list">
-                        <li className="header-data-item">
-                          <span className="header-data-text">아이스아메리카노</span>
+                      <ul className="detail-data-list">
+                        <li className="detail-data-item">
+                          <span className="detail-data-text">아이스아메리카노</span>
                         </li>
-                        <li className="header-data-item">
-                          <span className="header-data-text">SCM20251001</span>
+                        <li className="detail-data-item">
+                          <span className="detail-data-text">SCM20251001</span>
                         </li>
                       </ul>
                     </td>
@@ -83,9 +83,9 @@ export default function MasterHeaderData() {
                   <tr>
                     <th>메뉴 구분</th>
                     <td>
-                      <ul className="header-data-list">
-                        <li className="header-data-item">
-                          <span className="header-data-text">제품</span>
+                      <ul className="detail-data-list">
+                        <li className="detail-data-item">
+                          <span className="detail-data-text">제품</span>
                         </li>
                       </ul>
                     </td>
@@ -93,9 +93,9 @@ export default function MasterHeaderData() {
                   <tr>
                     <th>마케팅 분류</th>
                     <td>
-                      <ul className="header-data-list">
-                        <li className="header-data-item">
-                          <span className="header-data-text">NEW, BEST, EVENT</span>
+                      <ul className="detail-data-list">
+                        <li className="detail-data-item">
+                          <span className="detail-data-text">NEW, BEST, EVENT</span>
                         </li>
                       </ul>
                     </td>
@@ -103,20 +103,20 @@ export default function MasterHeaderData() {
                   <tr>
                     <th>대표자 정보</th>
                     <td>
-                      <ul className="header-data-list">
-                        <li className="header-data-item">
-                          <span className="header-data-text">김철수</span>
+                      <ul className="detail-data-list">
+                        <li className="detail-data-item">
+                          <span className="detail-data-text">김철수</span>
                         </li>
-                        <li className="header-data-item">
-                          <div className="header-data-flx">
-                            <span className="header-data-text">010-2222-4444</span>
-                            <button className="header-data-btn">SMS 전송</button>
+                        <li className="detail-data-item">
+                          <div className="detail-data-flx">
+                            <span className="detail-data-text">010-2222-4444</span>
+                            <button className="detail-data-btn">SMS 전송</button>
                           </div>
                         </li>
-                        <li className="header-data-item">
-                          <div className="header-data-flx">
-                            <span className="header-data-text">abc@abc.co.kr</span>
-                            <button className="header-data-btn">이메일 전송</button>
+                        <li className="detail-data-item">
+                          <div className="detail-data-flx">
+                            <span className="detail-data-text">abc@abc.co.kr</span>
+                            <button className="detail-data-btn">이메일 전송</button>
                           </div>
                         </li>
                       </ul>
@@ -125,9 +125,9 @@ export default function MasterHeaderData() {
                   <tr>
                     <th>온도 분류</th>
                     <td>
-                      <ul className="header-data-list">
-                        <li className="header-data-item">
-                          <span className="header-data-text">HOT, COLD</span>
+                      <ul className="detail-data-list">
+                        <li className="detail-data-item">
+                          <span className="detail-data-text">HOT, COLD</span>
                         </li>
                       </ul>
                     </td>
@@ -135,9 +135,9 @@ export default function MasterHeaderData() {
                   <tr>
                     <th>Description</th>
                     <td>
-                      <ul className="header-data-list">
-                        <li className="header-data-item">
-                          <span className="header-data-text">힘원두를 원두로 사용한 기본 아이스아메리카노</span>
+                      <ul className="detail-data-list">
+                        <li className="detail-data-item">
+                          <span className="detail-data-text">힘원두를 원두로 사용한 기본 아이스아메리카노</span>
                         </li>
                       </ul>
                     </td>
@@ -145,9 +145,9 @@ export default function MasterHeaderData() {
                   <tr>
                     <th>이미지 정보</th>
                     <td>
-                      <ul className="header-data-list">
-                        <li className="header-data-item">
-                          <button className="header-data-btn">코튼크림 신메뉴 목록이미지.jpg</button>
+                      <ul className="detail-data-list">
+                        <li className="detail-data-item">
+                          <button className="detail-data-btn">코튼크림 신메뉴 목록이미지.jpg</button>
                         </li>
                       </ul>
                     </td>
@@ -170,8 +170,8 @@ export default function MasterHeaderData() {
         </div>
         <AnimateHeight duration={300} height={slideboxOpen ? 'auto' : 0}>
           <div className="slidebox-body">
-            <div className="header-data-wrap">
-              <table className="header-data-table">
+            <div className="detail-data-wrap">
+              <table className="detail-data-table">
                 <colgroup>
                   <col width="200px" />
                   <col />
@@ -180,20 +180,20 @@ export default function MasterHeaderData() {
                   <tr>
                     <th>컴포넌트 메뉴 #1</th>
                     <td>
-                      <ul className="header-data-list">
-                        <li className="header-data-item">
-                          <span className="header-data-text">
+                      <ul className="detail-data-list">
+                        <li className="detail-data-item">
+                          <span className="detail-data-text">
                             <span>(운영)</span> 아이스아메리카노
                           </span>
                         </li>
-                        <li className="header-data-item">
-                          <span className="header-data-text">BMI1234</span>
+                        <li className="detail-data-item">
+                          <span className="detail-data-text">BMI1234</span>
                         </li>
-                        <li className="header-data-item">
-                          <span className="header-data-text">1개</span>
+                        <li className="detail-data-item">
+                          <span className="detail-data-text">1개</span>
                         </li>
-                        <li className="header-data-item">
-                          <span className="header-data-text">HOT, ICED</span>
+                        <li className="detail-data-item">
+                          <span className="detail-data-text">HOT, ICED</span>
                         </li>
                       </ul>
                     </td>
@@ -201,17 +201,17 @@ export default function MasterHeaderData() {
                   <tr>
                     <th>컴포넌트 메뉴 #2</th>
                     <td>
-                      <ul className="header-data-list">
-                        <li className="header-data-item">
-                          <span className="header-data-text">
+                      <ul className="detail-data-list">
+                        <li className="detail-data-item">
+                          <span className="detail-data-text">
                             <span className="red">(미운영)</span> 초코칩쿠키
                           </span>
                         </li>
-                        <li className="header-data-item">
-                          <span className="header-data-text">BMI1234</span>
+                        <li className="detail-data-item">
+                          <span className="detail-data-text">BMI1234</span>
                         </li>
-                        <li className="header-data-item">
-                          <span className="header-data-text">2개</span>
+                        <li className="detail-data-item">
+                          <span className="detail-data-text">2개</span>
                         </li>
                       </ul>
                     </td>
@@ -234,8 +234,8 @@ export default function MasterHeaderData() {
         </div>
         <AnimateHeight duration={300} height={slideboxOpen ? 'auto' : 0}>
           <div className="slidebox-body">
-            <div className="header-data-wrap">
-              <table className="header-data-table">
+            <div className="detail-data-wrap">
+              <table className="detail-data-table">
                 <colgroup>
                   <col width="200px" />
                   <col />
@@ -246,54 +246,54 @@ export default function MasterHeaderData() {
                     <td>
                       <div className="data-option-wrap">
                         <div className="data-option-item">
-                          <ul className="header-data-list">
-                            <li className="header-data-item">
-                              <span className="header-data-text">
+                          <ul className="detail-data-list">
+                            <li className="detail-data-item">
+                              <span className="detail-data-text">
                                 <span>(운영)</span> 아이스아메리카노
                               </span>
                             </li>
-                            <li className="header-data-item">
-                              <span className="header-data-text">BMI1234</span>
+                            <li className="detail-data-item">
+                              <span className="detail-data-text">BMI1234</span>
                             </li>
-                            <li className="header-data-item">
-                              <span className="header-data-text">1개</span>
+                            <li className="detail-data-item">
+                              <span className="detail-data-text">1개</span>
                             </li>
-                            <li className="header-data-item">
-                              <span className="header-data-text">HOT, ICED</span>
+                            <li className="detail-data-item">
+                              <span className="detail-data-text">HOT, ICED</span>
                             </li>
                           </ul>
                         </div>
                         <div className="data-option-item">
-                          <ul className="header-data-list">
-                            <li className="header-data-item">
-                              <span className="header-data-text">
+                          <ul className="detail-data-list">
+                            <li className="detail-data-item">
+                              <span className="detail-data-text">
                                 <span>(운영)</span> 아이스아메리카노
                               </span>
                             </li>
-                            <li className="header-data-item">
-                              <span className="header-data-text">BMI1234</span>
+                            <li className="detail-data-item">
+                              <span className="detail-data-text">BMI1234</span>
                             </li>
-                            <li className="header-data-item">
-                              <span className="header-data-text">1개</span>
+                            <li className="detail-data-item">
+                              <span className="detail-data-text">1개</span>
                             </li>
-                            <li className="header-data-item">
-                              <span className="header-data-text">HOT, ICED</span>
+                            <li className="detail-data-item">
+                              <span className="detail-data-text">HOT, ICED</span>
                             </li>
                           </ul>
-                          <ul className="header-data-list">
-                            <li className="header-data-item">
-                              <span className="header-data-text">
+                          <ul className="detail-data-list">
+                            <li className="detail-data-item">
+                              <span className="detail-data-text">
                                 <span>(운영)</span> 아이스아메리카노
                               </span>
                             </li>
-                            <li className="header-data-item">
-                              <span className="header-data-text">BMI1234</span>
+                            <li className="detail-data-item">
+                              <span className="detail-data-text">BMI1234</span>
                             </li>
-                            <li className="header-data-item">
-                              <span className="header-data-text">1개</span>
+                            <li className="detail-data-item">
+                              <span className="detail-data-text">1개</span>
                             </li>
-                            <li className="header-data-item">
-                              <span className="header-data-text">HOT, ICED</span>
+                            <li className="detail-data-item">
+                              <span className="detail-data-text">HOT, ICED</span>
                             </li>
                           </ul>
                         </div>
@@ -305,54 +305,54 @@ export default function MasterHeaderData() {
                     <td>
                       <div className="data-option-wrap">
                         <div className="data-option-item">
-                          <ul className="header-data-list">
-                            <li className="header-data-item">
-                              <span className="header-data-text">
+                          <ul className="detail-data-list">
+                            <li className="detail-data-item">
+                              <span className="detail-data-text">
                                 <span>(운영)</span> 아이스아메리카노
                               </span>
                             </li>
-                            <li className="header-data-item">
-                              <span className="header-data-text">BMI1234</span>
+                            <li className="detail-data-item">
+                              <span className="detail-data-text">BMI1234</span>
                             </li>
-                            <li className="header-data-item">
-                              <span className="header-data-text">1개</span>
+                            <li className="detail-data-item">
+                              <span className="detail-data-text">1개</span>
                             </li>
-                            <li className="header-data-item">
-                              <span className="header-data-text">HOT, ICED</span>
+                            <li className="detail-data-item">
+                              <span className="detail-data-text">HOT, ICED</span>
                             </li>
                           </ul>
                         </div>
                         <div className="data-option-item">
-                          <ul className="header-data-list">
-                            <li className="header-data-item">
-                              <span className="header-data-text">
+                          <ul className="detail-data-list">
+                            <li className="detail-data-item">
+                              <span className="detail-data-text">
                                 <span className="red">(미운영)</span> 아이스아메리카노
                               </span>
                             </li>
-                            <li className="header-data-item">
-                              <span className="header-data-text">BMI1234</span>
+                            <li className="detail-data-item">
+                              <span className="detail-data-text">BMI1234</span>
                             </li>
-                            <li className="header-data-item">
-                              <span className="header-data-text">1개</span>
+                            <li className="detail-data-item">
+                              <span className="detail-data-text">1개</span>
                             </li>
-                            <li className="header-data-item">
-                              <span className="header-data-text">HOT, ICED</span>
+                            <li className="detail-data-item">
+                              <span className="detail-data-text">HOT, ICED</span>
                             </li>
                           </ul>
-                          <ul className="header-data-list">
-                            <li className="header-data-item">
-                              <span className="header-data-text">
+                          <ul className="detail-data-list">
+                            <li className="detail-data-item">
+                              <span className="detail-data-text">
                                 <span className="red">(미운영)</span> 아이스아메리카노
                               </span>
                             </li>
-                            <li className="header-data-item">
-                              <span className="header-data-text">BMI1234</span>
+                            <li className="detail-data-item">
+                              <span className="detail-data-text">BMI1234</span>
                             </li>
-                            <li className="header-data-item">
-                              <span className="header-data-text">1개</span>
+                            <li className="detail-data-item">
+                              <span className="detail-data-text">1개</span>
                             </li>
-                            <li className="header-data-item">
-                              <span className="header-data-text">HOT, ICED</span>
+                            <li className="detail-data-item">
+                              <span className="detail-data-text">HOT, ICED</span>
                             </li>
                           </ul>
                         </div>
@@ -365,7 +365,7 @@ export default function MasterHeaderData() {
           </div>
         </AnimateHeight>
       </div>
-      <div className="header-data-info-wrap">
+      <div className="detail-data-info-wrap">
         <table className="default-table">
           <colgroup>
             <col width="120px" />

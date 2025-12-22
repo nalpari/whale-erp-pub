@@ -82,20 +82,20 @@
 }
 
 // header 정보 공통
-.master-header-data {
+.master-detail-data {
   @include flex(34px);
   flex-direction: column;
 }
-.header-data-wrap {
+.detail-data-wrap {
   padding: 10px 24px;
 }
-.header-data-list {
+.detail-data-list {
   @include flex(0px);
   align-items: center;
-  .header-data-item {
+  .detail-data-item {
     position: relative;
     padding: 0 10px;
-    .header-data-flx {
+    .detail-data-flx {
       @include flex(5px);
       align-items: center;
     }
