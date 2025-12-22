@@ -159,12 +159,14 @@ export default function MasterEdit() {
                             <div className="file-item-wrap">
                               <button className="file-name">을지로3가점 영업허가증.pdf</button>
                               <button className="file-delete"></button>
+                              <button className="file-preview"></button>
                             </div>
                           </li>
                           <li className="file-item">
                             <div className="file-item-wrap">
                               <button className="file-name">을지로3가점 영업허가증.pdf</button>
                               <button className="file-delete"></button>
+                              <button className="file-preview"></button>
                               <div className="toggle-wrap">
                                 <span className="toggle-txt">자가여부</span>
                                 <div className="toggle-btn">

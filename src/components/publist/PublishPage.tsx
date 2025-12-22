@@ -63,8 +63,8 @@ export default function PublishPage() {
                 </thead>
                 <tbody>
                   <tr>
+                    <td rowSpan={3}>공통 모음</td>
                     <td>Grid list 공통</td>
-                    <td></td>
                     <td>
                       <Link href={'/masterlist'}>MasterList.tsx</Link>
                     </td>
@@ -74,7 +74,6 @@ export default function PublishPage() {
                   </tr>
                   <tr>
                     <td>Header 정보 공통</td>
-                    <td></td>
                     <td>
                       <Link href={'/masterdetail'}>MasterDetail.tsx</Link>
                     </td>
@@ -84,7 +83,6 @@ export default function PublishPage() {
                   </tr>
                   <tr>
                     <td>Master Edit 공통</td>
-                    <td></td>
                     <td>
                       <Link href={'/masteredit'}>MasterEdit.tsx</Link>
                     </td>
@@ -93,12 +91,30 @@ export default function PublishPage() {
                     <td className="c red">2025-12-17</td>
                   </tr>
                   <tr>
-                    <td>Invitation</td>
+                    <td rowSpan={3}>MasterData</td>
                     <td>가맹점 초대</td>
                     <td>
                       <Link href={'/invitation'}>Invitation.tsx</Link>
                     </td>
+                    <td>Invitation</td>
                     <td></td>
+                    <td className="c red">2025-12-17</td>
+                  </tr>
+                  <tr>
+                    <td>회원탈퇴 팝업</td>
+                    <td>
+                      <Link href={'/popup/withdrawal'}>Withdrawal.tsx</Link>
+                    </td>
+                    <td>Withdrawal</td>
+                    <td></td>
+                    <td className="c red">2025-12-17</td>
+                  </tr>
+                  <tr>
+                    <td>썸네일 리스트</td>
+                    <td>
+                      <Link href={'/thumbnail'}>ThumbnailList.tsx</Link>
+                    </td>
+                    <td>ThumbnailList</td>
                     <td></td>
                     <td className="c red">2025-12-17</td>
                   </tr>

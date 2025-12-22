@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+
+.pop-form-item {
+  margin-bottom: 16px;
+  .pop-form-tit {
+    @include fontDefinition($font-ds-15, $font-w-500, $line-h-140);
+    color: #888;
+    margin-bottom: 8px;
+  }
+}
+.pop-btn-content {
+  @include flex(8px);
+  align-items: center;
+  justify-content: center;
+}

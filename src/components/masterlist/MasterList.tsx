@@ -6,9 +6,13 @@ export default function MasterList() {
     <div className="data-list-wrap">
       <div className="data-list-header">
         <div className="data-header-left">
+          <button className="btn-form outline">등록</button>
           <button className="btn-form basic">등록</button>
-          <button className="btn-form basic">등록</button>
-          <button className="btn-form basic">등록</button>
+          <button className="btn-form gray">등록</button>
+          <button className="tooltip-btn">
+            <span className="tooltip-icon"></span>
+            <span className="tooltip-txt">브랜드명 설명브랜드명 설명브랜드명 설명브랜드명 설명브랜드명 설명</span>
+          </button>
         </div>
         <div className="data-header-right">
           <button className="btn-form basic">등록</button>
