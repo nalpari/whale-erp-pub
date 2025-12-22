@@ -75,21 +75,7 @@
     }
   }
 }
-.more-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  .icon-more {
-    flex: none;
-    width: 38px;
-    height: 38px;
-    background-image: url('/assets/images/ui/table_more.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
+
 // pagination
 .pagination {
   margin-top: 24px;

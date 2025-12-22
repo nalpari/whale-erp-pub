@@ -1,6 +1,7 @@
 @use '../abstracts' as *;
 
 .default-table {
+  position: relative;
   width: 100%;
   table-layout: fixed;
   box-sizing: border-box;

@@ -139,3 +139,12 @@ input::-webkit-inner-spin-button {
     color: #999;
   }
 }
+
+.filed-file {
+  input {
+    display: none;
+  }
+  label {
+    display: inline-block;
+  }
+}

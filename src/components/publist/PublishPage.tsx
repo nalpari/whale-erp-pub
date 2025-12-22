@@ -64,17 +64,7 @@ export default function PublishPage() {
                 <tbody>
                   <tr>
                     <td>Grid list 공통</td>
-                    <td>
-                      <div>Business Partner 목록</div>
-                      <div>회원 목록</div>
-                      <div>마스터용 메뉴 목록</div>
-                      <div>점포용 메뉴 목록</div>
-                      <div>마스터용 가격 목록</div>
-                      <div>마스터용 가격 이력 관리</div>
-                      <div>점포용 가격 목록</div>
-                      <div>점포용 가격 이력 관리</div>
-                      <div>점포용 프로모션 가격 목록</div>
-                    </td>
+                    <td></td>
                     <td>
                       <Link href={'/masterlist'}>MasterList.tsx</Link>
                     </td>
@@ -84,15 +74,19 @@ export default function PublishPage() {
                   </tr>
                   <tr>
                     <td>Header 정보 공통</td>
-                    <td>
-                      <div>Business Partner 정보 상세조회</div>
-                      <div>회원 정보 상세조회 </div>
-                      <div>마스터용 메뉴 정보 상세조회</div>
-                      <div>점포용 메뉴 정보 상세조회</div>
-                      <div>점포용 프로모션 가격 정보 상세조회</div>
-                    </td>
+                    <td></td>
                     <td>
                       <Link href={'/masterdetail'}>MasterDetail.tsx</Link>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td className="c red">2025-12-17</td>
+                  </tr>
+                  <tr>
+                    <td>Master Edit 공통</td>
+                    <td></td>
+                    <td>
+                      <Link href={'/masteredit'}>MasterEdit.tsx</Link>
                     </td>
                     <td></td>
                     <td></td>
@@ -103,16 +97,6 @@ export default function PublishPage() {
                     <td>가맹점 초대</td>
                     <td>
                       <Link href={'/invitation'}>Invitation.tsx</Link>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td className="c red">2025-12-17</td>
-                  </tr>
-                  <tr>
-                    <td>Business Partner Header 정보</td>
-                    <td>Business Partner 정보 상세조회</td>
-                    <td>
-                      <Link href={'/masteredit'}>BPHeader.tsx</Link>
                     </td>
                     <td></td>
                     <td></td>

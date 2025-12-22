@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import AnimateHeight from 'react-animate-height'
+import DatePicker from '../ui/common/DatePicker'
 
 export default function MasterEdit() {
   const [slideboxOpen, setSlideboxOpen] = useState(true)
@@ -56,103 +57,207 @@ export default function MasterEdit() {
                     </div>
                   </td>
                 </tr>
-                <tr>
-                  <th>BP 그룹</th>
-                  <td>
-                    <div className="filed-check-flx">
-                      <div className="radio-form-box">
-                        <input type="radio" name="bpGroup" id="bpGroup-platform" />
-                        <label htmlFor="bpGroup-platform">플랫폼</label>
-                      </div>
-                      <div className="radio-form-box">
-                        <input type="radio" name="bpGroup" id="bpGroup-asp" />
-                        <label htmlFor="bpGroup-asp">ASP</label>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th>가입 방식</th>
-                  <td>
-                    <div className="mx-500">
-                      <input type="text" className="input-frame" readOnly defaultValue={'직접 가입'} />
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th>
-                    Master ID <span className="red">*</span>
-                  </th>
-                  <td>
-                    <div className="filed-flx">
-                      <div className="mx-500">
-                        <input type="text" className="input-frame" readOnly defaultValue={'Hc-1234567'} />
-                      </div>
-                      <button className="btn-form outline s">중복 확인</button>
-                      <span className="explain">
-                        ※ WHALE ERP의 Partner Office에 로그인할 때 사용할 ID를 입력해 주세요.
-                      </span>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th>
-                    업체명 <span className="red">*</span>
-                  </th>
-                  <td>
-                    <div className="filed-flx">
-                      <div className="mx-500">
-                        <input type="text" className="input-frame" defaultValue={'주식회사 따름인'} />
-                      </div>
-                      <span className="explain">BMI1234</span>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th>업체명(영문)</th>
-                  <td>
-                    <div className="filed-flx">
-                      <div className="mx-500">
-                        <input type="text" className="input-frame" />
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th>BP Description</th>
-                  <td>
-                    <div className="filed-flx">
-                      <div className="mx-500">
-                        <input type="text" className="input-frame" />
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th>브랜드명</th>
-                  <td>
-                    <div className="filed-flx">
-                      <div className="mx-500">
-                        <input type="text" className="input-frame" />
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th>
-                    사업자등록번호 <span className="red">*</span>
-                  </th>
-                  <td>
-                    <div className="filed-flx">
-                      <div className="mx-500">
-                        <input type="text" className="input-frame" />
-                      </div>
-                      <span className="explain">※ 숫자만 허용</span>
-                    </div>
-                  </td>
-                </tr>
               </tbody>
             </table>
+            <div className="slide-table-wrap">
+              <h3>Business Partner 정보</h3>
+              <table className="default-table">
+                <colgroup>
+                  <col width="190px" />
+                  <col />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>
+                      Master ID <span className="red">*</span>
+                    </th>
+                    <td>
+                      <div className="filed-flx">
+                        <div className="mx-500">
+                          <input type="text" className="input-frame" readOnly defaultValue={'Hc-1234567'} />
+                        </div>
+                        <button className="btn-form outline s">중복 확인</button>
+                        <span className="explain">
+                          ※ WHALE ERP의 Partner Office에 로그인할 때 사용할 ID를 입력해 주세요.
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      업체명 <span className="red">*</span>
+                    </th>
+                    <td>
+                      <div className="filed-flx">
+                        <div className="mx-500">
+                          <input type="text" className="input-frame" />
+                        </div>
+                        <span className="explain">BMI1234</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>브랜드명</th>
+                    <td>
+                      <div className="filed-flx">
+                        <div className="mx-500">
+                          <input type="text" className="input-frame" />
+                        </div>
+                        <button className="tooltip-btn">
+                          <span className="tooltip-icon"></span>
+                          <span className="tooltip-txt">
+                            브랜드명 설명브랜드명 설명브랜드명 설명브랜드명 설명브랜드명 설명
+                          </span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      사업자등록번호<span className="red">*</span>
+                    </th>
+                    <td>
+                      <div className="filed-flx">
+                        <div className="mx-500">
+                          <input type="text" className="input-frame" />
+                        </div>
+                        <span className="explain">※ 숫자만 허용</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      주소<span className="red">*</span>
+                    </th>
+                    <td>
+                      <div className="filed-btn mb10">
+                        <button className="btn-form outline s">주소 찾기</button>
+                      </div>
+                      <div className="filed-flx">
+                        <div className="block">
+                          <input type="text" className="input-frame" disabled />
+                        </div>
+                        <div className="block">
+                          <input type="text" className="input-frame" />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>LNB 로고</th>
+                    <td>
+                      <div className="filed-file mb10">
+                        <input type="file" className="file-input" id="file-input" />
+                        <label htmlFor="file-input" className="btn-form outline s">
+                          파일 찾기
+                        </label>
+                      </div>
+                      <div className="file-bx">
+                        <div className="file-guide">Drag & Drop으로 파일을 옮겨주세요.</div>
+                        <ul className="file-list">
+                          <li className="file-item">
+                            <div className="file-item-wrap">
+                              <button className="file-name">을지로3가점 영업허가증.pdf</button>
+                              <button className="file-delete"></button>
+                            </div>
+                          </li>
+                          <li className="file-item">
+                            <div className="file-item-wrap">
+                              <button className="file-name">을지로3가점 영업허가증.pdf</button>
+                              <button className="file-delete"></button>
+                              <div className="toggle-wrap">
+                                <span className="toggle-txt">자가여부</span>
+                                <div className="toggle-btn">
+                                  <input type="checkbox" id="toggle-btn" />
+                                  <label className="slider" htmlFor="toggle-btn"></label>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>임대 계약 만료일</th>
+                    <td>
+                      <div className="filed-flx">
+                        <div className="date-picker-wrap">
+                          <DatePicker />
+                          <span>~</span>
+                          <DatePicker />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="slide-table-wrap">
+              <h3>Partner Function</h3>
+              <table className="default-table">
+                <colgroup>
+                  <col width="190px" />
+                  <col />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>본사</th>
+                    <td>
+                      <div className="filed-flx">
+                        <div className="mx-500">
+                          <select name="" id="" className="select-form">
+                            <option value="">전체</option>
+                          </select>
+                        </div>
+                        <div className="auto-right">
+                          <div className="toggle-wrap">
+                            <div className="toggle-btn">
+                              <input type="checkbox" id="toggle-btn" />
+                              <label className="slider" htmlFor="toggle-btn"></label>
+                            </div>
+                          </div>
+                          <div className="more-btn">
+                            <span className="icon-more"></span>
+                            <div className="option-list">
+                              <button className="option-item">Partner Fuction 추가</button>
+                              <button className="option-item">Partner Fuction 삭제</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>가맹점</th>
+                    <td>
+                      <div className="filed-flx">
+                        <div className="mx-500">
+                          <select name="" id="" className="select-form">
+                            <option value="">전체</option>
+                          </select>
+                        </div>
+                        <div className="auto-right">
+                          <div className="toggle-wrap">
+                            <div className="toggle-btn">
+                              <input type="checkbox" id="toggle-btn" />
+                              <label className="slider" htmlFor="toggle-btn"></label>
+                            </div>
+                          </div>
+                          <div className="more-btn">
+                            <span className="icon-more"></span>
+                            {/* <div className="option-list">
+                              <button className="option-item">Partner Fuction 추가</button>
+                              <button className="option-item">Partner Fuction 삭제</button>
+                            </div> */}
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </AnimateHeight>
       </div>
