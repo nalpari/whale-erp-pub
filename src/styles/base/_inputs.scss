@@ -103,6 +103,9 @@ input::-webkit-inner-spin-button {
 // 데스크탑 input default
 .input-frame {
   @include input-frame(42px, $input-brd-default, $input-back-default, $input-font, $input-c-default);
+  &.small {
+    height: 32px;
+  }
 }
 // 모바일 input default
 .input-log-frame {

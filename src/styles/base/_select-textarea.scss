@@ -34,6 +34,9 @@
 // select 데스크탑
 .select-form {
   @include select-form(42px, $sel-font);
+  &.small {
+    height: 32px;
+  }
 }
 
 /******************** textarea-type 모음 *****************/

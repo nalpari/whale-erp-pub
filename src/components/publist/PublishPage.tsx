@@ -108,6 +108,16 @@ export default function PublishPage() {
                     <td></td>
                     <td className="c red">2025-12-17</td>
                   </tr>
+                  <tr>
+                    <td>Business Partner Header 정보</td>
+                    <td>Business Partner 정보 상세조회</td>
+                    <td>
+                      <Link href={'/masteredit'}>BPHeader.tsx</Link>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td className="c red">2025-12-17</td>
+                  </tr>
                 </tbody>
               </table>
             </div>

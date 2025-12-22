@@ -61,19 +61,43 @@ export default function AgGrid() {
       },
     },
     { field: 'make', headerName: '번호', width: 60 },
+    {
+      headerName: '변환',
+      cellRenderer: () => {
+        return (
+          <div className="filed-input">
+            <input type="text" className="input-frame small" />
+          </div>
+        )
+      },
+    },
     { field: 'model', headerName: '아이디', flex: 1 },
     { field: 'price', headerName: '회원명' },
     { field: 'phone', headerName: '휴대폰 번호' },
     { field: 'auth', headerName: '간편인증 ' },
     { field: 'regDate', headerName: '가입일시 ' },
     {
-      field: 'more',
-      headerName: ' ',
-      width: 60,
+      headerName: '가입일시 ',
       cellRenderer: () => {
         return (
-          <div className="more-btn">
-            <button className="icon-more"></button>
+          <div className="filed-select">
+            <select name="" id="" className="select-form small">
+              <option value="">10</option>
+              <option value="">20</option>
+              <option value="">30</option>
+              <option value="">40</option>
+              <option value="">50</option>
+            </select>
+          </div>
+        )
+      },
+    },
+    {
+      headerName: '가입일시 ',
+      cellRenderer: () => {
+        return (
+          <div className="filed-btn">
+            <button className="btn-form outline grid">변환</button>
           </div>
         )
       },

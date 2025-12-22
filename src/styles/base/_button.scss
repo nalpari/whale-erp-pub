@@ -90,6 +90,9 @@
   &.s {
     @include btn-frame(42px, 18px, $font-ds-15, 24px);
   }
+  &.grid {
+    @include btn-frame(32px, 18px, $font-ds-15, 24px);
+  }
 }
 .btn-log-frame {
   @include btn-frame(56px, 10px, $n-btn-font, 24px);

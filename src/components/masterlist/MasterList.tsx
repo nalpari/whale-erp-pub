@@ -5,6 +5,11 @@ export default function MasterList() {
   return (
     <div className="data-list-wrap">
       <div className="data-list-header">
+        <div className="data-header-left">
+          <button className="btn-form basic">등록</button>
+          <button className="btn-form basic">등록</button>
+          <button className="btn-form basic">등록</button>
+        </div>
         <div className="data-header-right">
           <button className="btn-form basic">등록</button>
           <div className="data-count-select">

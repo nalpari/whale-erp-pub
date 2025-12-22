@@ -3,6 +3,10 @@
   @include flex(0px);
   align-items: center;
   margin-bottom: 12px;
+  .data-header-left {
+    @include flex(8px);
+    align-items: center;
+  }
   .data-header-right {
     margin-left: auto;
     @include flex(8px);

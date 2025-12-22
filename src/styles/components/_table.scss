@@ -25,6 +25,10 @@
       @include flex(10px);
       align-items: center;
     }
+    .explain {
+      @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+      color: #222;
+    }
   }
 }
 
