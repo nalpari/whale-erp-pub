@@ -365,6 +365,46 @@ export default function MasterHeaderData() {
           </div>
         </AnimateHeight>
       </div>
+      <div className="header-data-info-wrap">
+        <table className="default-table">
+          <colgroup>
+            <col width="120px" />
+            <col />
+            <col width="120px" />
+            <col />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>등록자</th>
+              <td>
+                <div className="data-filed">
+                  <input type="text" className="input-frame" defaultValue={'홍길동(hs_admin)'} disabled />
+                </div>
+              </td>
+              <th>등록일시</th>
+              <td>
+                <div className="data-filed">
+                  <input type="text" className="input-frame" defaultValue={'2025.01.01 21:10:11'} disabled />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>최종 수정자</th>
+              <td>
+                <div className="data-filed">
+                  <input type="text" className="input-frame" defaultValue={'홍길동(hs_admin)'} disabled />
+                </div>
+              </td>
+              <th>최종 수정일시</th>
+              <td>
+                <div className="data-filed">
+                  <input type="text" className="input-frame" defaultValue={'2025.01.01 21:10:11'} disabled />
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   )
 }
