@@ -260,6 +260,438 @@ export default function MasterEdit() {
                 </tbody>
               </table>
             </div>
+            <div className="slide-table-wrap">
+              <h3>옵션 정보</h3>
+              <table className="master-option-table">
+                <colgroup>
+                  <col width="190px" />
+                  <col />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th className="option-header-tit">옵션 SET 01</th>
+                    <td>
+                      <table className="option-header">
+                        <colgroup>
+                          <col />
+                          <col width="150px" />
+                          <col width="150px" />
+                          <col width="200px" />
+                          <col width="110px" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div className="filed-flx">
+                                <div className="option-name">
+                                  옵션 SET명 <span className="red">*</span>
+                                </div>
+                                <div className="block">
+                                  <input type="text" className="input-frame" />
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="toggle-wrap">
+                                <span className="toggle-txt">필수선택</span>
+                                <div className="toggle-btn">
+                                  <input type="checkbox" id="toggle-btn" />
+                                  <label className="slider" htmlFor="toggle-btn"></label>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="toggle-wrap">
+                                <span className="toggle-txt">다중선택</span>
+                                <div className="toggle-btn">
+                                  <input type="checkbox" id="toggle-btn" />
+                                  <label className="slider" htmlFor="toggle-btn"></label>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="filed-flx">
+                                <div className="option-name">노출순서</div>
+                                <div className="block">
+                                  <input type="text" className="input-frame" />
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="filed-flx">
+                                <div className="toggle-btn">
+                                  <input type="checkbox" id="toggle-btn" />
+                                  <label className="slider" htmlFor="toggle-btn"></label>
+                                </div>
+                                <div className="more-btn">
+                                  <span className="icon-more"></span>
+                                  {/* <div className="option-list">
+                                  <button className="option-item">옵션 SET 추가</button>
+                                  <button className="option-item">옵션 SET 삭제</button>
+                                </div> */}
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div className="option-num-tit">
+                        <span>옵션 01</span>
+                        <button className="sequence-btn"></button>
+                      </div>
+                    </th>
+                    <td>
+                      <table className="option-list">
+                        <colgroup>
+                          <col />
+                          <col width="240px" />
+                          <col width="150px" />
+                          <col width="110px" />
+                          <col width="110px" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div className="filed-flx">
+                                <button className="btn-form outline s">옵션 찿기</button>
+                                <div className="block">
+                                  <input type="text" className="input-frame" />
+                                </div>
+                                <span className="explain">PDM10005</span>
+                                <div className="store-badge org">미운영</div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="filed-flx">
+                                <div className="option-name">추가가격</div>
+                                <div className="block">
+                                  <input type="text" className="input-frame" />
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="toggle-wrap">
+                                <span className="toggle-txt">수량입력</span>
+                                <div className="toggle-btn">
+                                  <input type="checkbox" id="toggle-btn" />
+                                  <label className="slider" htmlFor="toggle-btn"></label>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="toggle-wrap">
+                                <span className="toggle-txt">디폴트</span>
+                                <div className="radio-form-box no-txt">
+                                  <input type="radio" name="quantity" id="quantity-yes" />
+                                  <label htmlFor="quantity-yes"></label>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="filed-flx">
+                                <div className="toggle-btn">
+                                  <input type="checkbox" id="toggle-btn" />
+                                  <label className="slider" htmlFor="toggle-btn"></label>
+                                </div>
+                                <div className="more-btn">
+                                  <span className="icon-more"></span>
+                                  {/* <div className="option-list">
+                                  <button className="option-item">옵션 SET 추가</button>
+                                  <button className="option-item">옵션 SET 삭제</button>
+                                </div> */}
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div className="option-num-tit">
+                        <span>옵션 02</span>
+                        <button className="sequence-btn"></button>
+                      </div>
+                    </th>
+                    <td>
+                      <table className="option-list">
+                        <colgroup>
+                          <col />
+                          <col width="240px" />
+                          <col width="150px" />
+                          <col width="110px" />
+                          <col width="110px" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div className="filed-flx">
+                                <button className="btn-form outline s">옵션 찿기</button>
+                                <div className="block">
+                                  <input type="text" className="input-frame" />
+                                </div>
+                                <span className="explain">PDM10005</span>
+                                <div className="store-badge blue">운영</div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="filed-flx">
+                                <div className="option-name">추가가격</div>
+                                <div className="block">
+                                  <input type="text" className="input-frame" />
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="toggle-wrap">
+                                <span className="toggle-txt">수량입력</span>
+                                <div className="toggle-btn">
+                                  <input type="checkbox" id="toggle-btn" />
+                                  <label className="slider" htmlFor="toggle-btn"></label>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="toggle-wrap">
+                                <span className="toggle-txt">디폴트</span>
+                                <div className="radio-form-box no-txt">
+                                  <input type="radio" name="quantity" id="quantity-yes" />
+                                  <label htmlFor="quantity-yes"></label>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="filed-flx">
+                                <div className="toggle-btn">
+                                  <input type="checkbox" id="toggle-btn" />
+                                  <label className="slider" htmlFor="toggle-btn"></label>
+                                </div>
+                                <div className="more-btn">
+                                  <span className="icon-more"></span>
+                                  {/* <div className="option-list">
+                                  <button className="option-item">옵션 SET 추가</button>
+                                  <button className="option-item">옵션 SET 삭제</button>
+                                </div> */}
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table className="master-option-table">
+                <colgroup>
+                  <col width="190px" />
+                  <col />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th className="option-header-tit">옵션 SET 02</th>
+                    <td>
+                      <table className="option-header">
+                        <colgroup>
+                          <col />
+                          <col width="150px" />
+                          <col width="150px" />
+                          <col width="200px" />
+                          <col width="80px" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div className="filed-flx">
+                                <div className="option-name">
+                                  옵션 SET명 <span className="red">*</span>
+                                </div>
+                                <div className="block">
+                                  <input type="text" className="input-frame" />
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="toggle-wrap">
+                                <span className="toggle-txt">필수선택</span>
+                                <div className="toggle-btn">
+                                  <input type="checkbox" id="toggle-btn" />
+                                  <label className="slider" htmlFor="toggle-btn"></label>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="toggle-wrap">
+                                <span className="toggle-txt">다중선택</span>
+                                <div className="toggle-btn">
+                                  <input type="checkbox" id="toggle-btn" />
+                                  <label className="slider" htmlFor="toggle-btn"></label>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="filed-flx">
+                                <div className="option-name">노출순서</div>
+                                <div className="block">
+                                  <input type="text" className="input-frame" />
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="filed-flx">
+                                <div className="toggle-btn">
+                                  <input type="checkbox" id="toggle-btn" />
+                                  <label className="slider" htmlFor="toggle-btn"></label>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div className="option-num-tit">
+                        <span>옵션 01</span>
+                        <button className="sequence-btn"></button>
+                      </div>
+                    </th>
+                    <td>
+                      <table className="option-list">
+                        <colgroup>
+                          <col />
+                          <col width="240px" />
+                          <col width="150px" />
+                          <col width="110px" />
+                          <col width="80px" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div className="filed-flx">
+                                <button className="btn-form outline s">옵션 찿기</button>
+                                <div className="block">
+                                  <input type="text" className="input-frame" />
+                                </div>
+                                <span className="explain">PDM10005</span>
+                                <div className="store-badge org">미운영</div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="filed-flx">
+                                <div className="option-name">추가가격</div>
+                                <div className="block">
+                                  <input type="text" className="input-frame" />
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="toggle-wrap">
+                                <span className="toggle-txt">수량입력</span>
+                                <div className="toggle-btn">
+                                  <input type="checkbox" id="toggle-btn" />
+                                  <label className="slider" htmlFor="toggle-btn"></label>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="toggle-wrap">
+                                <span className="toggle-txt">디폴트</span>
+                                <div className="radio-form-box no-txt">
+                                  <input type="radio" name="quantity" id="quantity-yes" />
+                                  <label htmlFor="quantity-yes"></label>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="filed-flx">
+                                <div className="toggle-btn">
+                                  <input type="checkbox" id="toggle-btn" />
+                                  <label className="slider" htmlFor="toggle-btn"></label>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div className="option-num-tit">
+                        <span>옵션 02</span>
+                        <button className="sequence-btn"></button>
+                      </div>
+                    </th>
+                    <td>
+                      <table className="option-list">
+                        <colgroup>
+                          <col />
+                          <col width="240px" />
+                          <col width="150px" />
+                          <col width="110px" />
+                          <col width="80px" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div className="filed-flx">
+                                <button className="btn-form outline s">옵션 찿기</button>
+                                <div className="block">
+                                  <input type="text" className="input-frame" />
+                                </div>
+                                <span className="explain">PDM10005</span>
+                                <div className="store-badge blue">운영</div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="filed-flx">
+                                <div className="option-name">추가가격</div>
+                                <div className="block">
+                                  <input type="text" className="input-frame" />
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="toggle-wrap">
+                                <span className="toggle-txt">수량입력</span>
+                                <div className="toggle-btn">
+                                  <input type="checkbox" id="toggle-btn" />
+                                  <label className="slider" htmlFor="toggle-btn"></label>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="toggle-wrap">
+                                <span className="toggle-txt">디폴트</span>
+                                <div className="radio-form-box no-txt">
+                                  <input type="radio" name="quantity" id="quantity-yes" />
+                                  <label htmlFor="quantity-yes"></label>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div className="filed-flx">
+                                <div className="toggle-btn">
+                                  <input type="checkbox" id="toggle-btn" />
+                                  <label className="slider" htmlFor="toggle-btn"></label>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </AnimateHeight>
       </div>

@@ -118,6 +118,12 @@
 // radio box
 .radio-form-box {
   position: relative;
+  &.no-txt {
+    label {
+      padding-left: 20px;
+    }
+  }
+
   label {
     padding-left: 28px;
     &::before {
