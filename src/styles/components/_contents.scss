@@ -587,3 +587,22 @@
     }
   }
 }
+
+// 카테고리 리스트
+.category-list {
+  @include flex(10px);
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 6px 0;
+  .category-item {
+    @include flex(10px);
+    align-items: center;
+    .category-name {
+      @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+      color: #222;
+      i {
+        color: #e38936;
+      }
+    }
+  }
+}

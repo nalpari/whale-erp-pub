@@ -91,7 +91,7 @@ export default function PublishPage() {
                     <td className="c red">2025-12-17</td>
                   </tr>
                   <tr>
-                    <td rowSpan={4}>MasterData</td>
+                    <td rowSpan={5}>MasterData</td>
                     <td>가맹점 초대</td>
                     <td>
                       <Link href={'/invitation'}>Invitation.tsx</Link>
@@ -122,6 +122,15 @@ export default function PublishPage() {
                     <td>점포 메뉴 추가</td>
                     <td>
                       <Link href={'/popup/addmenu'}>AddSotreMenuPop.tsx</Link>
+                    </td>
+                    <td>AddSotreMenuPop</td>
+                    <td></td>
+                    <td className="c red">2025-12-22</td>
+                  </tr>
+                  <tr>
+                    <td>마스터용 카테고리 등록, 수정</td>
+                    <td>
+                      <Link href={'/popup/categoryedit'}>CategoryEditPop.tsx</Link>
                     </td>
                     <td>AddSotreMenuPop</td>
                     <td></td>

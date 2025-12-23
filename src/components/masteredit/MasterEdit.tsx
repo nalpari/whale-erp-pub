@@ -692,6 +692,50 @@ export default function MasterEdit() {
                 </tbody>
               </table>
             </div>
+            <div className="slide-table-wrap">
+              <h3>카테고리 정보</h3>
+              <table className="default-table white">
+                <colgroup>
+                  <col width="190px" />
+                  <col />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>
+                      카테고리 선택 <span className="red">*</span>
+                    </th>
+                    <td>
+                      <div className="filed-flx">
+                        <div className="mx-500">
+                          <select name="" id="" className="select-form">
+                            <option value="">전체</option>
+                          </select>
+                        </div>
+                        <button className="btn-form outline s">추가</button>
+                      </div>
+                      <ul className="category-list">
+                        <li className="category-item">
+                          <span className="category-name">COFFEE</span>
+                          <button className="file-delete"></button>
+                        </li>
+                        <li className="category-item">
+                          <span className="category-name">
+                            NON COFFEE<i> 미운영</i>
+                          </span>
+                          <button className="file-delete"></button>
+                        </li>
+                        <li className="category-item">
+                          <span className="category-name">
+                            ADE&TEA<i> 미운영</i>
+                          </span>
+                          <button className="file-delete"></button>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </AnimateHeight>
       </div>
