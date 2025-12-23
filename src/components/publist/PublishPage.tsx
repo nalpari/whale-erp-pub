@@ -70,7 +70,7 @@ export default function PublishPage() {
                     </td>
                     <td></td>
                     <td></td>
-                    <td className="c red">2025-12-17</td>
+                    <td className="c red">2025-12-24</td>
                   </tr>
                   <tr>
                     <td>Header 정보 공통</td>
@@ -79,7 +79,7 @@ export default function PublishPage() {
                     </td>
                     <td></td>
                     <td></td>
-                    <td className="c red">2025-12-17</td>
+                    <td className="c red">2025-12-24</td>
                   </tr>
                   <tr>
                     <td>Master Edit 공통</td>
@@ -88,17 +88,17 @@ export default function PublishPage() {
                     </td>
                     <td></td>
                     <td></td>
-                    <td className="c red">2025-12-17</td>
+                    <td className="c red">2025-12-24</td>
                   </tr>
                   <tr>
-                    <td rowSpan={5}>MasterData</td>
+                    <td rowSpan={6}>MasterData</td>
                     <td>가맹점 초대</td>
                     <td>
                       <Link href={'/invitation'}>Invitation.tsx</Link>
                     </td>
                     <td>Invitation</td>
                     <td></td>
-                    <td className="c red">2025-12-17</td>
+                    <td className="c red">2025-12-24</td>
                   </tr>
                   <tr>
                     <td>회원탈퇴 팝업</td>
@@ -107,7 +107,7 @@ export default function PublishPage() {
                     </td>
                     <td>Withdrawal</td>
                     <td></td>
-                    <td className="c red">2025-12-17</td>
+                    <td className="c red">2025-12-24</td>
                   </tr>
                   <tr>
                     <td>썸네일 리스트</td>
@@ -116,7 +116,7 @@ export default function PublishPage() {
                     </td>
                     <td>ThumbnailList</td>
                     <td></td>
-                    <td className="c red">2025-12-17</td>
+                    <td className="c red">2025-12-24</td>
                   </tr>
                   <tr>
                     <td>점포 메뉴 추가</td>
@@ -125,7 +125,7 @@ export default function PublishPage() {
                     </td>
                     <td>AddSotreMenuPop</td>
                     <td></td>
-                    <td className="c red">2025-12-22</td>
+                    <td className="c red">2025-12-24</td>
                   </tr>
                   <tr>
                     <td>마스터용 카테고리 등록, 수정</td>
@@ -134,7 +134,16 @@ export default function PublishPage() {
                     </td>
                     <td>AddSotreMenuPop</td>
                     <td></td>
-                    <td className="c red">2025-12-22</td>
+                    <td className="c red">2025-12-24</td>
+                  </tr>
+                  <tr>
+                    <td>점포용 프로모션 가격 관리</td>
+                    <td>
+                      <Link href={'/promotion'}>StorePromotion.tsx</Link>
+                    </td>
+                    <td>StorePromotion</td>
+                    <td></td>
+                    <td className="c red">2025-12-24</td>
                   </tr>
                 </tbody>
               </table>

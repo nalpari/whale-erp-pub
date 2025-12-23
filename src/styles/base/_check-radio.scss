@@ -19,7 +19,8 @@
   margin-bottom: 0;
   line-height: $line-h-140;
   font-size: $check-ds-font;
-  color: $check-c-font;
+  color: #999;
+
   vertical-align: top;
   word-break: break-all;
   font-weight: $font-w-400;
@@ -71,6 +72,9 @@
       cursor: pointer;
       transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
     }
+  }
+  input[type='checkbox']:checked + label {
+    color: $check-c-font;
   }
   input[type='checkbox']:checked + label::before {
     background-color: $check-c-back;
@@ -154,6 +158,9 @@
       border-radius: 50%;
       transition: background-color 0.1s ease-in-out;
     }
+  }
+  input[type='radio']:checked + label {
+    color: $check-c-font;
   }
   input[type='radio']:checked + label::before {
     border-color: $check-c-back;

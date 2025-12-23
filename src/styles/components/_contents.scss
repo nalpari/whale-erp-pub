@@ -1,4 +1,44 @@
 @use '../abstracts' as *;
+
+.content-wrap {
+  margin-bottom: 34px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.content-header {
+  @include fontDefinition($font-ds-18, $font-w-500, $line-h-140);
+  color: #222;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ebebeb;
+}
+.contents-btn {
+  @include flex(8px);
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}
+.flx-bx {
+  @include flex(16px);
+  align-items: center;
+  &.g10 {
+    gap: 10px;
+  }
+  &.flx1 {
+    flex: 1;
+  }
+
+  .filed-tit {
+    flex: none;
+    @include fontDefinition($font-ds-15, $font-w-500, $line-h-140);
+    color: #222;
+  }
+  span {
+    @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+    color: #222;
+  }
+}
+
 .data-list-header {
   @include flex(0px);
   align-items: center;
@@ -136,7 +176,14 @@
     padding: 16px 14px;
     border: 1px solid #e5e5e5;
     border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.15s ease-in-out;
     z-index: 15;
+    &.act {
+      opacity: 1;
+      visibility: visible;
+    }
   }
   .option-item {
     display: block;
@@ -603,6 +650,26 @@
       i {
         color: #e38936;
       }
+    }
+  }
+}
+// 점포용 프로모션 가격 관리
+.promotion-header {
+  padding: 10px 0;
+}
+.promotion-table {
+  width: 100%;
+  table-layout: fixed;
+  box-sizing: border-box;
+  th {
+    padding: 20px 16px;
+    border: 1px solid #ebebeb;
+  }
+  td {
+    padding: 10px 16px;
+    border: 1px solid #ebebeb;
+    .filed-tit {
+      color: #888;
     }
   }
 }
