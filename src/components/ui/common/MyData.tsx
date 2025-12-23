@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import AnimateHeight from 'react-animate-height'
+import Image from 'next/image'
 
 export default function MyData() {
   const [myDataOpen, setMyDataOpen] = useState(false)
@@ -7,7 +8,7 @@ export default function MyData() {
     <div className={`my-data ${myDataOpen ? 'act' : ''}`}>
       <div className="my-data-wrap">
         <div className="my-icon">
-          <img src="/assets/images/common/my_icon.png" alt="my-data-icon" />
+          <Image src="/assets/images/common/my_icon.png" alt="my-data-icon" fill />
         </div>
         <div className="data-info">
           <div className="data-position">Platform Manager</div>
