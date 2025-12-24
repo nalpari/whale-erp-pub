@@ -805,3 +805,79 @@
     }
   }
 }
+
+// 계약 근무 시간
+.work-hours-wrap {
+  padding: 24px 16px;
+  @include flex(20px);
+  justify-content: center;
+  height: 176px;
+  width: 100%;
+  .mySwiper {
+    width: 100%;
+    height: 100%;
+    .swiper-slide {
+      height: fit-content;
+      text-align: center;
+    }
+    .swiper-button-prev {
+      position: absolute;
+      top: 35px;
+      z-index: 2;
+    }
+    .swiper-button-next {
+      position: absolute;
+      bottom: 35px;
+      z-index: 2;
+    }
+  }
+  .time-swiper {
+    position: relative;
+    &.hours {
+      .mySwiper {
+        padding-left: 34px;
+        .swiper-button-prev {
+          left: 0;
+        }
+        .swiper-button-next {
+          left: 0;
+        }
+      }
+    }
+    &.minutes {
+      .mySwiper {
+        padding-right: 34px;
+        .swiper-button-prev {
+          right: 0;
+        }
+        .swiper-button-next {
+          right: 0;
+        }
+      }
+    }
+    .number-box {
+      text-align: center;
+      @include fontDefinition($font-ds-28, $font-w-600, $line-h-140);
+      color: #222;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-use-select: none;
+      user-select: none;
+      transition: all 0.15s ease-in-out;
+    }
+    .swiper-slide-prev,
+    .swiper-slide-next {
+      .number-box {
+        color: #e5e5e5;
+      }
+    }
+  }
+  .time-colon {
+    @include fontDefinition($font-ds-28, $font-w-600, 122px);
+    color: #222;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-use-select: none;
+    user-select: none;
+  }
+}
