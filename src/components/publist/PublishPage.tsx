@@ -173,6 +173,15 @@ export default function PublishPage() {
                     <td></td>
                     <td className="c red">2025-12-24</td>
                   </tr>
+                  <tr>
+                    <td>출퇴근 관리</td>
+                    <td>
+                      <Link href={'/commute'}>CommuteManagement.tsx</Link>
+                    </td>
+                    <td>CommuteManagement</td>
+                    <td></td>
+                    <td className="c red">2025-12-24</td>
+                  </tr>
                 </tbody>
               </table>
             </div>

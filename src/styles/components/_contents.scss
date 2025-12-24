@@ -698,3 +698,110 @@
     color: #666;
   }
 }
+.commute-wrap {
+  @include flex(18px);
+  flex-direction: column;
+}
+.commute-bx {
+  border-radius: 6px;
+  border: 1px solid #dae0eb;
+  overflow: hidden;
+  .commute-header {
+    padding: 11px 24px;
+    @include fontDefinition($font-ds-16, $font-w-600, $line-h-140);
+    color: #5d6779;
+    background-color: #e6ebf4;
+    border-bottom: 1px solid #dae0eb;
+  }
+  .commute-body {
+    padding: 0 24px;
+  }
+}
+.commute-list {
+  @include flex(0px);
+  flex-direction: column;
+  .commute-item {
+    @include flex(00px);
+    align-items: center;
+    padding: 19px 0;
+    border-bottom: 1px solid #eee;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+.commute-time {
+  @include flex(20px);
+  align-items: center;
+  .commute-time-item {
+    .commute-time-tit {
+      @include fontDefinition($font-ds-14, $font-w-500, $line-h-140);
+      margin-bottom: 3px;
+      color: #777;
+    }
+    .commute-time-desc {
+      @include fontDefinition($font-ds-24, $font-w-500, $line-h-140);
+      color: #777;
+    }
+  }
+}
+.work-time {
+  flex: none;
+  margin-left: auto;
+  .work-time-tit {
+    @include fontDefinition($font-ds-14, $font-w-500, $line-h-140);
+    color: #222;
+    margin-bottom: 3px;
+    text-align: right;
+  }
+  .work-time-desc {
+    @include fontDefinition($font-ds-24, $font-w-500, $line-h-140);
+    color: #222;
+  }
+}
+.work-time-total {
+  width: 100%;
+  @include flex(12px);
+  align-items: center;
+  justify-content: center;
+  .work-time-total-tit {
+    @include fontDefinition($font-ds-15, $font-w-600, $line-h-140);
+    color: #222;
+  }
+  .work-time-total-desc {
+    @include fontDefinition($font-ds-24, $font-w-600, $line-h-140);
+    color: #222;
+  }
+}
+.commute-bx {
+  &.gray-bx {
+    border: 1px solid #efeff4;
+    .commute-header {
+      background-color: #fcfcfd;
+      color: #555;
+      border-bottom: 1px solid #efeff4;
+    }
+  }
+  &.red-bx {
+    border: 1px solid #ebddde;
+    .commute-header {
+      background-color: #f8ebec;
+      color: #866a6d;
+      border-bottom: 1px solid #ebddde;
+    }
+    .commute-time {
+      opacity: 0.3;
+    }
+    .no-work {
+      @include flex(0px);
+      align-items: center;
+      justify-content: center;
+      width: 58px;
+      height: 58px;
+      border: 1px solid #c28e93;
+      border-radius: 50%;
+      @include fontDefinition($font-ds-18, $font-w-600, 58px);
+      color: #c28e93;
+    }
+  }
+}
