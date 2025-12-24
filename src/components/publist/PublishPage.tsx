@@ -164,6 +164,15 @@ export default function PublishPage() {
                     <td></td>
                     <td className="c red">2025-12-24</td>
                   </tr>
+                  <tr>
+                    <td>정직원 급여명세서</td>
+                    <td>
+                      <Link href={'/paystub'}>PayStub.tsx</Link>
+                    </td>
+                    <td>PayStub</td>
+                    <td></td>
+                    <td className="c red">2025-12-24</td>
+                  </tr>
                 </tbody>
               </table>
             </div>

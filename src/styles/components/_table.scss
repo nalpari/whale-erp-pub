@@ -24,10 +24,16 @@
   td {
     padding: 10px 16px;
     border: 1px solid #ebebeb;
+    &.val-top {
+      vertical-align: top;
+    }
   }
 }
 
 table {
+  .filed-th {
+    padding: 10px 16px;
+  }
   .filed-check-flx {
     @include flex(18px);
     align-items: center;
@@ -45,6 +51,16 @@ table {
   .explain {
     flex: none;
     @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+    color: #222;
+  }
+  .won {
+    flex: none;
+    @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+    color: #888;
+  }
+  .bold-tit {
+    flex: none;
+    @include fontDefinition($font-ds-15, $font-w-500, $line-h-140);
     color: #222;
   }
 }

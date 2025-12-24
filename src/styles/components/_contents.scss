@@ -672,3 +672,14 @@
     }
   }
 }
+// 급여명세서
+.paystub-guide {
+  @include flex(8px);
+  flex-direction: column;
+  padding: 4px 0;
+  span {
+    display: block;
+    @include fontDefinition($font-ds-14, $font-w-400, $line-h-140);
+    color: #666;
+  }
+}
