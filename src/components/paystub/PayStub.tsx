@@ -432,6 +432,348 @@ export default function PayStub() {
             </div>
           </div>
         </div>
+        <div className="content-wrap">
+          <table className="part-paystub-table">
+            <thead>
+              <tr>
+                <th>날짜/요일</th>
+                <th>근무시간</th>
+                <th>시급</th>
+                <th>지급액계</th>
+                <th>공제액</th>
+                <th>차인금액</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="gray">
+                <td>전주 근무시간(월~화)</td>
+                <td className="al-r">13</td>
+                <td className="al-r">11,000</td>
+                <td className="al-r">99,000</td>
+                <td className="al-r">3,267</td>
+                <td className="al-r">95,733</td>
+              </tr>
+              <tr>
+                <td>2025.01.02 (수)</td>
+                <td className="al-r">13</td>
+                <td className="al-r">11,000</td>
+                <td className="al-r">99,000</td>
+                <td className="al-r">3,267</td>
+                <td className="al-r">95,733</td>
+              </tr>
+              <tr>
+                <td>2025.01.03 (목)</td>
+                <td className="al-r">13</td>
+                <td className="al-r">11,000</td>
+                <td className="al-r">99,000</td>
+                <td className="al-r">3,267</td>
+                <td className="al-r">95,733</td>
+              </tr>
+              <tr>
+                <td>2025.01.04 (금)</td>
+                <td className="al-r">13</td>
+                <td className="al-r">11,000</td>
+                <td className="al-r">99,000</td>
+                <td className="al-r">3,267</td>
+                <td className="al-r">95,733</td>
+              </tr>
+              <tr>
+                <td>2025.01.05 (토)</td>
+                <td className="al-r">13</td>
+                <td className="al-r">11,000</td>
+                <td className="al-r">99,000</td>
+                <td className="al-r">3,267</td>
+                <td className="al-r">95,733</td>
+              </tr>
+              <tr>
+                <td>2025.01.06 (일)</td>
+                <td className="al-r">13</td>
+                <td className="al-r">11,000</td>
+                <td className="al-r">99,000</td>
+                <td className="al-r">3,267</td>
+                <td className="al-r">95,733</td>
+              </tr>
+              <tr className="yellow">
+                <td>주간소계</td>
+                <td className="al-r">13</td>
+                <td className="al-r">11,000</td>
+                <td className="al-r">99,000</td>
+                <td className="al-r">3,267</td>
+                <td className="al-r">95,733</td>
+              </tr>
+              <tr className="yellow">
+                <td>주휴 수당</td>
+                <td className="al-r">13</td>
+                <td className="al-r">11,000</td>
+                <td className="al-r">99,000</td>
+                <td className="al-r">3,267</td>
+                <td className="al-r">95,733</td>
+              </tr>
+              <tr className="yellow">
+                <td>주간 합계(주휴 포함) </td>
+                <td className="al-r">13</td>
+                <td className="al-r">11,000</td>
+                <td className="al-r">99,000</td>
+                <td className="al-r">3,267</td>
+                <td className="al-r">95,733</td>
+              </tr>
+              <tr>
+                <td>2025.01.07 (월)</td>
+                <td className="al-r">13</td>
+                <td className="al-r">11,000</td>
+                <td className="al-r">99,000</td>
+                <td className="al-r">3,267</td>
+                <td className="al-r">95,733</td>
+              </tr>
+              <tr>
+                <td>2025.01.31 (금)</td>
+                <td className="al-r">13</td>
+                <td className="al-r">11,000</td>
+                <td className="al-r">99,000</td>
+                <td className="al-r">3,267</td>
+                <td className="al-r">95,733</td>
+              </tr>
+              <tr className="yellow">
+                <td>주간소계</td>
+                <td className="al-r">13</td>
+                <td className="al-r">11,000</td>
+                <td className="al-r">99,000</td>
+                <td className="al-r">3,267</td>
+                <td className="al-r">95,733</td>
+              </tr>
+              <tr className="yellow">
+                <td>주휴 수당</td>
+                <td className="al-r">13</td>
+                <td className="al-r">11,000</td>
+                <td className="al-r">99,000</td>
+                <td className="al-r">3,267</td>
+                <td className="al-r">95,733</td>
+              </tr>
+              <tr className="yellow">
+                <td>주간 합계(주휴 포함) </td>
+                <td className="al-r">13</td>
+                <td className="al-r">11,000</td>
+                <td className="al-r">99,000</td>
+                <td className="al-r">3,267</td>
+                <td className="al-r">95,733</td>
+              </tr>
+              <tr className="blue">
+                <td>급여 소계</td>
+                <td className="al-r">13</td>
+                <td className="al-r"></td>
+                <td className="al-r">99,000</td>
+                <td className="al-r">3,267</td>
+                <td className="al-r">95,733</td>
+              </tr>
+              <tr className="blue">
+                <td>공제액</td>
+                <td className="al-r"></td>
+                <td className="al-r"></td>
+                <td className="al-r"></td>
+                <td className="al-r"></td>
+                <td className="al-r">95,733</td>
+              </tr>
+              <tr className="blue">
+                <td>상여금(만근 상여)</td>
+                <td>
+                  <div className="toggle-btn">
+                    <input type="checkbox" id="toggle-btn-mangeun" />
+                    <label className="slider" htmlFor="toggle-btn-mangeun"></label>
+                  </div>
+                </td>
+                <td className="al-r"></td>
+                <td className="al-r">357,500</td>
+                <td className="al-r">990</td>
+                <td className="al-r">95,733</td>
+              </tr>
+              <tr className="blue">
+                <td>상여금(직급 상여)</td>
+                <td>
+                  <div className="toggle-btn">
+                    <input type="checkbox" id="toggle-btn2" />
+                    <label className="slider" htmlFor="toggle-btn2"></label>
+                  </div>
+                </td>
+                <td className="al-r"></td>
+                <td className="al-r">357,500</td>
+                <td className="al-r">990</td>
+                <td className="al-r">95,733</td>
+              </tr>
+              <tr className="blue">
+                <td>급여 합계</td>
+                <td></td>
+                <td className="al-r"></td>
+                <td className="al-r">2,017,700</td>
+                <td className="al-r"></td>
+                <td className="al-r">1,951,116</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div className="content-wrap">
+          <div className="contents-btn">
+            <button className="btn-form outline s">계약 시간 적용</button>
+          </div>
+          <table className="part-time-table">
+            <colgroup>
+              <col width="200px" />
+              <col width="240px" />
+              <col />
+              <col width="200px" />
+              <col width="300px" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>날짜/요일</th>
+                <th>출퇴근 현황</th>
+                <th>
+                  <div className="filed-flx center">
+                    <span>근무 시간 수정</span>
+                    <button className="tooltip-btn black">
+                      <span className="tooltip-icon"></span>
+                      <span className="tooltip-txt">
+                        <i>근무 시간을 입력하지 않을 경우 해당 날짜는 출근하지 않은 날짜로 인식합니다.</i>
+                        <i>총근무시간은 출근시간에서 퇴근시간까지의 모든 시간을 입력하세요.</i>
+                        <i>휴게시간은 총근무시간에서 제외하고 급여명세서에 표시됩니다.</i>
+                        <i>예: 총근무시간 9시간, 휴게시간 60분일 경우 8시간 근무로 표시됩니다.</i>
+                      </span>
+                    </button>
+                  </div>
+                </th>
+                <th>계약 시급</th>
+                <th>적용 시급</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2025.01.01 (월)</td>
+                <td>9시간 00분(09:00 ~ 18:00)</td>
+                <td>
+                  <div className="filed-flx">
+                    <div className="filed-flx g8">
+                      <div className="mx-100">
+                        <select name="" id="" className="select-form">
+                          <option value="">08</option>
+                        </select>
+                      </div>
+                      <span className="won">시간</span>
+                      <div className="mx-100">
+                        <select name="" id="" className="select-form">
+                          <option value="">00</option>
+                        </select>
+                      </div>
+                      <span className="won">분</span>
+                    </div>
+                    <div className="auto-right">
+                      <div className="filed-flx g8">
+                        <span className="won">휴게</span>
+                        <div className="mx-100">
+                          <select name="" id="" className="select-form">
+                            <option value="">00</option>
+                          </select>
+                        </div>
+                        <span className="won">분</span>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td className="al-r">11,000</td>
+                <td>
+                  <div className="filed-flx">
+                    <div className="block">
+                      <input type="text" className="input-frame al-r" />
+                    </div>
+                    <span className="won">원</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>2025.01.01 (월)</td>
+                <td>9시간 00분(09:00 ~ 18:00)</td>
+                <td>
+                  <div className="filed-flx">
+                    <div className="filed-flx g8">
+                      <div className="mx-100">
+                        <select name="" id="" className="select-form">
+                          <option value="">08</option>
+                        </select>
+                      </div>
+                      <span className="won">시간</span>
+                      <div className="mx-100">
+                        <select name="" id="" className="select-form">
+                          <option value="">00</option>
+                        </select>
+                      </div>
+                      <span className="won">분</span>
+                    </div>
+                    <div className="auto-right">
+                      <div className="filed-flx g8">
+                        <span className="won">휴게</span>
+                        <div className="mx-100">
+                          <select name="" id="" className="select-form">
+                            <option value="">00</option>
+                          </select>
+                        </div>
+                        <span className="won">분</span>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td className="al-r">11,000</td>
+                <td>
+                  <div className="filed-flx">
+                    <div className="block">
+                      <input type="text" className="input-frame al-r" />
+                    </div>
+                    <span className="won">원</span>
+                  </div>
+                </td>
+              </tr>
+              <tr className="disabled">
+                <td>2025.01.01 (월)</td>
+                <td></td>
+                <td>
+                  <div className="filed-flx">
+                    <div className="filed-flx g8">
+                      <div className="mx-100">
+                        <select name="" id="" className="select-form">
+                          <option value="">08</option>
+                        </select>
+                      </div>
+                      <span className="won">시간</span>
+                      <div className="mx-100">
+                        <select name="" id="" className="select-form">
+                          <option value="">00</option>
+                        </select>
+                      </div>
+                      <span className="won">분</span>
+                    </div>
+                    <div className="auto-right">
+                      <div className="filed-flx g8">
+                        <span className="won">휴게</span>
+                        <div className="mx-100">
+                          <select name="" id="" className="select-form">
+                            <option value="">00</option>
+                          </select>
+                        </div>
+                        <span className="won">분</span>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td className="al-r">11,000</td>
+                <td>
+                  <div className="filed-flx">
+                    <div className="block">
+                      <input type="text" className="input-frame al-r" />
+                    </div>
+                    <span className="won">원</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   )

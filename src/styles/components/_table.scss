@@ -47,6 +47,9 @@ table {
     &.g16 {
       gap: 16px;
     }
+    &.center {
+      justify-content: center;
+    }
   }
   .explain {
     flex: none;
@@ -131,6 +134,112 @@ table {
       }
       td {
         border-bottom: none;
+      }
+    }
+  }
+}
+
+// 파트 급여명세서
+.part-paystub-table {
+  width: 100%;
+  table-layout: fixed;
+  box-sizing: border-box;
+  th {
+    padding: 11px 16px;
+    @include fontDefinition($font-ds-15, $font-w-500, $line-h-140);
+    color: #f5f5f5;
+    text-align: center;
+    background-color: #444;
+    &:first-child {
+      border-radius: 6px 0 0 0;
+    }
+    &:last-child {
+      border-radius: 0 6px 0 0;
+    }
+  }
+  td {
+    @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+    color: #666;
+    text-align: center;
+    border: 1px solid #ebebeb;
+    border-bottom: none;
+    padding: 10px 16px;
+    background-color: #fff;
+  }
+  tr {
+    &.gray {
+      td {
+        background-color: #f5f5f5;
+        color: #222;
+        font-weight: $font-w-500;
+      }
+    }
+    &.yellow {
+      td {
+        background-color: #fbfbf3;
+        color: #222;
+        font-weight: $font-w-500;
+        border: 1px solid #cdcdcd;
+        &:first-child {
+          font-weight: $font-w-600;
+        }
+      }
+    }
+    &.blue {
+      td {
+        background-color: #f2f8fa;
+        color: #222;
+        font-weight: $font-w-500;
+        border: 1px solid #cdcdcd;
+        &:first-child {
+          font-weight: $font-w-600;
+        }
+      }
+    }
+    &:first-child {
+      td {
+        border-radius: 0 0 6px 0;
+      }
+    }
+    &:last-child {
+      td {
+        border-radius: 0 0 6px;
+      }
+    }
+  }
+}
+
+// 파트 시간 수정
+.part-time-table {
+  width: 100%;
+  table-layout: fixed;
+  box-sizing: border-box;
+  th {
+    padding: 11px 16px;
+    @include fontDefinition($font-ds-15, $font-w-500, $line-h-140);
+    color: #f5f5f5;
+    text-align: center;
+    background-color: #444;
+    &:first-child {
+      border-radius: 6px 0 0 0;
+    }
+    &:last-child {
+      border-radius: 0 6px 0 0;
+    }
+  }
+  td {
+    padding: 10px 16px;
+    @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+    color: #222;
+    text-align: center;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+  }
+  tr {
+    &.disabled {
+      td {
+        opacity: 0.5;
+        background-color: #fbfbf3;
       }
     }
   }
