@@ -14,7 +14,7 @@ input::-webkit-inner-spin-button {
 // input-frame 공통
 @mixin input-frame($height, $border-color, $back-color, $font-size, $font-color) {
   width: 100%;
-  min-width: 100px;
+  min-width: 70px;
   height: $height;
   padding: 0 16px;
   border-radius: 6px;
@@ -111,6 +111,11 @@ input::-webkit-inner-spin-button {
     padding: 0 5px;
     min-width: 40px;
     text-align: center;
+  }
+  &.black {
+    border-color: #222;
+    background-color: #666;
+    color: #fff;
   }
 }
 // 모바일 input default

@@ -38,11 +38,31 @@ table {
     &.g8 {
       gap: 8px;
     }
+    &.g16 {
+      gap: 16px;
+    }
   }
   .explain {
     flex: none;
     @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
     color: #222;
+  }
+}
+
+.filed-warning {
+  @include flex(5px);
+  align-items: center;
+  justify-content: center;
+  .warning-icon {
+    display: block;
+    width: 16px;
+    height: 15px;
+    background: url('/assets/images/popup/filed_warning.svg') no-repeat center;
+    background-size: cover;
+  }
+  .warning-txt {
+    @include fontDefinition($font-ds-14, $font-w-400, $line-h-140);
+    color: #f30c0c;
   }
 }
 

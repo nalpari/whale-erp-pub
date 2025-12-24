@@ -88,3 +88,50 @@
 .biweek-wrap {
   padding-top: 8px;
 }
+
+// 연봉 및 통상시급 계산기 팝업
+.calculation-hd-table {
+  width: 100%;
+  table-layout: fixed;
+  box-sizing: border-box;
+  background-color: #fbfbfb;
+  border: 1px solid #ebebeb;
+  border-bottom: none;
+  th {
+    padding: 20px 16px;
+    @include fontDefinition($font-ds-15, $font-w-500, $line-h-140);
+    color: #222;
+    border-bottom: 1px solid #ebebeb;
+  }
+  td {
+    padding: 10px 10px 10px 16px;
+    border-bottom: 1px solid #ebebeb;
+  }
+  tr {
+    &:last-child {
+      th {
+        border-bottom: none;
+      }
+      td {
+        border-bottom: none;
+      }
+    }
+  }
+}
+.calculation-table {
+  width: 100%;
+  table-layout: fixed;
+  box-sizing: border-box;
+  border: 1px solid #ebebeb;
+  th {
+    padding: 20px 16px;
+    @include fontDefinition($font-ds-15, $font-w-500, $line-h-140);
+    color: #222;
+    border: 1px solid #ebebeb;
+    background-color: #fbfbfb;
+  }
+  td {
+    padding: 10px;
+    border: 1px solid #ebebeb;
+  }
+}

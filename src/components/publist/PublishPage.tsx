@@ -155,6 +155,15 @@ export default function PublishPage() {
                     <td></td>
                     <td className="c red">2025-12-24</td>
                   </tr>
+                  <tr>
+                    <td>연봉 및 통상시급 계산기 팝업</td>
+                    <td>
+                      <Link href={'/popup/calculation'}>SalaryCalculationPop.tsx</Link>
+                    </td>
+                    <td>SalaryCalculationPop</td>
+                    <td></td>
+                    <td className="c red">2025-12-24</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
