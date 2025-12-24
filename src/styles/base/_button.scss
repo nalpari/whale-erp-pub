@@ -42,6 +42,11 @@
     color: $out-d-font-color;
     border-color: $out-d-border-color;
   }
+  &.act {
+    background-color: #9ba7ba;
+    color: #fff;
+    border-color: #9ba7ba;
+  }
 }
 .gray {
   background-color: $gray-back-color;

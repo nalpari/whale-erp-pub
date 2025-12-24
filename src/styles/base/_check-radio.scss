@@ -243,6 +243,7 @@
   }
 }
 .toggle-wrap {
+  flex: none;
   @include flex(8px);
   align-items: center;
   .toggle-txt {

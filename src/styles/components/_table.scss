@@ -35,8 +35,12 @@ table {
   .filed-flx {
     @include flex(10px);
     align-items: center;
+    &.g8 {
+      gap: 8px;
+    }
   }
   .explain {
+    flex: none;
     @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
     color: #222;
   }

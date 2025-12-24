@@ -145,6 +145,16 @@ export default function PublishPage() {
                     <td></td>
                     <td className="c red">2025-12-24</td>
                   </tr>
+                  <tr>
+                    <td rowSpan={6}>직원관리</td>
+                    <td>직원 초대 팝업</td>
+                    <td>
+                      <Link href={'/popup/invitation'}>StaffInvitationPop.tsx</Link>
+                    </td>
+                    <td>StaffInvitationPop</td>
+                    <td></td>
+                    <td className="c red">2025-12-24</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
