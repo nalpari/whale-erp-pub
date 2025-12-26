@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import AnimateHeight from 'react-animate-height'
 import DatePicker from '../ui/common/DatePicker'
+import { Tooltip } from 'react-tooltip'
 
 export default function MasterEdit() {
   const [slideboxOpen, setSlideboxOpen] = useState(true)
@@ -104,10 +105,11 @@ export default function MasterEdit() {
                           <input type="text" className="input-frame" />
                         </div>
                         <button className="tooltip-btn">
-                          <span className="tooltip-icon"></span>
-                          <span className="tooltip-txt">
-                            브랜드명 설명브랜드명 설명브랜드명 설명브랜드명 설명브랜드명 설명
-                          </span>
+                          <span className="tooltip-icon" id="my-anchor-element"></span>
+                          <Tooltip className="tooltip-txt" anchorSelect="#my-anchor-element">
+                            <div>브랜드명 설명브랜드명 </div>
+                            <div>설명브랜드명 설명브랜드명 설명브랜드명 설명</div>
+                          </Tooltip>
                         </button>
                       </div>
                     </td>
@@ -221,7 +223,7 @@ export default function MasterEdit() {
                           </div>
                           <div className="more-btn">
                             <span className="icon-more"></span>
-                            <div className="option-list">
+                            <div className="option-list act">
                               <button className="option-item">Partner Fuction 추가</button>
                               <button className="option-item">Partner Fuction 삭제</button>
                             </div>

@@ -1,3 +1,6 @@
+'use client'
+import { Tooltip } from 'react-tooltip'
+
 export default function AddSotreMenuPop() {
   return (
     <div className="modal-popup">
@@ -35,16 +38,16 @@ export default function AddSotreMenuPop() {
                         </div>
                       </div>
                       <button className="tooltip-btn">
-                        <span className="tooltip-icon"></span>
-                        <span className="tooltip-txt">
-                          <b>1. 선택한 메뉴만 추가</b>
-                          <i>리스트에서 선택한 메뉴만 점포용 메뉴에 추가합니다.</i>
-                          <b>2. 모든 마스터 메뉴 추가</b>
-                          <i>
+                        <span className="tooltip-icon" id="tooltip-btn-anchor-option"></span>
+                        <Tooltip className="tooltip-txt" anchorSelect="#tooltip-btn-anchor-option" opacity={1}>
+                          <h4>1. 선택한 메뉴만 추가 </h4>
+                          <div>리스트에서 선택한 메뉴만 점포용 메뉴에 추가합니다.</div>
+                          <h4>2. 모든 마스터 메뉴 추가</h4>
+                          <div>
                             리스트에서 선택한 메뉴와 상관없이 사업자가 등록한 모든 마스터용 메뉴를 점포용 메뉴에
                             추가합니다.
-                          </i>
-                        </span>
+                          </div>
+                        </Tooltip>
                       </button>
                     </div>
                   </td>
@@ -64,11 +67,11 @@ export default function AddSotreMenuPop() {
                         </div>
                       </div>
                       <button className="tooltip-btn">
-                        <span className="tooltip-icon"></span>
-                        <span className="tooltip-txt">
-                          <i>점포용 메뉴를 생성할 때 생성 후 바로 사용할 수 있는지 여부를 선택합니다.</i>
-                          <i>‘운영’으로 체크하시면 점포용 메뉴가 생성 후 바로 고객의 APP에 노출됩니다.</i>
-                        </span>
+                        <span className="tooltip-icon" id="tooltip-btn-anchor-operation"></span>
+                        <Tooltip className="tooltip-txt" anchorSelect="#tooltip-btn-anchor-operation" opacity={1}>
+                          <div>점포용 메뉴를 생성할 때 생성 후 바로 사용할 수 있는지 여부를 선택합니다.</div>
+                          <div>‘운영’으로 체크하시면 점포용 메뉴가 생성 후 바로 고객의 APP에 노출됩니다.</div>
+                        </Tooltip>
                       </button>
                     </div>
                   </td>

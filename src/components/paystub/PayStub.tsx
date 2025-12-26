@@ -1,3 +1,5 @@
+'use client'
+import { Tooltip } from 'react-tooltip'
 import DatePicker from '../ui/common/DatePicker'
 
 export default function PayStub() {
@@ -630,13 +632,13 @@ export default function PayStub() {
                   <div className="filed-flx center">
                     <span>근무 시간 수정</span>
                     <button className="tooltip-btn black">
-                      <span className="tooltip-icon"></span>
-                      <span className="tooltip-txt">
-                        <i>근무 시간을 입력하지 않을 경우 해당 날짜는 출근하지 않은 날짜로 인식합니다.</i>
-                        <i>총근무시간은 출근시간에서 퇴근시간까지의 모든 시간을 입력하세요.</i>
-                        <i>휴게시간은 총근무시간에서 제외하고 급여명세서에 표시됩니다.</i>
-                        <i>예: 총근무시간 9시간, 휴게시간 60분일 경우 8시간 근무로 표시됩니다.</i>
-                      </span>
+                      <span className="tooltip-icon" id="tooltip-btn-anchor-work-time"></span>
+                      <Tooltip className="tooltip-txt" anchorSelect="#tooltip-btn-anchor-work-time">
+                        <div>근무 시간을 입력하지 않을 경우 해당 날짜는 출근하지 않은 날짜로 인식합니다.</div>
+                        <div>총근무시간은 출근시간에서 퇴근시간까지의 모든 시간을 입력하세요.</div>
+                        <div>휴게시간은 총근무시간에서 제외하고 급여명세서에 표시됩니다.</div>
+                        <div>예: 총근무시간 9시간, 휴게시간 60분일 경우 8시간 근무로 표시됩니다.</div>
+                      </Tooltip>
                     </button>
                   </div>
                 </th>

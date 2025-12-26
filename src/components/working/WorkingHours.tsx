@@ -38,6 +38,21 @@ export default function WorkingHours() {
                     <tr>
                       <th>평일 근무시간</th>
                       <td>
+                        <div className="work-info mb10">
+                          <div className="work-badge blue">정직원</div>
+                          <div className="staff-name">홍길동</div>
+                          <div className="more-btn work">
+                            <span className="icon-more"></span>
+                            <div className="option-list act">
+                              <button className="option-item">Partner Fuction 추가</button>
+                              <button className="option-item">Partner Fuction 삭제</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="work-info mb10">
+                          <div className="work-badge green">파트</div>
+                          <div className="staff-name">홍길동</div>
+                        </div>
                         <table className="work-hours-table">
                           <colgroup>
                             <col />

@@ -1,3 +1,5 @@
+'use client'
+import { Tooltip } from 'react-tooltip'
 import AgGrid from '../ui/AgGrid'
 import Pagination from '../ui/Pagination'
 
@@ -10,8 +12,11 @@ export default function MasterList() {
           <button className="btn-form basic">등록</button>
           <button className="btn-form gray">등록</button>
           <button className="tooltip-btn">
-            <span className="tooltip-icon"></span>
-            <span className="tooltip-txt">브랜드명 설명브랜드명 설명브랜드명 설명브랜드명 설명브랜드명 설명</span>
+            <span className="tooltip-icon" id="tooltip-btn-anchor"></span>
+            <Tooltip className="tooltip-txt" anchorSelect="#tooltip-btn-anchor">
+              <div>브랜드명 설명브랜드명 </div>
+              <div>설명브랜드명 설명브랜드명 설명브랜드명 설명</div>
+            </Tooltip>
           </button>
         </div>
         <div className="data-header-right">

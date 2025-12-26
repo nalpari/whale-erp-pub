@@ -1,3 +1,6 @@
+'use client'
+import { Tooltip } from 'react-tooltip'
+
 export default function SalaryCalculationPop() {
   return (
     <div className="modal-popup">
@@ -76,12 +79,12 @@ export default function SalaryCalculationPop() {
                         </span>
                         <div className="auto-right">
                           <button className="tooltip-btn">
-                            <span className="tooltip-icon"></span>
-                            <span className="tooltip-txt">
-                              <i>한주에 직원이 근무해야 하는 시간을 입력합니다.</i>
-                              <i>일반적으로 9 to 6 인 경우 하루 8시간 근무이며, 주단위로는 40시간입니다.</i>
-                              <i>주당 15시간 이상 근무일 경우 주휴수당(근무시간/5)을 함께 계산합니다.</i>
-                            </span>
+                            <span className="tooltip-icon" id="tooltip-btn-anchor-work-time"></span>
+                            <Tooltip className="tooltip-txt" anchorSelect="#tooltip-btn-anchor-work-time" opacity={1}>
+                              <div>한주에 직원이 근무해야 하는 시간을 입력합니다.</div>
+                              <div>일반적으로 9 to 6 인 경우 하루 8시간 근무이며, 주단위로는 40시간입니다.</div>
+                              <div>주당 15시간 이상 근무일 경우 주휴수당(근무시간/5)을 함께 계산합니다.</div>
+                            </Tooltip>
                           </button>
                         </div>
                       </div>
@@ -101,12 +104,16 @@ export default function SalaryCalculationPop() {
                         <span>식대</span>
                         <div className="auto-right">
                           <button className="tooltip-btn">
-                            <span className="tooltip-icon"></span>
-                            <span className="tooltip-txt">
-                              <i>식대는 비과세항목입니다.</i>
-                              <i>식대를 입력하고, 급여에 포함할 경우 과세범위에서 제외됩니다.</i>
-                              <i>식대를 입력하고, 급여에 포함하지 않을 경우 급여와는 별도로 지급해야 합니다.</i>
-                            </span>
+                            <span className="tooltip-icon" id="tooltip-btn-anchor-food-allowance"></span>
+                            <Tooltip
+                              className="tooltip-txt"
+                              anchorSelect="#tooltip-btn-anchor-food-allowance"
+                              opacity={1}
+                            >
+                              <div>식대는 비과세항목입니다.</div>
+                              <div>식대를 입력하고, 급여에 포함할 경우 과세범위에서 제외됩니다.</div>
+                              <div>식대를 입력하고, 급여에 포함하지 않을 경우 급여와는 별도로 지급해야 합니다.</div>
+                            </Tooltip>
                           </button>
                         </div>
                       </div>
@@ -132,14 +139,18 @@ export default function SalaryCalculationPop() {
                         <span>월간 기본근무</span>
                         <div className="auto-right">
                           <button className="tooltip-btn">
-                            <span className="tooltip-icon"></span>
-                            <span className="tooltip-txt">
-                              <i>한달에 직원이 근무해야 하는 시간을 표시합니다.</i>
-                              <i>
+                            <span className="tooltip-icon" id="tooltip-btn-anchor-basic-work-time"></span>
+                            <Tooltip
+                              className="tooltip-txt"
+                              anchorSelect="#tooltip-btn-anchor-basic-work-time"
+                              opacity={1}
+                            >
+                              <div>한달에 직원이 근무해야 하는 시간을 표시합니다.</div>
+                              <div>
                                 일반적으로 주단위로는 40시간을 근무할 경우 월간 174시간이지만, 주휴시간(근무시간/5)을
                                 함께 계산하면 209시간이 됩니다
-                              </i>
-                            </span>
+                              </div>
+                            </Tooltip>
                           </button>
                         </div>
                       </div>
@@ -159,17 +170,21 @@ export default function SalaryCalculationPop() {
                         <span>자가운전보조금</span>
                         <div className="auto-right">
                           <button className="tooltip-btn">
-                            <span className="tooltip-icon"></span>
-                            <span className="tooltip-txt">
-                              <i>
+                            <span className="tooltip-icon" id="tooltip-btn-anchor-driving-allowance"></span>
+                            <Tooltip
+                              className="tooltip-txt"
+                              anchorSelect="#tooltip-btn-anchor-driving-allowance"
+                              opacity={1}
+                            >
+                              <div>
                                 자가운전보조금은 비과세항목입니다. 차량을 소유한 직원에게만 해당합니다.(차량 소유가
                                 필수는 아님)
-                              </i>
-                              <i>자가운전보조금을 입력하고, 급여에 포함할 경우 과세범위에서 제외됩니다.</i>
-                              <i>
+                              </div>
+                              <div>자가운전보조금을 입력하고, 급여에 포함할 경우 과세범위에서 제외됩니다.</div>
+                              <div>
                                 자가운전보조금을 입력하고, 급여에 포함하지 않을 경우 급여와는 별도로 지급해야 합니다
-                              </i>
-                            </span>
+                              </div>
+                            </Tooltip>
                           </button>
                         </div>
                       </div>
@@ -195,11 +210,15 @@ export default function SalaryCalculationPop() {
                         <span>월간 연장근무</span>
                         <div className="auto-right">
                           <button className="tooltip-btn">
-                            <span className="tooltip-icon"></span>
-                            <span className="tooltip-txt">
-                              <i>근로자가 법정 근로시간(1일 8시간, 주 40시간)을 초과하여 근무하는 시간입니다.</i>
-                              <i>통상임금에 50%를 가산하여 지급해야 하는 추가 수당입니다.</i>
-                            </span>
+                            <span className="tooltip-icon" id="tooltip-btn-anchor-overtime-work-time"></span>
+                            <Tooltip
+                              className="tooltip-txt"
+                              anchorSelect="#tooltip-btn-anchor-overtime-work-time"
+                              opacity={1}
+                            >
+                              <div>근로자가 법정 근로시간(1일 8시간, 주 40시간)을 초과하여 근무하는 시간입니다.</div>
+                              <div>통상임금에 50%를 가산하여 지급해야 하는 추가 수당입니다.</div>
+                            </Tooltip>
                           </button>
                         </div>
                       </div>
@@ -219,13 +238,17 @@ export default function SalaryCalculationPop() {
                         <span>육아수당</span>
                         <div className="auto-right">
                           <button className="tooltip-btn">
-                            <span className="tooltip-icon"></span>
-                            <span className="tooltip-txt">
-                              <i>유아수당은 비과세항목입니다.</i>
-                              <i>미취학 아동이 있는 직원에게만 해당합니다.</i>
-                              <i>유아수당을 입력하고, 급여에 포함할 경우 과세범위에서 제외됩니다.</i>
-                              <i>유아수당을 입력하고, 급여에 포함하지 않을 경우 급여와는 별도로 지급해야 합니다</i>
-                            </span>
+                            <span className="tooltip-icon" id="tooltip-btn-anchor-child-allowance"></span>
+                            <Tooltip
+                              className="tooltip-txt"
+                              anchorSelect="#tooltip-btn-anchor-child-allowance"
+                              opacity={1}
+                            >
+                              <div>육아수당은 비과세항목입니다.</div>
+                              <div>미취학 아동이 있는 직원에게만 해당합니다.</div>
+                              <div>육아수당을 입력하고, 급여에 포함할 경우 과세범위에서 제외됩니다.</div>
+                              <div>육아수당을 입력하고, 급여에 포함하지 않을 경우 급여와는 별도로 지급해야 합니다</div>
+                            </Tooltip>
                           </button>
                         </div>
                       </div>
@@ -251,11 +274,17 @@ export default function SalaryCalculationPop() {
                         <span>월간 추가 휴일근무</span>
                         <div className="auto-right">
                           <button className="tooltip-btn">
-                            <span className="tooltip-icon"></span>
-                            <span className="tooltip-txt">
-                              <i>근로자가 법정 근로시간(1일 8시간, 주 40시간)을 초과하여 휴일에 근무하는 시간입니다.</i>
-                              <i>통상임금에 50%를 가산하여 지급해야 하는 추가 수당입니다.</i>
-                            </span>
+                            <span className="tooltip-icon" id="tooltip-btn-anchor-holiday-work-time"></span>
+                            <Tooltip
+                              className="tooltip-txt"
+                              anchorSelect="#tooltip-btn-anchor-holiday-work-time"
+                              opacity={1}
+                            >
+                              <div>
+                                근로자가 법정 근로시간(1일 8시간, 주 40시간)을 초과하여 휴일에 근무하는 시간입니다.
+                              </div>
+                              <div>통상임금에 50%를 가산하여 지급해야 하는 추가 수당입니다.</div>
+                            </Tooltip>
                           </button>
                         </div>
                       </div>
@@ -282,11 +311,15 @@ export default function SalaryCalculationPop() {
                         </span>
                         <div className="auto-right">
                           <button className="tooltip-btn">
-                            <span className="tooltip-icon"></span>
-                            <span className="tooltip-txt">
-                              <i>근로자가 법정 근로시간(1일 8시간, 주 40시간) 내에 야간에 근무하는 시간입니다.</i>
-                              <i>통상임금에 50%를 가산하여 지급해야 하는 추가 수당입니다.</i>
-                            </span>
+                            <span className="tooltip-icon" id="tooltip-btn-anchor-night-work-time"></span>
+                            <Tooltip
+                              className="tooltip-txt"
+                              anchorSelect="#tooltip-btn-anchor-night-work-time"
+                              opacity={1}
+                            >
+                              <div>근로자가 법정 근로시간(1일 8시간, 주 40시간) 내에 야간에 근무하는 시간입니다.</div>
+                              <div>통상임금에 50%를 가산하여 지급해야 하는 추가 수당입니다.</div>
+                            </Tooltip>
                           </button>
                         </div>
                       </div>
@@ -313,11 +346,15 @@ export default function SalaryCalculationPop() {
                         </span>
                         <div className="auto-right">
                           <button className="tooltip-btn">
-                            <span className="tooltip-icon"></span>
-                            <span className="tooltip-txt">
-                              <i>근로자가 법정 근로시간(1일 8시간, 주 40시간) 내에 휴일에 근무하는 시간입니다.</i>
-                              <i>통상임금에 50%를 가산하여 지급해야 하는 추가 수당입니다.</i>
-                            </span>
+                            <span className="tooltip-icon" id="tooltip-btn-anchor-holiday-work-time"></span>
+                            <Tooltip
+                              className="tooltip-txt"
+                              anchorSelect="#tooltip-btn-anchor-holiday-work-time"
+                              opacity={1}
+                            >
+                              <div>근로자가 법정 근로시간(1일 8시간, 주 40시간) 내에 휴일에 근무하는 시간입니다.</div>
+                              <div>통상임금에 50%를 가산하여 지급해야 하는 추가 수당입니다.</div>
+                            </Tooltip>
                           </button>
                         </div>
                       </div>
@@ -345,10 +382,14 @@ export default function SalaryCalculationPop() {
                         <span>월간 총 근무 시간</span>
                         <div className="auto-right">
                           <button className="tooltip-btn">
-                            <span className="tooltip-icon"></span>
-                            <span className="tooltip-txt">
-                              <i>근로자가 월간 근무하는 총 근로시간을 표시합니다.</i>
-                            </span>
+                            <span className="tooltip-icon" id="tooltip-btn-anchor-total-work-time"></span>
+                            <Tooltip
+                              className="tooltip-txt"
+                              anchorSelect="#tooltip-btn-anchor-total-work-time"
+                              opacity={1}
+                            >
+                              <div>근로자가 월간 근무하는 총 근로시간을 표시합니다.</div>
+                            </Tooltip>
                           </button>
                         </div>
                       </div>
