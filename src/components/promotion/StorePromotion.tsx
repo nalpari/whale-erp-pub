@@ -1,3 +1,6 @@
+'use client'
+import { Tooltip } from 'react-tooltip'
+
 export default function StorePromotion() {
   return (
     <div className="contents-wrap">
@@ -139,11 +142,19 @@ export default function StorePromotion() {
                       </div>
                       <div className="auto-right">
                         <div className="more-btn">
-                          <span className="icon-more"></span>
-                          <div className="option-list">
-                            <button className="option-item">Partner Fuction 추가</button>
-                            <button className="option-item">Partner Fuction 삭제</button>
-                          </div>
+                          <span className="icon-more" id="more-btn-anchor-menu-01"></span>
+                          <Tooltip
+                            className="option-list"
+                            anchorSelect="#more-btn-anchor-menu-01"
+                            place="left-end"
+                            offset={0}
+                            openOnClick={true} // 클릭으로 열기
+                            clickable={true} // 툴팁 내부 클릭 가능
+                            opacity={1}
+                          >
+                            <button className="option-item">메뉴 추가</button>
+                            <button className="option-item">메뉴 삭제</button>
+                          </Tooltip>
                         </div>
                       </div>
                     </div>
@@ -187,11 +198,19 @@ export default function StorePromotion() {
                       </div>
                       <div className="auto-right">
                         <div className="more-btn">
-                          <span className="icon-more"></span>
-                          <div className="option-list act">
-                            <button className="option-item">Partner Fuction 추가</button>
-                            <button className="option-item">Partner Fuction 삭제</button>
-                          </div>
+                          <span className="icon-more" id="more-btn-anchor-menu-02"></span>
+                          <Tooltip
+                            className="option-list"
+                            anchorSelect="#more-btn-anchor-menu-02"
+                            place="left-end"
+                            offset={0}
+                            openOnClick={true} // 클릭으로 열기
+                            clickable={true} // 툴팁 내부 클릭 가능
+                            opacity={1}
+                          >
+                            <button className="option-item">메뉴 추가</button>
+                            <button className="option-item">메뉴 삭제</button>
+                          </Tooltip>
                         </div>
                       </div>
                     </div>
@@ -235,11 +254,19 @@ export default function StorePromotion() {
                       </div>
                       <div className="auto-right">
                         <div className="more-btn">
-                          <span className="icon-more"></span>
-                          <div className="option-list">
-                            <button className="option-item">Partner Fuction 추가</button>
-                            <button className="option-item">Partner Fuction 삭제</button>
-                          </div>
+                          <span className="icon-more" id="more-btn-anchor-menu-03"></span>
+                          <Tooltip
+                            className="option-list"
+                            anchorSelect="#more-btn-anchor-menu-03"
+                            place="left-end"
+                            offset={0}
+                            openOnClick={true} // 클릭으로 열기
+                            clickable={true} // 툴팁 내부 클릭 가능
+                            opacity={1}
+                          >
+                            <button className="option-item">메뉴 추가</button>
+                            <button className="option-item">메뉴 삭제</button>
+                          </Tooltip>
                         </div>
                       </div>
                     </div>

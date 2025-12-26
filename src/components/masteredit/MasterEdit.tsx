@@ -222,11 +222,19 @@ export default function MasterEdit() {
                             </div>
                           </div>
                           <div className="more-btn">
-                            <span className="icon-more"></span>
-                            <div className="option-list act">
+                            <span className="icon-more" id="more-btn-anchor-partner-function"></span>
+                            <Tooltip
+                              className="option-list"
+                              anchorSelect="#more-btn-anchor-partner-function"
+                              place="right-end"
+                              offset={0}
+                              openOnClick={true} // 클릭으로 열기
+                              clickable={true} // 툴팁 내부 클릭 가능
+                              opacity={1}
+                            >
                               <button className="option-item">Partner Fuction 추가</button>
                               <button className="option-item">Partner Fuction 삭제</button>
-                            </div>
+                            </Tooltip>
                           </div>
                         </div>
                       </div>
@@ -249,11 +257,19 @@ export default function MasterEdit() {
                             </div>
                           </div>
                           <div className="more-btn">
-                            <span className="icon-more"></span>
-                            {/* <div className="option-list">
+                            <span className="icon-more" id="more-btn-anchor-franchise-function"></span>
+                            <Tooltip
+                              className="option-list"
+                              anchorSelect="#more-btn-anchor-franchise-function"
+                              place="right-end"
+                              offset={0}
+                              openOnClick={true} // 클릭으로 열기
+                              clickable={true} // 툴팁 내부 클릭 가능
+                              opacity={1}
+                            >
                               <button className="option-item">Partner Fuction 추가</button>
                               <button className="option-item">Partner Fuction 삭제</button>
-                            </div> */}
+                            </Tooltip>
                           </div>
                         </div>
                       </div>
@@ -326,11 +342,19 @@ export default function MasterEdit() {
                                   <label className="slider" htmlFor="toggle-btn"></label>
                                 </div>
                                 <div className="more-btn">
-                                  <span className="icon-more"></span>
-                                  {/* <div className="option-list">
-                                  <button className="option-item">옵션 SET 추가</button>
-                                  <button className="option-item">옵션 SET 삭제</button>
-                                </div> */}
+                                  <span className="icon-more" id="more-btn-anchor-option-set-01"></span>
+                                  <Tooltip
+                                    className="option-list"
+                                    anchorSelect="#more-btn-anchor-option-set-01"
+                                    place="right-end"
+                                    offset={0}
+                                    openOnClick={true} // 클릭으로 열기
+                                    clickable={true} // 툴팁 내부 클릭 가능
+                                    opacity={1}
+                                  >
+                                    <button className="option-item">옵션 SET 추가</button>
+                                    <button className="option-item">옵션 SET 삭제</button>
+                                  </Tooltip>
                                 </div>
                               </div>
                             </td>
@@ -400,11 +424,19 @@ export default function MasterEdit() {
                                   <label className="slider" htmlFor="toggle-btn"></label>
                                 </div>
                                 <div className="more-btn">
-                                  <span className="icon-more"></span>
-                                  {/* <div className="option-list">
-                                  <button className="option-item">옵션 SET 추가</button>
-                                  <button className="option-item">옵션 SET 삭제</button>
-                                </div> */}
+                                  <span className="icon-more" id="more-btn-anchor-option-01"></span>
+                                  <Tooltip
+                                    className="option-list"
+                                    anchorSelect="#more-btn-anchor-option-01"
+                                    place="left-end"
+                                    offset={0}
+                                    openOnClick={true} // 클릭으로 열기
+                                    clickable={true} // 툴팁 내부 클릭 가능
+                                    opacity={1}
+                                  >
+                                    <button className="option-item">옵션 추가</button>
+                                    <button className="option-item">옵션 삭제</button>
+                                  </Tooltip>
                                 </div>
                               </div>
                             </td>
@@ -474,11 +506,19 @@ export default function MasterEdit() {
                                   <label className="slider" htmlFor="toggle-btn"></label>
                                 </div>
                                 <div className="more-btn">
-                                  <span className="icon-more"></span>
-                                  {/* <div className="option-list">
-                                  <button className="option-item">옵션 SET 추가</button>
-                                  <button className="option-item">옵션 SET 삭제</button>
-                                </div> */}
+                                  <span className="icon-more" id="more-btn-anchor-option-02"></span>
+                                  <Tooltip
+                                    className="option-list"
+                                    anchorSelect="#more-btn-anchor-option-02"
+                                    place="left-end"
+                                    offset={0}
+                                    openOnClick={true} // 클릭으로 열기
+                                    clickable={true} // 툴팁 내부 클릭 가능
+                                    opacity={1}
+                                  >
+                                    <button className="option-item">옵션 추가</button>
+                                    <button className="option-item">옵션 삭제</button>
+                                  </Tooltip>
                                 </div>
                               </div>
                             </td>

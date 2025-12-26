@@ -9,6 +9,7 @@ import { Navigation } from 'swiper/modules'
 import AnimateHeight from 'react-animate-height'
 import { useState } from 'react'
 import DatePicker from '../ui/common/DatePicker'
+import { Tooltip } from 'react-tooltip'
 
 export default function WorkingHours() {
   const [slideboxOpen, setSlideboxOpen] = useState(true)
@@ -41,17 +42,44 @@ export default function WorkingHours() {
                         <div className="work-info mb10">
                           <div className="work-badge blue">정직원</div>
                           <div className="staff-name">홍길동</div>
-                          <div className="more-btn work">
-                            <span className="icon-more"></span>
-                            <div className="option-list act">
-                              <button className="option-item">Partner Fuction 추가</button>
-                              <button className="option-item">Partner Fuction 삭제</button>
-                            </div>
+                          <div className="more-btn">
+                            <span className="icon-more" id="more-btn-anchor-work-hours-01"></span>
+                            <Tooltip
+                              className="option-list"
+                              anchorSelect="#more-btn-anchor-work-hours-01"
+                              place="right-start"
+                              offset={0}
+                              openOnClick={true} // 클릭으로 열기
+                              clickable={true} // 툴팁 내부 클릭 가능
+                              opacity={1}
+                            >
+                              <button className="option-item">근무자 추가</button>
+                              <button className="option-item">근무자 삭제</button>
+                              <button className="option-item">근무자 교체</button>
+                              <button className="option-item">직원 외 근무자 추가</button>
+                            </Tooltip>
                           </div>
                         </div>
                         <div className="work-info mb10">
                           <div className="work-badge green">파트</div>
                           <div className="staff-name">홍길동</div>
+                          <div className="more-btn">
+                            <span className="icon-more" id="more-btn-anchor-work-hours-02"></span>
+                            <Tooltip
+                              className="option-list"
+                              anchorSelect="#more-btn-anchor-work-hours-02"
+                              place="right-start"
+                              offset={0}
+                              openOnClick={true} // 클릭으로 열기
+                              clickable={true} // 툴팁 내부 클릭 가능
+                              opacity={1}
+                            >
+                              <button className="option-item">근무자 추가</button>
+                              <button className="option-item">근무자 삭제</button>
+                              <button className="option-item">근무자 교체</button>
+                              <button className="option-item">직원 외 근무자 추가</button>
+                            </Tooltip>
+                          </div>
                         </div>
                         <table className="work-hours-table">
                           <colgroup>

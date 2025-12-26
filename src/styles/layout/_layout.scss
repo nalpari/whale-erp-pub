@@ -6,10 +6,9 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-width: 1900px;
+  min-width: 1800px;
   min-height: 100vh;
   padding-left: 280px;
-  transition: padding-left 0.25s ease-in-out;
   // overflow-x: hidden;
   .container {
     flex: 1;
