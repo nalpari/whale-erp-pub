@@ -176,7 +176,7 @@ export default function PublishPage() {
                   <tr>
                     <td>계약 근무 시간</td>
                     <td>
-                      <Link href={'/working'}>WorkingHours.tsx</Link>
+                      <Link href={'/workinghour'}>WorkingHours.tsx</Link>
                     </td>
                     <td>WorkingHours</td>
                     <td></td>
@@ -188,6 +188,15 @@ export default function PublishPage() {
                       <Link href={'/commute'}>CommuteManagement.tsx</Link>
                     </td>
                     <td>CommuteManagement</td>
+                    <td></td>
+                    <td className="c red">2025-12-30</td>
+                  </tr>
+                  <tr>
+                    <td>점포별 근무 시간 관리</td>
+                    <td>
+                      <Link href={'/storeworktable'}>StoreWorkTable.tsx</Link>
+                    </td>
+                    <td>StoreWorkTable</td>
                     <td></td>
                     <td className="c red">2025-12-30</td>
                   </tr>

@@ -1,75 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-$default-color: #2C2C2C;
+$default-color: #2c2c2c;
 
-.l{text-align: left !important;}
-.c{text-align: center !important;}
-.r{text-align: right !important;}
+.l {
+  text-align: left !important;
+}
+.c {
+  text-align: center !important;
+}
+.r {
+  text-align: right !important;
+}
 
-.red{color: #F00;}
+.red {
+  color: #f00;
+}
 
-.mb15{margin-bottom: 15px !important;}
+.mb15 {
+  margin-bottom: 15px !important;
+}
 
 .publish-list {
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-variation-settings:"wdth" 100;
+  font-variation-settings: 'wdth' 100;
   display: flex;
   flex-direction: column;
   width: 100%;
   min-height: 100vh;
 }
-.p-header{
+.p-header {
   padding: 20px;
   background-color: $default-color;
   text-align: center;
-  h1{
+  h1 {
     font-size: 34px;
     color: #fff;
     font-weight: 600;
   }
 }
 
-.p-body{
+.p-body {
   margin-top: 30px;
+  margin-bottom: 30px;
   flex: 1 1 auto;
-  .p-contents{
+  .p-contents {
     max-width: 1480px;
     margin: 0 auto;
   }
 }
 
-.p-guide{
+.p-guide {
   border: 1px solid $default-color;
   border-radius: 4px;
-  .p-guide-header{
+  .p-guide-header {
     font-size: 16px;
     color: #fff;
     background-color: $default-color;
     padding: 10px 20px;
     border-radius: 4px 4px 0 0;
   }
-  .p-guide-content{
+  .p-guide-content {
     padding: 10px 20px;
-    p{
+    p {
       font-size: 14px;
       margin-bottom: 5px;
-      span{
+      span {
         color: red;
       }
-      &:last-child{
+      &:last-child {
         margin-bottom: 0;
       }
     }
   }
-  .p-guide-inputcommon{
-    h3{
+  .p-guide-inputcommon {
+    h3 {
       font-size: 16px;
       margin: 15px 0 5px;
       font-weight: 600;
     }
-    a{
+    a {
       display: block;
       border: 1px solid $default-color;
       border-radius: 3px;
@@ -79,8 +90,8 @@ $default-color: #2C2C2C;
       line-height: 40px;
       padding: 0 10px;
       text-align: center;
-      transition: all .15s ease-in-out;
-      &:hover{
+      transition: all 0.15s ease-in-out;
+      &:hover {
         background-color: #fff;
         color: $default-color;
       }
@@ -88,35 +99,35 @@ $default-color: #2C2C2C;
   }
 }
 
-.p-list-wrap{
+.p-list-wrap {
   margin-top: 25px;
-  h2{
+  h2 {
     font-size: 22px;
     font-weight: 500;
   }
-  .p-list-table{
+  .p-list-table {
     margin-top: 10px;
-    table{
+    table {
       width: 100%;
       border-collapse: collapse;
       table-layout: fixed;
-      th{
+      th {
         background-color: #eee;
-        color: #2C2C2C;
+        color: #2c2c2c;
         text-align: center;
         font-size: 14px;
         font-weight: 600;
         padding: 10px;
         border: 1px solid #999;
       }
-      td{
+      td {
         border: 1px solid #999;
         padding: 10px;
         font-size: 12px;
-        a{
+        a {
           text-decoration: underline;
           color: blue;
-          &:visited{
+          &:visited {
             color: purple;
           }
         }
@@ -124,21 +135,21 @@ $default-color: #2C2C2C;
     }
   }
 }
-.p-guide-link-wrap{
+.p-guide-link-wrap {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
-  a{
+  a {
     display: inline-block;
-    border: 1px solid #2C2C2C;
+    border: 1px solid #2c2c2c;
     background-color: #fff;
-    color: #2C2C2C;
+    color: #2c2c2c;
     padding: 3px 10px;
     border-radius: 4px;
     font-size: 14px;
-    transition: all .15s ease-in-out;
-    &:hover{
-      background-color: #2C2C2C;
+    transition: all 0.15s ease-in-out;
+    &:hover {
+      background-color: #2c2c2c;
       color: #fff;
     }
   }
