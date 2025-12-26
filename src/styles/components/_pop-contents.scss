@@ -80,6 +80,8 @@
   border: 1px solid #aaa;
   border-radius: 4px;
   padding: 5px 9px;
+  transition: all 0.15s ease-in-out;
+  &:hover,
   &.act {
     background-color: #aaaaaa;
     color: #fff;

@@ -97,13 +97,13 @@ export default function MasterSearch() {
                 <th>임시저장 여부</th>
                 <td>
                   <div className="filed-check-flx">
-                    <div className="radio-form-box">
-                      <input type="radio" name="status" id="status-all" />
-                      <label htmlFor="status-all">전체</label>
+                    <div className="check-form-box">
+                      <input type="checkbox" name="tempSave" id="tempSave-all" />
+                      <label htmlFor="tempSave-all">전체</label>
                     </div>
-                    <div className="radio-form-box">
-                      <input type="radio" name="status" id="status-consulting" />
-                      <label htmlFor="status-consulting">임시저장</label>
+                    <div className="check-form-box">
+                      <input type="checkbox" name="tempSave" id="tempSave-consulting" />
+                      <label htmlFor="tempSave-consulting">임시저장</label>
                     </div>
                   </div>
                 </td>

@@ -8,9 +8,11 @@ import { Navigation } from 'swiper/modules'
 
 import AnimateHeight from 'react-animate-height'
 import { useState } from 'react'
+import DatePicker from '../ui/common/DatePicker'
 
 export default function WorkingHours() {
   const [slideboxOpen, setSlideboxOpen] = useState(true)
+
   return (
     <div className="contents-wrap">
       <div className="contents-body">
@@ -40,8 +42,6 @@ export default function WorkingHours() {
                           <colgroup>
                             <col />
                             <col />
-                            <col />
-                            <col />
                           </colgroup>
                           <thead>
                             <tr>
@@ -64,68 +64,324 @@ export default function WorkingHours() {
                                 </div>
                               </th>
                             </tr>
-                            <tr>
-                              <th className="p0">
-                                <button className="work-time-tab act">오전</button>
-                              </th>
-                              <th className="p0">
-                                <button className="work-time-tab">오후</button>
-                              </th>
-                              <th className="p0">
-                                <button className="work-time-tab ">오전</button>
-                              </th>
-                              <th className="p0">
-                                <button className="work-time-tab act">오후</button>
-                              </th>
-                            </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <td colSpan={2}>
-                                <div className="work-hours-wrap">
-                                  <div className="time-swiper hours">
-                                    <Swiper
-                                      spaceBetween={20}
-                                      slidesPerView={3}
-                                      direction={'vertical'}
-                                      navigation={true}
-                                      loop={true}
-                                      centeredSlides={true}
-                                      modules={[Navigation]}
-                                      className="mySwiper"
-                                    >
-                                      {Array.from({ length: 12 }).map((_, index) => (
-                                        <SwiperSlide key={index}>
-                                          <div className="number-box">{index < 9 ? `0${index + 1}` : index + 1}</div>
-                                        </SwiperSlide>
-                                      ))}
-                                    </Swiper>
+                              <td>
+                                <div className="work-hours-box disabled">
+                                  <div className="work-hours-tab">
+                                    <button className="work-time-tab act">오전</button>
+                                    <button className="work-time-tab ">오후</button>
                                   </div>
-                                  <div className="time-colon">:</div>
-                                  <div className="time-swiper minutes">
-                                    <Swiper
-                                      spaceBetween={20}
-                                      slidesPerView={3}
-                                      direction={'vertical'}
-                                      navigation={true}
-                                      modules={[Navigation]}
-                                      loop={true}
-                                      centeredSlides={true}
-                                      className="mySwiper"
-                                    >
-                                      {Array.from({ length: 60 }).map((_, index) => (
-                                        <SwiperSlide key={index}>
-                                          <div className="number-box">{index < 10 ? `0${index}` : index}</div>
+                                  <div className="work-hours-inner">
+                                    <div className="time-swiper hours">
+                                      <Swiper
+                                        spaceBetween={10}
+                                        slidesPerView={3}
+                                        direction={'vertical'}
+                                        navigation={true}
+                                        loop={true}
+                                        centeredSlides={true}
+                                        modules={[Navigation]}
+                                        className="mySwiper"
+                                      >
+                                        {Array.from({ length: 12 }).map((_, index) => (
+                                          <SwiperSlide key={index}>
+                                            <div className="number-box">{index < 9 ? `0${index + 1}` : index + 1}</div>
+                                          </SwiperSlide>
+                                        ))}
+                                      </Swiper>
+                                    </div>
+                                    <div className="time-colon">:</div>
+                                    <div className="time-swiper minutes">
+                                      <Swiper
+                                        spaceBetween={10}
+                                        slidesPerView={3}
+                                        direction={'vertical'}
+                                        navigation={true}
+                                        modules={[Navigation]}
+                                        loop={false}
+                                        centeredSlides={true}
+                                        className="mySwiper"
+                                      >
+                                        <SwiperSlide>
+                                          <div className="number-box">00</div>
                                         </SwiperSlide>
-                                      ))}
-                                    </Swiper>
+                                        <SwiperSlide>
+                                          <div className="number-box">30</div>
+                                        </SwiperSlide>
+                                      </Swiper>
+                                    </div>
+                                  </div>
+                                  <div className="work-hours-preview">
+                                    <div className="filed-flx g8">
+                                      <span className="explain">오전</span>
+                                      <div>
+                                        <input type="text" className="input-frame xs" defaultValue={'00'} />
+                                      </div>
+                                      <span className="explain">시</span>
+                                      <div>
+                                        <input type="text" className="input-frame xs" defaultValue={'00'} />
+                                      </div>
+                                      <span className="explain">분</span>
+                                      <span className="explain">부터</span>
+                                    </div>
                                   </div>
                                 </div>
                               </td>
-                              <td colSpan={2}>월~금</td>
+                              <td>
+                                <div className="work-hours-box disabled">
+                                  <div className="work-hours-tab">
+                                    <button className="work-time-tab act">오전</button>
+                                    <button className="work-time-tab ">오후</button>
+                                  </div>
+                                  <div className="work-hours-inner">
+                                    <div className="time-swiper hours">
+                                      <Swiper
+                                        spaceBetween={10}
+                                        slidesPerView={3}
+                                        direction={'vertical'}
+                                        navigation={true}
+                                        loop={true}
+                                        centeredSlides={true}
+                                        modules={[Navigation]}
+                                        className="mySwiper"
+                                      >
+                                        {Array.from({ length: 12 }).map((_, index) => (
+                                          <SwiperSlide key={index}>
+                                            <div className="number-box">{index < 9 ? `0${index + 1}` : index + 1}</div>
+                                          </SwiperSlide>
+                                        ))}
+                                      </Swiper>
+                                    </div>
+                                    <div className="time-colon">:</div>
+                                    <div className="time-swiper minutes">
+                                      <Swiper
+                                        spaceBetween={10}
+                                        slidesPerView={3}
+                                        direction={'vertical'}
+                                        navigation={true}
+                                        modules={[Navigation]}
+                                        loop={false}
+                                        centeredSlides={true}
+                                        className="mySwiper"
+                                      >
+                                        <SwiperSlide>
+                                          <div className="number-box">00</div>
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                          <div className="number-box">30</div>
+                                        </SwiperSlide>
+                                      </Swiper>
+                                    </div>
+                                  </div>
+                                  <div className="work-hours-preview">
+                                    <div className="filed-flx g8">
+                                      <span className="explain">오후</span>
+                                      <div>
+                                        <input type="text" className="input-frame xs" defaultValue={'00'} />
+                                      </div>
+                                      <span className="explain">시</span>
+                                      <div>
+                                        <input type="text" className="input-frame xs" defaultValue={'00'} />
+                                      </div>
+                                      <span className="explain">분</span>
+                                      <span className="explain">까지</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div className="work-hours-box">
+                                  <div className="work-hours-tab">
+                                    <button className="work-time-tab act">오전</button>
+                                    <button className="work-time-tab ">오후</button>
+                                  </div>
+                                  <div className="work-hours-inner">
+                                    <div className="time-swiper hours">
+                                      <Swiper
+                                        spaceBetween={10}
+                                        slidesPerView={3}
+                                        direction={'vertical'}
+                                        navigation={true}
+                                        loop={true}
+                                        centeredSlides={true}
+                                        modules={[Navigation]}
+                                        className="mySwiper"
+                                      >
+                                        {Array.from({ length: 12 }).map((_, index) => (
+                                          <SwiperSlide key={index}>
+                                            <div className="number-box">{index < 9 ? `0${index + 1}` : index + 1}</div>
+                                          </SwiperSlide>
+                                        ))}
+                                      </Swiper>
+                                    </div>
+                                    <div className="time-colon">:</div>
+                                    <div className="time-swiper minutes">
+                                      <Swiper
+                                        spaceBetween={10}
+                                        slidesPerView={3}
+                                        direction={'vertical'}
+                                        navigation={true}
+                                        modules={[Navigation]}
+                                        loop={false}
+                                        centeredSlides={true}
+                                        className="mySwiper"
+                                      >
+                                        <SwiperSlide>
+                                          <div className="number-box">00</div>
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                          <div className="number-box">30</div>
+                                        </SwiperSlide>
+                                      </Swiper>
+                                    </div>
+                                  </div>
+                                  <div className="work-hours-preview">
+                                    <div className="filed-flx g8">
+                                      <span className="explain">오후</span>
+                                      <div>
+                                        <input type="text" className="input-frame xs" defaultValue={'00'} />
+                                      </div>
+                                      <span className="explain">시</span>
+                                      <div>
+                                        <input type="text" className="input-frame xs" defaultValue={'00'} />
+                                      </div>
+                                      <span className="explain">분</span>
+                                      <span className="explain">부터</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div className="work-hours-box">
+                                  <div className="work-hours-tab">
+                                    <button className="work-time-tab act">오전</button>
+                                    <button className="work-time-tab ">오후</button>
+                                  </div>
+                                  <div className="work-hours-inner">
+                                    <div className="time-swiper hours">
+                                      <Swiper
+                                        spaceBetween={10}
+                                        slidesPerView={3}
+                                        direction={'vertical'}
+                                        navigation={true}
+                                        loop={true}
+                                        centeredSlides={true}
+                                        modules={[Navigation]}
+                                        className="mySwiper"
+                                      >
+                                        {Array.from({ length: 12 }).map((_, index) => (
+                                          <SwiperSlide key={index}>
+                                            <div className="number-box">{index < 9 ? `0${index + 1}` : index + 1}</div>
+                                          </SwiperSlide>
+                                        ))}
+                                      </Swiper>
+                                    </div>
+                                    <div className="time-colon">:</div>
+                                    <div className="time-swiper minutes">
+                                      <Swiper
+                                        spaceBetween={10}
+                                        slidesPerView={3}
+                                        direction={'vertical'}
+                                        navigation={true}
+                                        modules={[Navigation]}
+                                        loop={false}
+                                        centeredSlides={true}
+                                        className="mySwiper"
+                                      >
+                                        <SwiperSlide>
+                                          <div className="number-box">00</div>
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                          <div className="number-box">30</div>
+                                        </SwiperSlide>
+                                      </Swiper>
+                                    </div>
+                                  </div>
+                                  <div className="work-hours-preview">
+                                    <div className="filed-flx g8">
+                                      <span className="explain">오후</span>
+                                      <div>
+                                        <input type="text" className="input-frame xs" defaultValue={'00'} />
+                                      </div>
+                                      <span className="explain">시</span>
+                                      <div>
+                                        <input type="text" className="input-frame xs" defaultValue={'00'} />
+                                      </div>
+                                      <span className="explain">분</span>
+                                      <span className="explain">까지</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
                             </tr>
                           </tbody>
                         </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>평일 근무 요일</th>
+                      <td>
+                        <div className="filed-flx g8">
+                          <button className="day-btn act">월</button>
+                          <button className="day-btn act">화</button>
+                          <button className="day-btn act">수</button>
+                          <button className="day-btn">목</button>
+                          <button className="day-btn act">금</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>토요일 격주 근무 여부</th>
+                      <td>
+                        <div className="filed-flx">
+                          <div className="filed-check-flx">
+                            <div className="radio-form-box">
+                              <input type="radio" id="every-sat" />
+                              <label htmlFor="every-sat">매주 토요일</label>
+                            </div>
+                            <div className="radio-form-box">
+                              <input type="radio" id="biweek-sat" />
+                              <label htmlFor="biweek-sat">토요일 격주</label>
+                            </div>
+                          </div>
+                          <div className="filed-flx ml10">
+                            <div className="filed-flx g8">
+                              <div className="explain">토요일 첫 근무일</div>
+                              <div className="block">
+                                <DatePicker />
+                              </div>
+                            </div>
+                            <div className="explain">※ 설정한 날짜를 격주 근무 시작일로 인식합니다.</div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>일요일 격주 근무 여부</th>
+                      <td>
+                        <div className="filed-flx">
+                          <div className="filed-check-flx">
+                            <div className="radio-form-box">
+                              <input type="radio" id="every-sun" />
+                              <label htmlFor="every-sun">매주 일요일</label>
+                            </div>
+                            <div className="radio-form-box">
+                              <input type="radio" id="biweek-sun" />
+                              <label htmlFor="biweek-sun">일요일 격주</label>
+                            </div>
+                          </div>
+                          <div className="filed-flx ml10">
+                            <div className="filed-flx g8">
+                              <div className="explain">일요일 첫 근무일</div>
+                              <div className="block">
+                                <DatePicker />
+                              </div>
+                            </div>
+                            <div className="explain">※ 설정한 날짜를 격주 근무 시작일로 인식합니다.</div>
+                          </div>
+                        </div>
                       </td>
                     </tr>
                   </tbody>

@@ -153,7 +153,7 @@ export default function PublishPage() {
                     </td>
                     <td>StaffInvitationPop</td>
                     <td></td>
-                    <td className="c red">2025-12-24</td>
+                    <td className="c red">2025-12-30</td>
                   </tr>
                   <tr>
                     <td>연봉 및 통상시급 계산기 팝업</td>
@@ -162,7 +162,7 @@ export default function PublishPage() {
                     </td>
                     <td>SalaryCalculationPop</td>
                     <td></td>
-                    <td className="c red">2025-12-24</td>
+                    <td className="c red">2025-12-30</td>
                   </tr>
                   <tr>
                     <td>정직원, 파트타이머 급여명세서</td>
@@ -171,7 +171,7 @@ export default function PublishPage() {
                     </td>
                     <td>PayStub</td>
                     <td></td>
-                    <td className="c red">2025-12-24</td>
+                    <td className="c red">2025-12-30</td>
                   </tr>
                   <tr>
                     <td>계약 근무 시간</td>
@@ -180,7 +180,7 @@ export default function PublishPage() {
                     </td>
                     <td>WorkingHours</td>
                     <td></td>
-                    <td className="c red">2025-12-24</td>
+                    <td className="c red">2025-12-30</td>
                   </tr>
                   <tr>
                     <td>출퇴근 관리</td>
@@ -189,7 +189,7 @@ export default function PublishPage() {
                     </td>
                     <td>CommuteManagement</td>
                     <td></td>
-                    <td className="c red">2025-12-24</td>
+                    <td className="c red">2025-12-30</td>
                   </tr>
                 </tbody>
               </table>

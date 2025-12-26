@@ -805,13 +805,40 @@
     }
   }
 }
-
 // 계약 근무 시간
 .work-hours-wrap {
-  padding: 24px 16px;
+  @include flex(30px);
+  align-items: center;
+  justify-content: center;
+}
+.work-hours-box {
+  padding: 14px 0;
+  &.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+}
+.work-hours-preview {
+  @include flex(0px);
+  margin-top: 24px;
+  align-items: center;
+  justify-content: center;
+}
+.work-hours-tab {
+  @include flex(0px);
+  align-items: center;
+  border-bottom: 1px solid #ebebeb;
+  margin: -24px -16px 24px;
+  button {
+    &:first-child {
+      border-right: 1px solid #ebebeb;
+    }
+  }
+}
+.work-hours-inner {
   @include flex(20px);
   justify-content: center;
-  height: 176px;
+  height: 140px;
   width: 100%;
   .mySwiper {
     width: 100%;
@@ -823,19 +850,36 @@
     .swiper-button-prev {
       position: absolute;
       top: 35px;
+      width: 28px;
+      height: 28px;
+      background: url('/assets/images/contents/working_hours_arr.svg') no-repeat center;
+      background-size: cover;
       z-index: 2;
+      cursor: pointer;
+      svg {
+        display: none;
+      }
     }
     .swiper-button-next {
       position: absolute;
       bottom: 35px;
+      width: 28px;
+      height: 28px;
+      transform: rotate(180deg);
+      background: url('/assets/images/contents/working_hours_arr.svg') no-repeat center;
+      background-size: cover;
       z-index: 2;
+      cursor: pointer;
+      svg {
+        display: none;
+      }
     }
   }
   .time-swiper {
     position: relative;
     &.hours {
       .mySwiper {
-        padding-left: 34px;
+        padding-left: 52px;
         .swiper-button-prev {
           left: 0;
         }
@@ -846,7 +890,7 @@
     }
     &.minutes {
       .mySwiper {
-        padding-right: 34px;
+        padding-right: 52px;
         .swiper-button-prev {
           right: 0;
         }
@@ -858,22 +902,21 @@
     .number-box {
       text-align: center;
       @include fontDefinition($font-ds-28, $font-w-600, $line-h-140);
-      color: #222;
+      color: #e5e5e5;
       -webkit-user-select: none;
       -moz-user-select: none;
       -ms-use-select: none;
       user-select: none;
       transition: all 0.15s ease-in-out;
     }
-    .swiper-slide-prev,
-    .swiper-slide-next {
+    .swiper-slide-active {
       .number-box {
-        color: #e5e5e5;
+        color: #222;
       }
     }
   }
   .time-colon {
-    @include fontDefinition($font-ds-28, $font-w-600, 122px);
+    @include fontDefinition($font-ds-28, $font-w-600, 134px);
     color: #222;
     -webkit-user-select: none;
     -moz-user-select: none;

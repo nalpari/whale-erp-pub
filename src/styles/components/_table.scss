@@ -257,24 +257,24 @@ table {
     &.p0 {
       padding: 0;
     }
-    .work-time-tab {
-      display: block;
-      width: 100%;
-      text-align: left;
-      padding: 11px 16px;
-      @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
-      color: #222;
-      background-color: #fff;
-      transition: all 0.15s ease-in-out;
-      &:hover,
-      &.act {
-        background-color: #fafafa;
-        font-weight: $font-w-500;
-      }
-    }
   }
   td {
     background-color: #fafafa;
     border: 1px solid #ebebeb !important;
+  }
+}
+.work-time-tab {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 11px 16px;
+  @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+  color: #222;
+  background-color: #fff;
+  transition: all 0.15s ease-in-out;
+  &:hover,
+  &.act {
+    background-color: #fafafa;
+    font-weight: $font-w-500;
   }
 }
