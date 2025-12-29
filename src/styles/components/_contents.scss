@@ -959,30 +959,45 @@
   margin-top: 18px;
   .time-header {
     display: flex;
-    margin-bottom: 4px;
+    margin-top: 6px;
     .time-label {
       flex: 1;
       text-align: center;
-      font-size: 12px;
-      font-weight: 400;
-      color: #666;
+      @include fontDefinition($font-ds-14, $font-w-400, $line-h-140);
+      color: #222;
       min-width: 0;
     }
   }
   .time-blocks {
     display: flex;
+    gap: 3px;
     height: 20px;
-    border-radius: 4px;
     overflow: hidden;
+    &.blue {
+      .time-block {
+        background-color: #76a3f8;
+      }
+    }
+    &.green {
+      .time-block {
+        background-color: #7dd1b2;
+      }
+    }
     .time-block {
       flex: 1;
-      background-color: #76a3f8;
       min-width: 0;
       &.gray {
-        background-color: #f5f5f5;
+        background-color: #ebebeb;
       }
       &:not(:last-child) {
         border-right: 1px solid #fff;
+      }
+      &:nth-child(even) {
+        margin-left: -4px;
+        border-radius: 0 3px 3px 0;
+      }
+      &:nth-child(odd) {
+        border-radius: 3px 0 0 3px;
       }
     }
   }
