@@ -21,9 +21,7 @@
 .flx-bx {
   @include flex(16px);
   align-items: center;
-  &.g10 {
-    gap: 10px;
-  }
+
   &.flx1 {
     flex: 1;
   }
@@ -34,6 +32,7 @@
     color: #222;
   }
   span {
+    flex: none;
     @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
     color: #222;
   }
@@ -79,6 +78,11 @@
       text-decoration: underline;
     }
   }
+}
+.default-txt {
+  flex: none;
+  @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+  color: #222;
 }
 .file-delete {
   display: block;
@@ -1001,4 +1005,10 @@
       }
     }
   }
+}
+
+// 권한 관리
+.authority-table-header {
+  @include flex(0px);
+  margin-bottom: 12px;
 }

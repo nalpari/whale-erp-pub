@@ -200,6 +200,16 @@ export default function PublishPage() {
                     <td></td>
                     <td className="c red">2025-12-30</td>
                   </tr>
+                  <tr>
+                    <td rowSpan={6}>시스템 관리</td>
+                    <td>권한 관리</td>
+                    <td>
+                      <Link href={'/authority'}>AuthorityTable.tsx</Link>
+                    </td>
+                    <td>AuthorityTable</td>
+                    <td></td>
+                    <td className="c red">2025-12-30</td>
+                  </tr>
                 </tbody>
               </table>
             </div>

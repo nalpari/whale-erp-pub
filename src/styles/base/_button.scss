@@ -11,6 +11,13 @@
   margin-right: 8px;
 }
 
+.check {
+  width: 20px;
+  height: 20px;
+  background-image: url(/assets/images/common/btn_check.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /******************** btn-color 모음 *****************/
 .basic {
   background-color: $normal-back-color;
@@ -68,6 +75,9 @@
 // btn-frame 공통
 @mixin btn-frame($height, $padding, $font-size, $i-size) {
   flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   height: $height;
   padding: 0px $padding;
   border-radius: 6px;
@@ -77,6 +87,7 @@
   transition: all 0.15s ease-in-out;
   cursor: pointer;
   i {
+    display: block;
     width: $i-size;
     height: $i-size;
   }
@@ -92,7 +103,7 @@
 
 // 데스크탑 small 버튼
 .btn-form {
-  @include btn-frame(42px, 24px, $font-ds-15, 24px);
+  @include btn-frame(42px, 24px, $font-ds-15, 20px);
   &.s {
     @include btn-frame(42px, 18px, $font-ds-15, 24px);
   }
