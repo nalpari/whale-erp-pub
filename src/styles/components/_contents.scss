@@ -1012,3 +1012,25 @@
   @include flex(0px);
   margin-bottom: 12px;
 }
+// 공통 코드 관리
+.common-code-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid #666;
+}
+.common-code-item {
+  @include flex(0px);
+  align-items: center;
+  padding: 10px 0px 10px 10px;
+  border-bottom: 1px solid #e9edf5;
+  &:nth-child(even) {
+    border-left: 1px solid #e9edf5;
+  }
+  .code-right {
+    margin-left: auto;
+    .btn-form {
+      height: 35px;
+      padding: 0 14px;
+    }
+  }
+}
