@@ -81,8 +81,6 @@
   cursor: pointer;
   i {
     display: block;
-    width: $i-size;
-    height: $i-size;
   }
   &:disabled {
     cursor: default;
@@ -118,6 +116,14 @@
   width: 20px;
   height: 20px;
   background-image: url(/assets/images/common/btn_check.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.plus {
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+  background-image: url(/assets/images/contents/btn_plus.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }

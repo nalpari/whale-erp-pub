@@ -1107,3 +1107,220 @@
     }
   }
 }
+
+// 프로그램 관리
+.program-result {
+  @include flex(0px);
+  margin-top: 12px;
+  padding: 16px;
+  border: 1px solid #ebebeb;
+  border-radius: 6px;
+  .program-result-tit {
+    @include fontDefinition($font-ds-16, $font-w-500, $line-h-140);
+    color: #222;
+    padding-right: 45px;
+  }
+}
+.program-result-list-wrap {
+  @include flex(8px);
+  flex-direction: column;
+}
+.program-result-list {
+  @include flex(0px);
+  align-items: center;
+  .program-result-item {
+    position: relative;
+    @include fontDefinition($font-ds-16, $font-w-400, $line-h-140);
+    color: #888;
+    padding: 0 10px;
+    span {
+      padding: 0 1px;
+      background-color: #ffa36a;
+      border-radius: 3px;
+      @include fontDefinition($font-ds-16, $font-w-600, $line-h-140);
+      color: #fff;
+    }
+    &:before {
+      content: '>';
+      position: absolute;
+      top: 50%;
+      right: -5px;
+      transform: translateY(-54%);
+    }
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+.hierarchy-bx {
+  .hierarchy-tit {
+    @include fontDefinition($font-ds-18, $font-w-500, $line-h-140);
+    color: #222;
+    margin-bottom: 3px;
+  }
+  .hierarchy-txt {
+    @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+    color: #777;
+  }
+}
+
+// 프로그램 계층 관리
+.hierarchy-wrap {
+  padding: 16px;
+  border: 1px solid #ebebeb;
+  border-radius: 6px;
+}
+.hierarchy-list {
+  .disabled {
+    .depth-name {
+      opacity: 0.4;
+    }
+    .path-name {
+      opacity: 0.4;
+    }
+  }
+  &.depth01 {
+    .depth-name {
+      font-weight: 600;
+      &:before {
+        background-image: url('/assets/images/contents/depth_icon01.svg');
+      }
+    }
+  }
+  &.depth02 {
+    .hierarchy-depth {
+      padding-left: 52px;
+    }
+    .depth-name {
+      font-weight: 500;
+      &:before {
+        background-image: url('/assets/images/contents/depth_icon02.svg');
+      }
+    }
+  }
+  &.depth03 {
+    .hierarchy-depth {
+      padding-left: 88px;
+    }
+    .depth-name {
+      font-weight: 400;
+      &:before {
+        background-image: url('/assets/images/contents/depth_icon03.svg');
+      }
+    }
+  }
+}
+
+.hierarchy-depth {
+  @include flex(13px);
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    background-color: #f3f5f8;
+    .depth-btn-wrap {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .order-btn {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('/assets/images/contents/order_btn.svg') no-repeat center;
+    background-size: cover;
+  }
+  .depth-inner {
+    position: relative;
+    padding-left: 36px;
+    .depth-arr {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      display: block;
+      width: 24px;
+      height: 24px;
+      background: url('/assets/images/contents/depth_arr.svg') no-repeat center;
+      background-size: cover;
+    }
+    .depth-name {
+      position: relative;
+      padding-left: 30px;
+      font-size: 15px;
+      color: #222;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+    }
+  }
+}
+.depth-right {
+  margin-left: auto;
+  @include flex(0px);
+  align-items: center;
+  .path-name {
+    @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+    color: #525969;
+  }
+  .disable-badge {
+    margin-left: 10px;
+    display: inline-block;
+    @include fontDefinition($font-ds-14, $font-w-500, 32px);
+    color: #b4b4b4;
+    height: 34px;
+    border: 1px solid #ededed;
+    padding: 0 14px;
+    background-color: #f8f8f8;
+    border-radius: 100px;
+  }
+  .depth-btn-wrap {
+    margin-left: 32px;
+    @include flex(8px);
+    align-items: center;
+    justify-content: flex-end;
+    width: 100px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.15s ease-in-out;
+    .depth-btn {
+      display: block;
+      width: 28px;
+      height: 28px;
+      background-color: #fff;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      transition: all 0.15s ease-in-out;
+      &.create {
+        background-image: url('/assets/images/contents/depth_btn_create.svg');
+      }
+      &.edit {
+        background-image: url('/assets/images/contents/depth_btn_edit.svg');
+      }
+      &.delete {
+        background-image: url('/assets/images/contents/depth_btn_delete.svg');
+      }
+      &:hover {
+        background-color: #e4eaf3;
+      }
+    }
+  }
+}
