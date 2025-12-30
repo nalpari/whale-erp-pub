@@ -10,6 +10,10 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@tiptap/extension-underline": "^3.14.0",
+    "@tiptap/pm": "^3.14.0",
+    "@tiptap/react": "^3.14.0",
+    "@tiptap/starter-kit": "^3.14.0",
     "ag-grid-community": "^35.0.0",
     "ag-grid-react": "^35.0.0",
     "date-fns": "^4.1.0",
