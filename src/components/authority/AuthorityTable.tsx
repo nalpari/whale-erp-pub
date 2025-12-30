@@ -106,7 +106,7 @@ export default function AuthorityTable() {
                   </Tooltip>
                 </button>
                 <div className="default-txt">다른 권한 COPY</div>
-                <div className="w-260">
+                <div className="mx-260">
                   <select name="" id="" className="select-form">
                     <option value="">선택</option>
                   </select>

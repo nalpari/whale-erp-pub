@@ -1,4 +1,4 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 * {
   -webkit-text-size-adjust: none;
@@ -49,7 +49,7 @@ td {
   margin: 0;
   padding: 0;
   line-height: 140%;
-  font-family: "Pretendard", sans-serif;
+  font-family: 'Pretendard', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -111,11 +111,11 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
 }
 blockquote,
 q {
-  quotes: "" "";
+  quotes: '' '';
 }
 
 body:first-of-type caption {

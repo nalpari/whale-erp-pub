@@ -10,6 +10,7 @@
   min-height: 100vh;
   padding-left: 280px;
   overflow-x: hidden;
+  transition: all 0.25s ease-in-out;
   .container {
     flex: 1;
     padding: 24px;

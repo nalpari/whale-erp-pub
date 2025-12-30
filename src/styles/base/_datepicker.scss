@@ -46,10 +46,11 @@
     &:focus {
       border-color: #948ea5;
     }
+    &:read-only,
     &:disabled {
-      color: #d0c9d6;
-      background-color: #ecebed;
-      border-color: #ecebed;
+      color: #999;
+      background-color: #f5f5f5;
+      border-color: #ebebeb;
       cursor: default;
     }
   }

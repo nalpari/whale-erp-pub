@@ -1034,3 +1034,74 @@
     }
   }
 }
+
+// 휴일 관리
+.day-off-header {
+  @include flex(0px);
+  align-items: center;
+  margin-bottom: 12px;
+  .day-off-header-tit {
+    @include fontDefinition($font-ds-18, $font-w-500, $line-h-140);
+    color: #222;
+  }
+}
+.day-off-table {
+  width: 100%;
+  table-layout: auto;
+  box-shadow: 0 0 0 1px #e9edf5;
+  border-radius: 6px;
+  td {
+    padding: 10px 5px;
+    border-bottom: 1px solid #e9edf5;
+    &:last-child {
+      padding-right: 10px;
+    }
+    &:first-child {
+      padding-left: 10px;
+    }
+  }
+  tr {
+    &:last-child {
+      td {
+        border-bottom: none;
+      }
+    }
+  }
+}
+.day-off-badge {
+  @include flex(6px);
+  align-items: center;
+  .do-circle {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  .do-txt {
+    @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+  }
+  &.r {
+    .do-circle {
+      background-color: #ff4d4f;
+    }
+    .do-txt {
+      color: #ff4d4f;
+    }
+  }
+  &.p {
+    .do-circle {
+      background-color: #8c6ff7;
+    }
+    .do-txt {
+      color: #8c6ff7;
+    }
+  }
+  &.g {
+    .do-circle {
+      background-color: #52c41a;
+    }
+    .do-txt {
+      color: #52c41a;
+    }
+  }
+}

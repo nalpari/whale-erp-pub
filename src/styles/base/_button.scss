@@ -11,13 +11,6 @@
   margin-right: 8px;
 }
 
-.check {
-  width: 20px;
-  height: 20px;
-  background-image: url(/assets/images/common/btn_check.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 /******************** btn-color 모음 *****************/
 .basic {
   background-color: $normal-back-color;
@@ -119,4 +112,31 @@
   &:hover {
     background-color: #323232;
   }
+}
+
+.check {
+  width: 20px;
+  height: 20px;
+  background-image: url(/assets/images/common/btn_check.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.add {
+  padding: 0;
+  width: 42px;
+  height: 42px;
+  background-image: url(/assets/images/contents/btn_add.svg);
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+  background-position: center;
+}
+
+.minus {
+  padding: 0;
+  width: 42px;
+  height: 42px;
+  background-image: url(/assets/images/contents/btn_minus.svg);
+  background-repeat: no-repeat;
+  background-size: 10px 2px;
+  background-position: center;
 }
