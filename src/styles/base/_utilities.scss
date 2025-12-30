@@ -146,32 +146,26 @@
   color: #f00 !important;
 }
 .mx-500 {
-  flex: 0 0 auto;
+  flex: none;
+  width: 100%;
   max-width: 500px;
-  width: 100%;
-}
-.mx-160 {
-  flex: none;
-  width: 100%;
-  max-width: 160px;
-  min-width: 0;
-}
-.mx-100 {
-  flex: none;
-  width: 100%;
-  max-width: 100px;
 }
 .mx-300 {
   flex: none;
   width: 100%;
   max-width: 300px;
 }
-.mx-260 {
+.mx-160 {
   flex: none;
   width: 100%;
-  max-width: 260px;
-  min-width: 0;
+  max-width: 160px;
 }
+.mx-100 {
+  flex: none;
+  width: 100%;
+  max-width: 100px;
+}
+
 .g16 {
   gap: 16px !important;
 }

@@ -1009,7 +1009,9 @@
 
 // 권한 관리
 .authority-table-header {
-  @include flex(0px);
+  @include flex(8px);
+  align-items: center;
+  justify-content: flex-end;
   margin-bottom: 12px;
 }
 // 공통 코드 관리

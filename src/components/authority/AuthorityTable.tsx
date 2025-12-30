@@ -98,28 +98,26 @@ export default function AuthorityTable() {
         <div className="content-wrap">
           <div className="authority-table-wrap">
             <div className="authority-table-header">
-              <div className="auto-right g8">
-                <button className="tooltip-btn">
-                  <span className="tooltip-icon" id="tooltip-btn-anchor"></span>
-                  <Tooltip className="tooltip-txt" anchorSelect="#tooltip-btn-anchor" opacity={1}>
-                    <div>기존에 등록된 메뉴별 권한을 copy하여 현재 조회/등록 중인 권한을 만들 수 있습니다.</div>
-                  </Tooltip>
-                </button>
-                <div className="default-txt">다른 권한 COPY</div>
-                <div className="mx-260">
-                  <select name="" id="" className="select-form">
-                    <option value="">선택</option>
-                  </select>
-                </div>
-                <button className="btn-form basic">적용하기</button>
-                <button className="btn-form gray">
-                  <i className="check"></i>Read
-                </button>
-                <button className="btn-form outline s">Create, Delete</button>
-                <button className="btn-form gray">
-                  <i className="check"></i>Update
-                </button>
+              <button className="tooltip-btn">
+                <span className="tooltip-icon" id="tooltip-btn-anchor"></span>
+                <Tooltip className="tooltip-txt" anchorSelect="#tooltip-btn-anchor" opacity={1}>
+                  <div>기존에 등록된 메뉴별 권한을 copy하여 현재 조회/등록 중인 권한을 만들 수 있습니다.</div>
+                </Tooltip>
+              </button>
+              <div className="default-txt">다른 권한 COPY</div>
+              <div className="mx-300">
+                <select name="" id="" className="select-form">
+                  <option value="">선택</option>
+                </select>
               </div>
+              <button className="btn-form basic">적용하기</button>
+              <button className="btn-form gray">
+                <i className="check"></i>Read
+              </button>
+              <button className="btn-form outline s">Create, Delete</button>
+              <button className="btn-form gray">
+                <i className="check"></i>Update
+              </button>
             </div>
             <div className="authority-table-body">
               <table className="system-table">

@@ -76,25 +76,19 @@ export default function StorePromotion() {
         <div className="content-wrap">
           <div className="content-header">프로모션 메뉴 구성</div>
           <div className="promotion-header">
-            <div className="flx-bx">
-              <div className="flx-bx">
-                <div className="filed-tit">
-                  할인 분류 <span className="red">*</span>
-                </div>
-                <div className="mx-500">
-                  <input type="text" className="input-frame" />
-                </div>
+            <div className="flx-bx g10">
+              <div className="filed-tit">
+                할인 분류 <span className="red">*</span>
               </div>
-              <div className="flx-bx">
-                <div className="filed-tit">할인가/할인율 </div>
-                <div className="flx-bx g10">
-                  <div className="mx-500">
-                    <input type="text" className="input-frame" />
-                  </div>
-                  <span>원</span>
-                  <button className="btn-form outline s">적용</button>
-                </div>
+              <div className="mx-300">
+                <input type="text" className="input-frame" />
               </div>
+              <div className="filed-tit">할인가/할인율 </div>
+              <div className="mx-300">
+                <input type="text" className="input-frame" />
+              </div>
+              <span>원</span>
+              <button className="btn-form outline s">적용</button>
             </div>
           </div>
           <div className="promotion-body">

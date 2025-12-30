@@ -3,6 +3,7 @@ import { useState } from 'react'
 import AnimateHeight from 'react-animate-height'
 import DatePicker from '../ui/common/DatePicker'
 import { Tooltip } from 'react-tooltip'
+import Editor from '../editor/Editor'
 
 export default function MasterEdit() {
   const [slideboxOpen, setSlideboxOpen] = useState(true)
@@ -192,6 +193,12 @@ export default function MasterEdit() {
                           <DatePicker />
                         </div>
                       </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Editor</th>
+                    <td>
+                      <Editor />
                     </td>
                   </tr>
                 </tbody>
