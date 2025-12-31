@@ -1177,6 +1177,10 @@
   border-radius: 6px;
 }
 .hierarchy-list {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease-in-out;
+
   .disabled {
     .depth-name {
       opacity: 0.4;
@@ -1186,6 +1190,7 @@
     }
   }
   &.depth01 {
+    max-height: fit-content;
     .depth-name {
       font-weight: 600;
       &:before {
@@ -1212,6 +1217,18 @@
       font-weight: 400;
       &:before {
         background-image: url('/assets/images/contents/depth_icon03.svg');
+      }
+    }
+  }
+}
+.hierarchy-item {
+  &.open {
+    > .hierarchy-list {
+      max-height: 1000px;
+    }
+    > .hierarchy-depth {
+      .depth-arr {
+        transform: translateY(-50%) rotate(180deg);
       }
     }
   }
@@ -1251,6 +1268,7 @@
       height: 24px;
       background: url('/assets/images/contents/depth_arr.svg') no-repeat center;
       background-size: cover;
+      transition: all 0.15s ease-in-out;
     }
     .depth-name {
       position: relative;

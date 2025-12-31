@@ -1,4 +1,32 @@
+'use client'
+import { useState } from 'react'
+
 export default function ProgramManagement() {
+  const [openItems, setOpenItems] = useState<Set<string>>(new Set(['depth-01', 'depth-01-01']))
+  const [isAllClosed, setIsAllClosed] = useState(false)
+
+  const handleToggleItem = (itemId: string) => {
+    setOpenItems((prev) => {
+      const newSet = new Set(prev)
+      if (newSet.has(itemId)) {
+        newSet.delete(itemId)
+      } else {
+        newSet.add(itemId)
+      }
+      return newSet
+    })
+  }
+
+  const handleAllClose = () => {
+    if (isAllClosed) {
+      setOpenItems(new Set(['depth-01', 'depth-01-01', 'depth-01-02']))
+      setIsAllClosed(false)
+    } else {
+      setOpenItems(new Set())
+      setIsAllClosed(true)
+    }
+  }
+
   return (
     <div className="contents-wrap">
       <div className="contents-body">
@@ -66,6 +94,9 @@ export default function ProgramManagement() {
               <div className="hierarchy-txt">드래그 앤 드롭을 사용하여 동일 레벨 내 순서를 변경할 수 있습니다.</div>
             </div>
             <div className="data-header-right">
+              <button className="btn-form gray s" onClick={handleAllClose}>
+                {isAllClosed ? 'All Open' : 'All Close'}
+              </button>
               <button className="btn-form basic s">
                 <i className="plus"></i> 최상위 추가
               </button>
@@ -73,11 +104,15 @@ export default function ProgramManagement() {
           </div>
           <div className="hierarchy-wrap">
             <ul className="hierarchy-list depth01">
-              <li className="hierarchy-item ">
-                <div className="hierarchy-depth ">
+              <li className={`hierarchy-item ${openItems.has('depth-01') ? 'open' : ''}`}>
+                <div className="hierarchy-depth">
                   <button className="order-btn"></button>
                   <div className="depth-inner">
-                    <button className="depth-arr"></button>
+                    <button
+                      className="depth-arr"
+                      onClick={() => handleToggleItem('depth-01')}
+                      aria-label="하위 메뉴 토글"
+                    ></button>
                     <div className="depth-name">Master Data 관리</div>
                   </div>
                   <div className="depth-right">
@@ -88,12 +123,16 @@ export default function ProgramManagement() {
                     </div>
                   </div>
                 </div>
-                <ul className="hierarchy-list depth02 ">
-                  <li className="hierarchy-item disabled">
-                    <div className="hierarchy-depth ">
+                <ul className="hierarchy-list depth02">
+                  <li className={`hierarchy-item disabled ${openItems.has('depth-01-01') ? 'open' : ''}`}>
+                    <div className="hierarchy-depth">
                       <button className="order-btn"></button>
                       <div className="depth-inner">
-                        <button className="depth-arr"></button>
+                        <button
+                          className="depth-arr"
+                          onClick={() => handleToggleItem('depth-01-01')}
+                          aria-label="하위 메뉴 토글"
+                        ></button>
                         <div className="depth-name">Business Partner Master</div>
                       </div>
                       <div className="depth-right">
@@ -106,8 +145,8 @@ export default function ProgramManagement() {
                       </div>
                     </div>
                     <ul className="hierarchy-list depth03">
-                      <li className="hierarchy-item ">
-                        <div className="hierarchy-depth ">
+                      <li className="hierarchy-item">
+                        <div className="hierarchy-depth">
                           <button className="order-btn"></button>
                           <div className="depth-inner">
                             <div className="depth-name">Business Partner 관리</div>
@@ -121,8 +160,8 @@ export default function ProgramManagement() {
                           </div>
                         </div>
                       </li>
-                      <li className="hierarchy-item ">
-                        <div className="hierarchy-depth ">
+                      <li className="hierarchy-item">
+                        <div className="hierarchy-depth">
                           <button className="order-btn"></button>
                           <div className="depth-inner">
                             <div className="depth-name">Business Partner 초대이메일</div>
@@ -138,11 +177,15 @@ export default function ProgramManagement() {
                       </li>
                     </ul>
                   </li>
-                  <li className="hierarchy-item">
-                    <div className="hierarchy-depth ">
+                  <li className={`hierarchy-item ${openItems.has('depth-01-02') ? 'open' : ''}`}>
+                    <div className="hierarchy-depth">
                       <button className="order-btn"></button>
                       <div className="depth-inner">
-                        <button className="depth-arr"></button>
+                        <button
+                          className="depth-arr"
+                          onClick={() => handleToggleItem('depth-01-02')}
+                          aria-label="하위 메뉴 토글"
+                        ></button>
                         <div className="depth-name">Business Partner Master</div>
                       </div>
                       <div className="depth-right">
@@ -155,7 +198,7 @@ export default function ProgramManagement() {
                     </div>
                     <ul className="hierarchy-list depth03">
                       <li className="hierarchy-item">
-                        <div className="hierarchy-depth ">
+                        <div className="hierarchy-depth">
                           <button className="order-btn"></button>
                           <div className="depth-inner">
                             <div className="depth-name">Business Partner 관리</div>
