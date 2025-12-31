@@ -550,21 +550,6 @@
     &.option-header-tit {
       background-color: #f5f5f5;
     }
-    .option-num-tit {
-      @include flex(0px);
-      align-items: center;
-      span {
-        font-size: $font-ds-15;
-      }
-      .sequence-btn {
-        margin-left: auto;
-        display: block;
-        width: 24px;
-        height: 24px;
-        background: url('/assets/images/contents/sequence_icon.svg') no-repeat center;
-        background-size: cover;
-      }
-    }
   }
   td {
     border-bottom: 1px solid #ebebeb;
@@ -576,6 +561,21 @@
         border-bottom: none;
       }
     }
+  }
+}
+.option-num-tit {
+  @include flex(0px);
+  align-items: center;
+  span {
+    font-size: $font-ds-15;
+  }
+  .sequence-btn {
+    margin-left: auto;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('/assets/images/contents/sequence_icon.svg') no-repeat center;
+    background-size: cover;
   }
 }
 .option-header {
@@ -1224,7 +1224,7 @@
 .hierarchy-item {
   &.open {
     > .hierarchy-list {
-      max-height: 1000px;
+      max-height: 10000px;
     }
     > .hierarchy-depth {
       .depth-arr {
@@ -1340,5 +1340,37 @@
         background-color: #e4eaf3;
       }
     }
+  }
+}
+
+// 메뉴 정보 공통코드
+.preferences-tab {
+  @include flex(0px);
+  align-items: center;
+  margin-bottom: 30px;
+  .preferences-menu {
+    flex: 1;
+    display: block;
+    @include fontDefinition($font-ds-18, $font-w-600, $line-h-140);
+    color: #aaa;
+    padding-bottom: 22px;
+    border-bottom: 2px solid #aaa;
+    transition: all 0.15s ease-in-out;
+    &.act,
+    &:hover {
+      color: #366fe3;
+      border-bottom: 2px solid #366fe3;
+    }
+  }
+}
+.preferences-guide {
+  padding: 24px 20px;
+  border: 1px solid #ebebeb;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  span {
+    display: block;
+    @include fontDefinition($font-ds-15, $font-w-400, $line-h-160);
+    color: #333;
   }
 }

@@ -201,7 +201,7 @@ export default function PublishPage() {
                     <td className="c red">2025-12-30</td>
                   </tr>
                   <tr>
-                    <td rowSpan={6}>시스템 관리</td>
+                    <td rowSpan={4}>시스템 관리</td>
                     <td>권한 관리</td>
                     <td>
                       <Link href={'/authority'}>AuthorityTable.tsx</Link>
@@ -236,6 +236,16 @@ export default function PublishPage() {
                     <td>ProgramManagement</td>
                     <td></td>
                     <td className="c red">2025-12-31</td>
+                  </tr>
+                  <tr>
+                    <td>환경설정</td>
+                    <td>메뉴 정보 공통코드</td>
+                    <td>
+                      <Link href={'/menuinfo'}>MenuInfoCode.tsx</Link>
+                    </td>
+                    <td>MenuInfoCode</td>
+                    <td></td>
+                    <td className="c red">2026-01-02</td>
                   </tr>
                 </tbody>
               </table>
