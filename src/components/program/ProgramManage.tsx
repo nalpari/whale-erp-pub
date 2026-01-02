@@ -1,9 +1,9 @@
 'use client'
 import { useState } from 'react'
+import AnimateHeight from 'react-animate-height'
 
 export default function ProgramManagement() {
   const [openItems, setOpenItems] = useState<Set<string>>(new Set(['depth-01', 'depth-01-01']))
-  const [isAllClosed, setIsAllClosed] = useState(false)
 
   const handleToggleItem = (itemId: string) => {
     setOpenItems((prev) => {
@@ -18,13 +18,7 @@ export default function ProgramManagement() {
   }
 
   const handleAllClose = () => {
-    if (isAllClosed) {
-      setOpenItems(new Set(['depth-01', 'depth-01-01', 'depth-01-02']))
-      setIsAllClosed(false)
-    } else {
-      setOpenItems(new Set())
-      setIsAllClosed(true)
-    }
+    setOpenItems(new Set())
   }
 
   return (
@@ -95,7 +89,7 @@ export default function ProgramManagement() {
             </div>
             <div className="data-header-right">
               <button className="btn-form gray s" onClick={handleAllClose}>
-                {isAllClosed ? 'All Open' : 'All Close'}
+                All Close
               </button>
               <button className="btn-form basic s">
                 <i className="plus"></i> 최상위 추가
@@ -123,98 +117,104 @@ export default function ProgramManagement() {
                     </div>
                   </div>
                 </div>
-                <ul className="hierarchy-list depth02">
-                  <li className={`hierarchy-item disabled ${openItems.has('depth-01-01') ? 'open' : ''}`}>
-                    <div className="hierarchy-depth">
-                      <button className="order-btn"></button>
-                      <div className="depth-inner">
-                        <button
-                          className="depth-arr"
-                          onClick={() => handleToggleItem('depth-01-01')}
-                          aria-label="하위 메뉴 토글"
-                        ></button>
-                        <div className="depth-name">Business Partner Master</div>
-                      </div>
-                      <div className="depth-right">
-                        <div className="disable-badge">비활성</div>
-                        <div className="depth-btn-wrap">
-                          <button className="depth-btn create"></button>
-                          <button className="depth-btn edit"></button>
-                          <button className="depth-btn delete"></button>
+                <AnimateHeight duration={300} height={openItems.has('depth-01') ? 'auto' : 0}>
+                  <ul className="hierarchy-list depth02">
+                    <li className={`hierarchy-item disabled ${openItems.has('depth-01-01') ? 'open' : ''}`}>
+                      <div className="hierarchy-depth">
+                        <button className="order-btn"></button>
+                        <div className="depth-inner">
+                          <button
+                            className="depth-arr"
+                            onClick={() => handleToggleItem('depth-01-01')}
+                            aria-label="하위 메뉴 토글"
+                          ></button>
+                          <div className="depth-name">Business Partner Master</div>
+                        </div>
+                        <div className="depth-right">
+                          <div className="disable-badge">비활성</div>
+                          <div className="depth-btn-wrap">
+                            <button className="depth-btn create"></button>
+                            <button className="depth-btn edit"></button>
+                            <button className="depth-btn delete"></button>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <ul className="hierarchy-list depth03">
-                      <li className="hierarchy-item">
-                        <div className="hierarchy-depth">
-                          <button className="order-btn"></button>
-                          <div className="depth-inner">
-                            <div className="depth-name">Business Partner 관리</div>
-                          </div>
-                          <div className="depth-right">
-                            <div className="path-name">/master-data/business-partner/m..</div>
-                            <div className="depth-btn-wrap">
-                              <button className="depth-btn edit"></button>
-                              <button className="depth-btn delete"></button>
+                      <AnimateHeight duration={300} height={openItems.has('depth-01-01') ? 'auto' : 0}>
+                        <ul className="hierarchy-list depth03">
+                          <li className="hierarchy-item">
+                            <div className="hierarchy-depth">
+                              <button className="order-btn"></button>
+                              <div className="depth-inner">
+                                <div className="depth-name">Business Partner 관리</div>
+                              </div>
+                              <div className="depth-right">
+                                <div className="path-name">/master-data/business-partner/m..</div>
+                                <div className="depth-btn-wrap">
+                                  <button className="depth-btn edit"></button>
+                                  <button className="depth-btn delete"></button>
+                                </div>
+                              </div>
                             </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li className="hierarchy-item">
-                        <div className="hierarchy-depth">
-                          <button className="order-btn"></button>
-                          <div className="depth-inner">
-                            <div className="depth-name">Business Partner 초대이메일</div>
-                          </div>
-                          <div className="depth-right">
-                            <div className="path-name">/master-data/business-partner/m..</div>
-                            <div className="depth-btn-wrap">
-                              <button className="depth-btn edit"></button>
-                              <button className="depth-btn delete"></button>
+                          </li>
+                          <li className="hierarchy-item">
+                            <div className="hierarchy-depth">
+                              <button className="order-btn"></button>
+                              <div className="depth-inner">
+                                <div className="depth-name">Business Partner 초대이메일</div>
+                              </div>
+                              <div className="depth-right">
+                                <div className="path-name">/master-data/business-partner/m..</div>
+                                <div className="depth-btn-wrap">
+                                  <button className="depth-btn edit"></button>
+                                  <button className="depth-btn delete"></button>
+                                </div>
+                              </div>
                             </div>
+                          </li>
+                        </ul>
+                      </AnimateHeight>
+                    </li>
+                    <li className={`hierarchy-item ${openItems.has('depth-01-02') ? 'open' : ''}`}>
+                      <div className="hierarchy-depth">
+                        <button className="order-btn"></button>
+                        <div className="depth-inner">
+                          <button
+                            className="depth-arr"
+                            onClick={() => handleToggleItem('depth-01-02')}
+                            aria-label="하위 메뉴 토글"
+                          ></button>
+                          <div className="depth-name">Business Partner Master</div>
+                        </div>
+                        <div className="depth-right">
+                          <div className="depth-btn-wrap">
+                            <button className="depth-btn create"></button>
+                            <button className="depth-btn edit"></button>
+                            <button className="depth-btn delete"></button>
                           </div>
                         </div>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className={`hierarchy-item ${openItems.has('depth-01-02') ? 'open' : ''}`}>
-                    <div className="hierarchy-depth">
-                      <button className="order-btn"></button>
-                      <div className="depth-inner">
-                        <button
-                          className="depth-arr"
-                          onClick={() => handleToggleItem('depth-01-02')}
-                          aria-label="하위 메뉴 토글"
-                        ></button>
-                        <div className="depth-name">Business Partner Master</div>
                       </div>
-                      <div className="depth-right">
-                        <div className="depth-btn-wrap">
-                          <button className="depth-btn create"></button>
-                          <button className="depth-btn edit"></button>
-                          <button className="depth-btn delete"></button>
-                        </div>
-                      </div>
-                    </div>
-                    <ul className="hierarchy-list depth03">
-                      <li className="hierarchy-item">
-                        <div className="hierarchy-depth">
-                          <button className="order-btn"></button>
-                          <div className="depth-inner">
-                            <div className="depth-name">Business Partner 관리</div>
-                          </div>
-                          <div className="depth-right">
-                            <div className="path-name">/master-data/business-partner/m..</div>
-                            <div className="depth-btn-wrap">
-                              <button className="depth-btn edit"></button>
-                              <button className="depth-btn delete"></button>
+                      <AnimateHeight duration={300} height={openItems.has('depth-01-02') ? 'auto' : 0}>
+                        <ul className="hierarchy-list depth03">
+                          <li className="hierarchy-item">
+                            <div className="hierarchy-depth">
+                              <button className="order-btn"></button>
+                              <div className="depth-inner">
+                                <div className="depth-name">Business Partner 관리</div>
+                              </div>
+                              <div className="depth-right">
+                                <div className="path-name">/master-data/business-partner/m..</div>
+                                <div className="depth-btn-wrap">
+                                  <button className="depth-btn edit"></button>
+                                  <button className="depth-btn delete"></button>
+                                </div>
+                              </div>
                             </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
+                          </li>
+                        </ul>
+                      </AnimateHeight>
+                    </li>
+                  </ul>
+                </AnimateHeight>
               </li>
             </ul>
           </div>

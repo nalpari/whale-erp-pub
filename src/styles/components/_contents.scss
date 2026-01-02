@@ -1177,10 +1177,6 @@
   border-radius: 6px;
 }
 .hierarchy-list {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.35s ease-in-out;
-
   .disabled {
     .depth-name {
       opacity: 0.4;
@@ -1223,9 +1219,6 @@
 }
 .hierarchy-item {
   &.open {
-    > .hierarchy-list {
-      max-height: 10000px;
-    }
     > .hierarchy-depth {
       .depth-arr {
         transform: translateY(-50%) rotate(180deg);

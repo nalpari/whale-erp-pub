@@ -68,10 +68,10 @@ export default function MenuInfoCode() {
                         </div>
                         <div className="auto-right">
                           <div className="more-btn">
-                            <span className="icon-more" id="more-btn-anchor-partner-function"></span>
+                            <span className="icon-more" id="menu-info-code-1"></span>
                             <Tooltip
                               className="option-list"
-                              anchorSelect="#more-btn-anchor-partner-function"
+                              anchorSelect="#menu-info-code-1"
                               place="right-end"
                               offset={0}
                               openOnClick={true} // 클릭으로 열기
