@@ -266,6 +266,15 @@ export default function PublishPage() {
                     <td></td>
                     <td className="c red">2026-01-06</td>
                   </tr>
+                  <tr>
+                    <td>Business Partner 가입</td>
+                    <td>
+                      <Link href={'/partnerjoin'}>BusinessPartnerJoin.tsx</Link>
+                    </td>
+                    <td>BusinessPartnerJoin</td>
+                    <td></td>
+                    <td className="c red">2026-01-06</td>
+                  </tr>
                 </tbody>
               </table>
             </div>

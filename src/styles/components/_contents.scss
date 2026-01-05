@@ -1390,3 +1390,43 @@
     }
   }
 }
+
+// bp 회원가입
+.subscrip-tit {
+  margin-bottom: 30px;
+  p {
+    @include fontDefinition($font-ds-20, $font-w-500, $line-h-140);
+    color: #222;
+  }
+}
+.subscrip-txt {
+  @include fontDefinition($font-ds-18, $font-w-500, $line-h-140);
+  color: #505050;
+  margin-bottom: 18px;
+}
+.subscrip-guide {
+  margin-top: 30px;
+  margin-bottom: 18px;
+  .subscrip-guide-tit {
+    @include fontDefinition($font-ds-18, $font-w-600, $line-h-140);
+    color: #222;
+    margin-bottom: 15px;
+  }
+  .subscrip-guide-cont {
+    p {
+      @include fontDefinition($font-ds-15, $font-w-400, $line-h-160);
+      color: #505050;
+    }
+  }
+}
+.subscrip-guide-link {
+  a {
+    @include fontDefinition($font-ds-15, $font-w-500, $line-h-140);
+    color: #366fe3;
+    text-decoration: underline;
+  }
+}
+.subscrip-form-footer {
+  text-align: center;
+  margin-top: 24px;
+}
