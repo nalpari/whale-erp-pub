@@ -275,6 +275,15 @@ export default function PublishPage() {
                     <td></td>
                     <td className="c red">2026-01-06</td>
                   </tr>
+                  <tr>
+                    <td>구독 결제 팝업</td>
+                    <td>
+                      <Link href={'/popup/subscrippay'}>SubscripPayPop.tsx</Link>
+                    </td>
+                    <td>SubscripPayPop</td>
+                    <td></td>
+                    <td className="c red">2026-01-06</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
