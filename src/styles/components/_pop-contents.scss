@@ -137,3 +137,84 @@
     border: 1px solid #ebebeb;
   }
 }
+
+.comparison-table {
+  width: 100%;
+  table-layout: fixed;
+  box-shadow: 0 0 0 1px #ebebeb;
+  border-radius: 6px;
+  th {
+    padding: 10px 16px;
+    @include fontDefinition($font-ds-15, $font-w-500, $line-h-140);
+    color: #fff;
+    border-right: 1px solid #69727f;
+    border-bottom: 1px solid #69727f;
+    background-color: #556071;
+    text-align: center;
+    &:last-child {
+      border-right: none;
+    }
+  }
+  td {
+    padding: 12px 16px;
+    @include fontDefinition($font-ds-15, $font-w-500, $line-h-140);
+    color: #505050;
+    border-right: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    text-align: center;
+    &:last-child {
+      border-right: none;
+    }
+  }
+  thead {
+    tr {
+      &:first-child {
+        th {
+          &:first-child {
+            border-radius: 6px 0 0 0;
+          }
+          &:last-child {
+            border-radius: 0 6px 0 0;
+          }
+        }
+      }
+    }
+  }
+  tr {
+    &:last-child {
+      th {
+        border-bottom: none;
+      }
+      td {
+        border-bottom: none;
+      }
+    }
+    &.data {
+      td {
+        background-color: #fbfbfb;
+      }
+    }
+  }
+}
+.comparison-btn {
+  @include fontDefinition($font-ds-15, $font-w-600, $line-h-140);
+  padding: 0 14px;
+  height: 28px;
+  color: #556071;
+  background-color: #fff;
+  border-radius: 6px;
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    background-color: #c8d5e9;
+  }
+}
+.comparison-check {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(/assets/images/popup/comparison_check.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle;
+}

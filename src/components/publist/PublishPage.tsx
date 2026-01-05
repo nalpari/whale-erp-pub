@@ -247,6 +247,25 @@ export default function PublishPage() {
                     <td></td>
                     <td className="c red">2026-01-02</td>
                   </tr>
+                  <tr>
+                    <td rowSpan={4}>과금 관리</td>
+                    <td>ERP요금제 정보 관리</td>
+                    <td>
+                      <Link href={'/pricingplan'}>PricingPlan.tsx</Link>
+                    </td>
+                    <td>PricingPlan</td>
+                    <td></td>
+                    <td className="c red">2026-01-06</td>
+                  </tr>
+                  <tr>
+                    <td>ERP 요금제 기능 비교 팝업</td>
+                    <td>
+                      <Link href={'/popup/comparison'}>ComparisonPop.tsx</Link>
+                    </td>
+                    <td>ComparisonPop</td>
+                    <td></td>
+                    <td className="c red">2026-01-06</td>
+                  </tr>
                 </tbody>
               </table>
             </div>

@@ -1367,3 +1367,26 @@
     color: #333;
   }
 }
+
+// 과금관리
+.pricing-check-wrap {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 8px;
+  .pricing-btn {
+    display: block;
+    width: 100%;
+    height: 42px;
+    padding: 0 5px;
+    border-radius: 6px;
+    @include fontDefinition($font-ds-15, $font-w-500, $line-h-140);
+    color: #9ba7ba;
+    transition: all 0.15s ease-in-out;
+    &:hover,
+    &.act {
+      background-color: #e5e9ed;
+      color: #5d748f;
+      border-color: #5d748f;
+    }
+  }
+}
