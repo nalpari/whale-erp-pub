@@ -293,6 +293,15 @@ export default function PublishPage() {
                     <td></td>
                     <td className="c red">2026-01-06</td>
                   </tr>
+                  <tr>
+                    <td>결제수단 관리</td>
+                    <td>
+                      <Link href={'/paymethod'}>PaymentMethod.tsx</Link>
+                    </td>
+                    <td>PaymentMethod</td>
+                    <td></td>
+                    <td className="c red">2026-01-06</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
