@@ -135,6 +135,8 @@
   td {
     padding: 10px;
     border: 1px solid #ebebeb;
+    @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+    color: #222;
   }
 }
 
@@ -288,5 +290,92 @@
         font-size: 22px;
       }
     }
+  }
+}
+.receip-wrap {
+  margin-top: 30px;
+  .receip-tit {
+    @include fontDefinition($font-ds-18, $font-w-500, $line-h-140);
+    color: #222;
+    margin-bottom: 16px;
+  }
+}
+.receip-table {
+  width: 100%;
+  table-layout: fixed;
+  box-shadow: 0 0 0 1px #ebebeb;
+  border-radius: 6px;
+
+  th {
+    padding: 13px 16px;
+    @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+    color: #505050;
+    border-right: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    background-color: #fbfbfb;
+    text-align: center;
+    &:last-child {
+      border-right: none;
+    }
+  }
+  td {
+    padding: 13px 16px;
+    @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+    color: #505050;
+    border-right: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    text-align: center;
+    &.bold {
+      font-weight: 600;
+    }
+    &:last-child {
+      border-right: none;
+    }
+  }
+  tfoot {
+    td {
+      border: none;
+      padding: 0;
+      .total-data {
+        @include flex(0px);
+        align-items: center;
+        padding: 17px 16px;
+        background-color: #5775b1;
+        border-radius: 0 0 6px 6px;
+        span {
+          @include fontDefinition($font-ds-20, $font-w-600, $line-h-140);
+          color: #fff;
+          &.total-price {
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
+  &.col {
+    tr {
+      &:last-child {
+        th {
+          border-bottom: none;
+          text-align: left;
+        }
+        td {
+          border-bottom: none;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.today-info {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ebebeb;
+  text-align: center;
+  margin-top: 24px;
+  span {
+    display: block;
+    @include fontDefinition($font-ds-16, $font-w-500, $line-h-140);
+    color: #222;
   }
 }
