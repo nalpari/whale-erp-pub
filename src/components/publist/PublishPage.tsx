@@ -248,7 +248,7 @@ export default function PublishPage() {
                     <td className="c red">2026-01-02</td>
                   </tr>
                   <tr>
-                    <td rowSpan={6}>과금 관리</td>
+                    <td rowSpan={7}>과금 관리</td>
                     <td>ERP요금제 정보 관리</td>
                     <td>
                       <Link href={'/pricingplan'}>PricingPlan.tsx</Link>
@@ -299,6 +299,15 @@ export default function PublishPage() {
                       <Link href={'/paymethod'}>PaymentMethod.tsx</Link>
                     </td>
                     <td>PaymentMethod</td>
+                    <td></td>
+                    <td className="c red">2026-01-06</td>
+                  </tr>
+                  <tr>
+                    <td>결제수단 등록 팝업</td>
+                    <td>
+                      <Link href={'/popup/paycreate'}>PaymentCreatePop.tsx</Link>
+                    </td>
+                    <td>PaymentCreatePop</td>
                     <td></td>
                     <td className="c red">2026-01-06</td>
                   </tr>

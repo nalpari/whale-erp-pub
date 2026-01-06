@@ -140,6 +140,7 @@
   }
 }
 
+// ERP 요금제 기능 비교 팝업
 .comparison-table {
   width: 100%;
   table-layout: fixed;
@@ -221,6 +222,7 @@
   vertical-align: middle;
 }
 
+// 구독 결제 팝업
 .pay-btn-wrap {
   margin-top: 32px;
   .pay-btn-tit {
@@ -292,6 +294,8 @@
     }
   }
 }
+
+// 전자영수증 팝업
 .receip-wrap {
   margin-top: 30px;
   .receip-tit {
@@ -377,5 +381,42 @@
     display: block;
     @include fontDefinition($font-ds-16, $font-w-500, $line-h-140);
     color: #222;
+  }
+}
+
+// 결제수단 등록 팝업
+.pay-create-guide {
+  @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+  color: #222;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ebebeb;
+}
+.pay-create-warning {
+  padding-left: 16px;
+  margin-bottom: 20px;
+  @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+  color: #ff0000;
+}
+.approve-check-wrap {
+  @include flex(10px);
+  align-items: center;
+  padding: 20px 16px;
+  background-color: #f4f5f6;
+  border-radius: 6px;
+  .check-form-box {
+    label {
+      color: #767676;
+    }
+  }
+  a {
+    margin-left: auto;
+    @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+    color: #222;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 3%;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
   }
 }
