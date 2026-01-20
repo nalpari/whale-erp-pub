@@ -94,8 +94,14 @@
 }
 .btn-log-frame {
   @include btn-frame(56px, 10px, 16px, 24px);
-  background-color: #77828D;
   font-weight: 600;
+  &.basic{
+    background-color: #77828D;
+  }
+  &.gray{
+    background-color: #EBEDEE;
+    color: #77828D;
+  }
 }
 
 .check {

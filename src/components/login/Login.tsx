@@ -39,8 +39,7 @@ export default function Login() {
               <label htmlFor="login-check">ID 저장</label>
             </div>
             <div className="find-btn-wrap">
-              <button className="find-btn-item">ID 찾기</button>
-              <button className="find-btn-item">Password 찾기</button>
+              <button className="find-btn-item">ID / Password 찾기</button>
             </div>
           </div>
           <div className="another-login-wrap">

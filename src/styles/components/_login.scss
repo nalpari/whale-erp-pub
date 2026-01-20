@@ -11,6 +11,14 @@
     max-width: 520px;
     margin: 0 auto;
   }
+  &.find{
+    background-color: #F5F5F5;
+    .find-inner{
+      width: 100%;
+      max-width: 460px;
+      margin: 0 auto;
+    }
+  }
 }
 .login_header{
   text-align: center;
@@ -62,22 +70,6 @@
       position: relative;
       @include fontDefinition($font-ds-15, $font-w-500, $line-h-140);
       color: #5E697B;
-      &:first-child{
-        padding-right: 10px;
-        &:after{
-          content: '';
-          position: absolute;
-          right: 0;
-          top: 50%;
-          transform: translateY(-50%);
-          width: 1px;
-          height: 14px;
-          background-color: #5E697B;
-        }
-      }
-      &:last-child{
-        padding-left: 10px;
-      }
     }
   }
 }
@@ -147,5 +139,78 @@
     top: 0;
     @include fontDefinition($font-ds-16, $font-w-400, $line-h-150);
     color: #777;
+  }
+}
+
+// ID / Password 찾기
+.find-bx{
+  position: relative;
+  border: 1px solid #C0C5CD;
+  background-color: #fff;
+  border-radius: 8px;
+  .find-close-btn{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+    background: url('/assets/images/common/find_close.svg') no-repeat center;
+    background-size: cover;
+  }
+}
+.find-header{
+  padding: 38px 0 0;
+  @include flex(0px);
+  align-items: center;
+  .find-btn-item{
+    flex: 1;
+    padding: 10px;
+    border-bottom: 1px solid #E5E5E5;
+    @include fontDefinition($font-ds-22, $font-w-500, $line-h-140);
+    color: #ccc;
+    &.act{
+      color: #222;
+      border-color: #222;
+    }
+  }
+}
+.find-body{
+  padding: 38px 32px;
+}
+.find-form-header{
+  margin-bottom: 24px;
+  .find-form-header-tit{
+    @include fontDefinition($font-ds-20, $font-w-500, $line-h-140);
+    color: #222;
+    margin-bottom: 6px;
+  }
+  .find-form-header-desc{
+    @include fontDefinition($font-ds-14, $font-w-400, $line-h-140);
+    color: #767676;
+  }
+}
+.find-form-content{
+  @include flex(10px);
+  flex-direction: column;
+}
+.find-form-btn{
+  @include flex(8px);
+  align-items: center;
+  margin-top: 24px;
+  button{
+    flex: 1;
+    padding: 0 10px;
+    &.l{
+      min-width: 140px
+    }
+  }
+}
+.id-find{
+  @include fontDefinition($font-ds-16, $font-w-400, $line-h-140);
+  color: #222;
+  margin-bottom: 24px;
+  span{
+    color: #F97316;
+    font-weight: $font-w-500;
   }
 }

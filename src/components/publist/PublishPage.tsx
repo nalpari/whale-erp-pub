@@ -73,6 +73,16 @@ export default function PublishPage() {
                     <td className="c red">2026-01-20</td>
                   </tr>
                   <tr>
+                    <td>ID / Password 찾기</td>
+                    <td></td>
+                    <td>
+                      <Link href={'/info-find'}>FindIdPw.tsx</Link>
+                    </td>
+                    <td>FindIdPw</td>
+                    <td></td>
+                    <td className="c red">2026-01-20</td>
+                  </tr>
+                  <tr>
                     <td rowSpan={3}>공통 모음</td>
                     <td>Grid list 공통</td>
                     <td>
