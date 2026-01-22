@@ -1,7 +1,26 @@
 'use client'
+import { useState } from 'react'
+import AnimateHeight from 'react-animate-height'
 import { Tooltip } from 'react-tooltip'
 
 export default function AuthorityTable() {
+  const [openItems, setOpenItems] = useState<Set<string>>(new Set(['depth-01', 'depth-01-01']))
+
+  const handleToggleItem = (itemId: string) => {
+    setOpenItems((prev) => {
+      const newSet = new Set(prev)
+      if (newSet.has(itemId)) {
+        newSet.delete(itemId)
+      } else {
+        newSet.add(itemId)
+      }
+      return newSet
+    })
+  }
+
+  const handleAllClose = () => {
+    setOpenItems(new Set())
+  }
   return (
     <div className="contents-wrap">
       <div className="contents-btn">
@@ -110,6 +129,7 @@ export default function AuthorityTable() {
                   <option value="">선택</option>
                 </select>
               </div>
+              
               <button className="btn-form basic">적용하기</button>
               <button className="btn-form gray">
                 <i className="check"></i>Read
@@ -118,101 +138,187 @@ export default function AuthorityTable() {
               <button className="btn-form gray">
                 <i className="check"></i>Update
               </button>
+              <button className="btn-form basic s">
+                <i className="plus"></i> 최상위 추가
+              </button>
+              <button className="btn-form gray s" onClick={handleAllClose}>
+                All Close
+              </button>
             </div>
-            <div className="authority-table-body">
-              <table className="system-table">
-                <colgroup>
-                  <col />
-                  <col />
-                  <col />
-                  <col />
-                  <col width={'15%'} />
-                  <col width={'15%'} />
-                  <col width={'15%'} />
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th colSpan={4}>Menu</th>
-                    <th>Read</th>
-                    <th>Create, Delete</th>
-                    <th>Update</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="bold">Level 1</td>
-                    <td className="bold">Level 2</td>
-                    <td className="bold">Level 3</td>
-                    <td className="bold">Level 4</td>
-                    <td>
-                      <div className="toggle-btn">
-                        <input type="checkbox" id="toggle-btn" />
-                        <label className="slider" htmlFor="toggle-btn"></label>
+            <div className="hierarchy-wrap">
+              <ul className="hierarchy-list depth01">
+                <li className={`hierarchy-item ${openItems.has('depth-01') ? 'open' : ''}`}>
+                  <div className="hierarchy-depth">
+                    <button className="order-btn"></button>
+                    <div className="depth-inner">
+                      <button
+                        className="depth-arr"
+                        aria-label="하위 메뉴 토글"
+                        onClick={() => handleToggleItem('depth-01')}
+                      ></button>
+                      <div className="depth-name">Master Data</div>
+                    </div>
+                    <div className="depth-right">
+                      <div className="authority-check">
+                        <div className="check-form-box">
+                          <input type="checkbox" id="checkbox-01" />
+                          <label htmlFor="checkbox-01">Read</label>
+                        </div>
+                        <div className="check-form-box">
+                          <input type="checkbox" id="checkbox-02" />
+                          <label htmlFor="checkbox-02">Create, Delete</label>
+                        </div>
+                        <div className="check-form-box">
+                          <input type="checkbox" id="checkbox-03" />
+                          <label htmlFor="checkbox-03">Update</label>
+                        </div>
                       </div>
-                    </td>
-                    <td>
-                      <div className="toggle-btn">
-                        <input type="checkbox" id="toggle-btn" />
-                        <label className="slider" htmlFor="toggle-btn"></label>
-                      </div>
-                    </td>
-                    <td>
-                      <div className="toggle-btn">
-                        <input type="checkbox" id="toggle-btn" />
-                        <label className="slider" htmlFor="toggle-btn"></label>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Master Data</td>
-                    <td></td>
-                    <td></td>
-                    <td className="r">N</td>
-                    <td>
-                      <div className="toggle-btn">
-                        <input type="checkbox" id="toggle-btn" />
-                        <label className="slider" htmlFor="toggle-btn"></label>
-                      </div>
-                    </td>
-                    <td>
-                      <div className="toggle-btn">
-                        <input type="checkbox" id="toggle-btn" />
-                        <label className="slider" htmlFor="toggle-btn"></label>
-                      </div>
-                    </td>
-                    <td>
-                      <div className="toggle-btn">
-                        <input type="checkbox" id="toggle-btn" />
-                        <label className="slider" htmlFor="toggle-btn"></label>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Master Data</td>
-                    <td>Product Master</td>
-                    <td></td>
-                    <td className="g">Y</td>
-                    <td>
-                      <div className="toggle-btn">
-                        <input type="checkbox" id="toggle-btn" />
-                        <label className="slider" htmlFor="toggle-btn"></label>
-                      </div>
-                    </td>
-                    <td>
-                      <div className="toggle-btn">
-                        <input type="checkbox" id="toggle-btn" />
-                        <label className="slider" htmlFor="toggle-btn"></label>
-                      </div>
-                    </td>
-                    <td>
-                      <div className="toggle-btn">
-                        <input type="checkbox" id="toggle-btn" />
-                        <label className="slider" htmlFor="toggle-btn"></label>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                    </div>
+                  </div>
+                  <AnimateHeight duration={300} height={openItems.has('depth-01') ? 'auto' : 0}>
+                    <ul className="hierarchy-list depth02">
+                      <li className={`hierarchy-item ${openItems.has('depth-01-01') ? 'open' : ''}`}>
+                        <div className="hierarchy-depth">
+                          <button className="order-btn"></button>
+                          <div className="depth-inner">
+                            <button
+                              className="depth-arr"
+                              onClick={() => handleToggleItem('depth-01-01')}
+                              aria-label="하위 메뉴 토글"
+                            ></button>
+                            <div className="depth-name">Product Master</div>
+                          </div>
+                          <div className="depth-right">
+                            <div className="authority-check">
+                              <div className="check-form-box">
+                                <input type="checkbox" id="checkbox-01" />
+                                <label htmlFor="checkbox-01">Read</label>
+                              </div>
+                              <div className="check-form-box">
+                                <input type="checkbox" id="checkbox-02" />
+                                <label htmlFor="checkbox-02">Create, Delete</label>
+                              </div>
+                              <div className="check-form-box">
+                                <input type="checkbox" id="checkbox-03" />
+                                <label htmlFor="checkbox-03">Update</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <AnimateHeight duration={300} height={openItems.has('depth-01-01') ? 'auto' : 0}>
+                          <ul className="hierarchy-list depth03">
+                            <li className="hierarchy-item">
+                              <div className="hierarchy-depth">
+                                <button className="order-btn"></button>
+                                <div className="depth-inner">
+                                  <div className="depth-name">Product</div>
+                                </div>
+                                <div className="depth-right">
+                                  <div className="authority-check">
+                                    <div className="check-form-box">
+                                      <input type="checkbox" id="checkbox-01" />
+                                      <label htmlFor="checkbox-01">Read</label>
+                                    </div>
+                                    <div className="check-form-box">
+                                      <input type="checkbox" id="checkbox-02" />
+                                      <label htmlFor="checkbox-02">Create, Delete</label>
+                                    </div>
+                                    <div className="check-form-box">
+                                      <input type="checkbox" id="checkbox-03" />
+                                      <label htmlFor="checkbox-03">Update</label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li className="hierarchy-item">
+                              <div className="hierarchy-depth">
+                                <button className="order-btn"></button>
+                                <div className="depth-inner">
+                                  <div className="depth-name">Sales BOM List</div>
+                                </div>
+                                <div className="depth-right">
+                                  <div className="authority-check">
+                                    <div className="check-form-box">
+                                      <input type="checkbox" id="checkbox-01" />
+                                      <label htmlFor="checkbox-01">Read</label>
+                                    </div>
+                                    <div className="check-form-box">
+                                      <input type="checkbox" id="checkbox-02" />
+                                      <label htmlFor="checkbox-02">Create, Delete</label>
+                                    </div>
+                                    <div className="check-form-box">
+                                      <input type="checkbox" id="checkbox-03" />
+                                      <label htmlFor="checkbox-03">Update</label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </AnimateHeight>
+                      </li>
+                      <li className={`hierarchy-item ${openItems.has('depth-01-02') ? 'open' : ''}`}>
+                        <div className="hierarchy-depth">
+                          <button className="order-btn"></button>
+                          <div className="depth-inner">
+                            <button
+                              className="depth-arr"
+                              onClick={() => handleToggleItem('depth-01-02')}
+                              aria-label="하위 메뉴 토글"
+                            ></button>
+                            <div className="depth-name">Master Data</div>
+                          </div>
+                          <div className="depth-right">
+                            <div className="authority-check">
+                              <div className="check-form-box">
+                                <input type="checkbox" id="checkbox-01" />
+                                <label htmlFor="checkbox-01">Read</label>
+                              </div>
+                              <div className="check-form-box">
+                                <input type="checkbox" id="checkbox-02" />
+                                <label htmlFor="checkbox-02">Create, Delete</label>
+                              </div>
+                              <div className="check-form-box">
+                                <input type="checkbox" id="checkbox-03" />
+                                <label htmlFor="checkbox-03">Update</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <AnimateHeight duration={300} height={openItems.has('depth-01-02') ? 'auto' : 0}>
+                          <ul className="hierarchy-list depth03">
+                            <li className="hierarchy-item">
+                              <div className="hierarchy-depth">
+                                <button className="order-btn"></button>
+                                <div className="depth-inner">
+                                  <div className="depth-name">Customer Master</div>
+                                </div>
+                                <div className="depth-right">
+                                  <div className="authority-check">
+                                    <div className="check-form-box">
+                                      <input type="checkbox" id="checkbox-01" />
+                                      <label htmlFor="checkbox-01">Read</label>
+                                    </div>
+                                    <div className="check-form-box">
+                                      <input type="checkbox" id="checkbox-02" />
+                                      <label htmlFor="checkbox-02">Create, Delete</label>
+                                    </div>
+                                    <div className="check-form-box">
+                                      <input type="checkbox" id="checkbox-03" />
+                                      <label htmlFor="checkbox-03">Update</label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </AnimateHeight>
+                      </li>
+                    </ul>
+                  </AnimateHeight>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
