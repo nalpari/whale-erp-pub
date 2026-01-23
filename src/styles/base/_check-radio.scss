@@ -47,7 +47,7 @@
       position: absolute;
       width: 20px;
       height: 20px;
-      top: 2px;
+      top: 0px;
       left: 0;
       margin-left: 0px;
       border: 1px solid $check-c-bord;
@@ -60,7 +60,7 @@
       content: '';
       display: inline-block;
       position: absolute;
-      top: 1px;
+      top: -1px;
       left: -1px;
       width: 6px;
       height: 10px;

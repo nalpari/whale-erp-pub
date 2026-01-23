@@ -41,7 +41,7 @@ export default function Login() {
             <div className="find-btn-wrap">
               <button className="find-btn-item">ID / Password 찾기</button>
             </div>
-          </div>
+          </div> 
           <div className="login-signup-wrap">
             <div className="login-signup-txt">
               <div className="login-signup-tit">처음 오셨나요?</div>
