@@ -214,3 +214,38 @@
     font-weight: $font-w-500;
   }
 }
+
+.login-signup-wrap{
+  @include flex(10px);
+  align-items: center;
+  padding: 24px 0;
+  margin-top: 24px;
+  border-top: 1px solid #EBEBEB;
+  border-bottom: 1px solid #EBEBEB;
+  .login-signup-tit{
+    @include fontDefinition($font-ds-18, $font-w-600, $line-h-140);
+    color: #222;
+    margin-bottom: 4px;
+  }
+  .login-signup-desc{
+    @include fontDefinition($font-ds-16, $font-w-400, $line-h-140);
+    color: #111;
+  }
+  .login-signup-btn-wrap{
+    margin-left: auto;
+    .login-signup-btn{
+      border: 1px solid #111;
+      height: 48px;
+      border-radius: 6px;
+      background-color: #fff;
+      padding: 0 14px;
+      @include fontDefinition($font-ds-16, $font-w-600, $line-h-140);
+      color: #111;
+      transition: all 0.15s ease-in-out;
+      &:hover{
+        background-color: #111;
+        color: #fff;
+      }
+    }
+  }
+}
