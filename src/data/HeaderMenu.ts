@@ -10,6 +10,12 @@ export interface HeaderMenuItem {
 
 export const HeaderMenu: HeaderMenuItem[] = [
   {
+    id: 'home',
+    name: 'Home',
+    icon: 'lnb_menu_icon00.svg',
+    link: '/',
+  },
+  {
     id: 'master',
     name: 'Master data 관리',
     icon: 'lnb_menu_icon01.svg',
@@ -159,7 +165,7 @@ export const HeaderMenu: HeaderMenuItem[] = [
   },
   {
     id: 'employee',
-    name: '직원 관리',
+    name: 'BP 직원 관리',
     icon: 'lnb_menu_icon03.svg',
     link: '#',
     children: [
@@ -238,7 +244,7 @@ export const HeaderMenu: HeaderMenuItem[] = [
   },
   {
     id: 'finance',
-    name: '재무 관리',
+    name: 'BP 재무 관리',
     icon: 'lnb_menu_icon04.svg',
     link: '#',
     children: [
@@ -261,7 +267,7 @@ export const HeaderMenu: HeaderMenuItem[] = [
   },
   {
     id: 'work',
-    name: '업무 관리',
+    name: 'BP 업무 관리',
     icon: 'lnb_menu_icon05.svg',
     link: '#',
     children: [
@@ -335,4 +341,40 @@ export const HeaderMenu: HeaderMenuItem[] = [
       },
     ],
   },
+  {
+    id: 'charge',
+    name: '과금 관리',
+    icon: 'lnb_menu_icon07.svg',
+    link: '#',
+    children: [
+      {
+        id: 'charge-01',
+        name: 'ERP요금제 관리',
+        link: '/',
+      },
+      {
+        id: 'charge-02',
+        name: '부가서비스 요금제 관리',
+        link: '/',
+      },
+      {
+        id: 'charge-03',
+        name: '결제현황',
+        link: '/',
+      },
+    ],
+  },
+  {
+    id: 'additional-service',
+    name: '부가서비스 관리',
+    icon: 'lnb_menu_icon08.svg',
+    link: '#',
+    children: [
+      {
+        id: 'additional-service-01',
+        name: '부가서비스 셋팅',
+        link: '/',
+      },
+    ],
+  }
 ]
