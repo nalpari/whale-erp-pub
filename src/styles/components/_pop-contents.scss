@@ -423,6 +423,13 @@
 
 
 // 마이페이지 팝업
+.mypage-sub{
+  .mypage-header{
+    h2{
+      @include fontDefinition($font-ds-24, $font-w-600, $line-h-140);
+    }
+  }
+}
 .mypage-header {
   @include flex(0px);
   align-items: center;
@@ -450,10 +457,10 @@
   .mypage-tab-item{
     display: block;
     width: 100%;
-    background-color: #F1F1F1;
+    background-color: #EBF1FC;
     padding: 20px 0;
     @include fontDefinition($font-ds-16, $font-w-500, $line-h-140);
-    color: #222;
+    color: #6C96EA;
     transition: all 0.15s ease-in-out;
     &:hover,
     &.act {
@@ -463,8 +470,6 @@
     }
   }
 }
-
-// 마이페이지 내정보
 .mypage-frame-wrap{
   padding-top: 34px;
 }
@@ -483,6 +488,9 @@
   justify-content: center;
   margin-top: 16px;
 }
+
+// 마이페이지 내정보
+
 .mypage-data-wrap{
   padding-top: 42px;
 }
@@ -601,4 +609,148 @@
       }
     }
   }
+}
+
+.sub-contents-wrap{
+  margin-top: 34px;
+  .sub-contents-tit{
+    @include fontDefinition($font-ds-16, $font-w-500, $line-h-140);
+    color: #222;
+    span{
+      @include fontDefinition($font-ds-16, $font-w-600, $line-h-140);
+      color: #366FE3;
+    }
+  }
+}
+.myservice-wrap{
+  margin-top: 12px;
+}
+
+.mypage-filter-head{
+  @include flex(0px);
+  align-items: center;
+  .filter-left{
+    @include flex(8px);
+    align-items: center;
+    .filter-tit{
+      flex: none;
+      @include fontDefinition($font-ds-15, $font-w-500, $line-h-140);
+      color: #222;
+    }
+    .sel-year{
+      width: 120px;
+    }
+  }
+  .filter-right{
+    @include flex(8px);
+    align-items: center;
+    margin-left: auto;
+  }
+}
+
+// 결제수단 관리
+.pay-method-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.pay-method-inner {
+  @include flex(0px);
+  padding: 23px 16px;
+  background-color: #fff;
+  border: 1px solid #EBEBEB;
+  border-radius: 12px;
+  .pay-method-tit {
+    @include fontDefinition($font-ds-15, $font-w-600, $line-h-140);
+    color: #222;
+  }
+  .pay-method-num {
+    @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+    color: #222;
+    margin-top: 4px;
+  }
+  .pay-method-del {
+    flex: none;
+    margin-left: auto;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url('/assets/images/popup/paymethod_del.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.pay-method-date {
+  @include flex(0px);
+  align-items: center;
+  margin-top: 12px;
+  span {
+    display: block;
+    @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+    color: #505050;
+    &.date{
+      margin-left: auto;
+    }
+  }
+}
+.pay-method-add{
+  @include flex(8px);
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid #5E8CE9;
+  @include fontDefinition($font-ds-15, $font-w-600, $line-h-140);
+  color: #5E8CE9;
+  padding: 24px 16px;
+  // align-self: flex-start;
+  transition: all 0.15s ease-in-out;
+  .method-add{
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url('/assets/images/popup/paymethod_add.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &:hover{
+    background-color: rgb(238, 244, 255)
+  }
+}
+
+// 비밀번호 변경
+.password-change-wrap{
+  max-width: 420px;
+  margin: 0 auto;
+  .password-change-inner{
+    padding: 38px 32px;
+    border: 1px solid #ebebeb;
+    border-radius: 6px;
+  }
+}
+.filed-wrap{
+  @include flex(14px);
+  flex-direction: column;
+  .filed-item{
+    .filed-tit{
+      @include fontDefinition($font-ds-15, $font-w-500, $line-h-140);
+      color: #222;
+    }
+    .filed-input{
+      margin-top: 10px;
+    }
+    .filed-error{
+      @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+      color: #f00;
+      margin-top: 10px;
+    }
+  }
+}
+.password-change-btn{
+  @include flex(10px);
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
 }

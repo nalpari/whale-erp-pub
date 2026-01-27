@@ -4,8 +4,8 @@ export default function PaymentCreatePop() {
   return (
     <div className="modal-popup">
       <div className="modal-dialog medium">
-        <div className="modal-content">
-          <div className="modal-header">
+        <div className="modal-content mypage-sub">
+          <div className="mypage-header">
             <h2>결제수단 등록</h2>
             <button className="modal-close"></button>
           </div>
@@ -20,7 +20,7 @@ export default function PaymentCreatePop() {
                 <tbody>
                   <tr>
                     <th>
-                      결제수단 이름<span className="red"> *</span>
+                      결제카드 선택<span className="red"> *</span>
                     </th>
                     <td>
                       <div className="block">

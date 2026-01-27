@@ -268,7 +268,7 @@ export default function PublishPage() {
                     <td className="c red">2026-01-02</td>
                   </tr>
                   <tr>
-                    <td rowSpan={7}>과금 관리</td>
+                    <td rowSpan={4}>과금 관리</td>
                     <td>ERP요금제 정보 관리</td>
                     <td>
                       <Link href={'/pricingplan'}>PricingPlan.tsx</Link>
@@ -305,20 +305,21 @@ export default function PublishPage() {
                     <td className="c red">2026-01-06</td>
                   </tr>
                   <tr>
+                    <td rowSpan={3}>마이페이지</td>
+                    <td>마이페이지 레이아웃</td>
+                    <td>
+                      <Link href={'/popup/mypage'}>MyPageLayout.tsx</Link>
+                    </td>
+                    <td>MyPageLayout</td>
+                    <td></td>
+                    <td className="c red">2026-01-26</td>
+                  </tr>
+                  <tr>
                     <td>전자영수증 팝업</td>
                     <td>
                       <Link href={'/popup/receipt'}>ElectronicReceipt.tsx</Link>
                     </td>
                     <td>ElectronicReceipt</td>
-                    <td></td>
-                    <td className="c red">2026-01-06</td>
-                  </tr>
-                  <tr>
-                    <td>결제수단 관리</td>
-                    <td>
-                      <Link href={'/paymethod'}>PaymentMethod.tsx</Link>
-                    </td>
-                    <td>PaymentMethod</td>
                     <td></td>
                     <td className="c red">2026-01-06</td>
                   </tr>
@@ -330,16 +331,6 @@ export default function PublishPage() {
                     <td>PaymentCreatePop</td>
                     <td></td>
                     <td className="c red">2026-01-06</td>
-                  </tr>
-                  <tr>
-                    <td>마이페이지</td>
-                    <td></td>
-                    <td>
-                      <Link href={'/popup/mypage'}>MyPageLayout.tsx</Link>
-                    </td>
-                    <td>MyPageLayout</td>
-                    <td></td>
-                    <td className="c red">2026-01-26</td>
                   </tr>
                 </tbody>
               </table>

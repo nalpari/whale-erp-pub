@@ -440,3 +440,71 @@ table {
     }
   }
 }
+
+// 마이페이지 메인 테이블
+.mypage-main-table{
+  width: 100%;
+  table-layout: auto;
+  box-sizing: border-box;
+  th{
+    padding: 15px 10px;
+    @include fontDefinition($font-ds-15, $font-w-500, $line-h-140);
+    color: #F5F5F5;
+    background-color: #444;
+    text-align: center;
+    &:first-child {
+      border-radius: 6px 0 0 0;
+    }
+    &:last-child {
+      border-radius: 0 6px 0 0;
+    }
+  }
+  td{
+    padding: 9px 16px;
+    text-align: center;
+    border: 1px solid #EBEBEB;
+    @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+    color: #222;
+  }
+  &.bold{
+    td{
+      font-weight: $font-w-600;
+    }
+  }
+}
+
+.mypage-sub-table{
+  width: 100%;
+  table-layout: auto;
+  box-sizing: border-box;
+  th{
+    padding: 14px 10px;
+    @include fontDefinition($font-ds-15, $font-w-500, $line-h-140);
+    color: #666;
+    text-align: center;
+    background-color: #F8F8F8;
+    box-shadow: 0 -1px 0 0 #EBEBEB;
+    &:first-child {
+      border-radius: 6px 0 0 0;
+      box-shadow: -1px -1px 0 0 #EBEBEB;
+    }
+    &:last-child {
+      border-radius: 0 6px 0 0;
+      box-shadow: 1px -1px 0 0 #EBEBEB;
+    }
+  }
+  td{
+    padding: 9px 16px;
+    @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+    color: #666;
+    border: 1px solid #EBEBEB;
+    text-align: center;
+    &.bold{
+      font-weight: $font-w-600;
+      color: #222;
+    }
+    &.empty{
+      padding: 14px 16px;
+    }
+  }
+}

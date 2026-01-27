@@ -2,12 +2,12 @@ export default function ElectronicReceiptPop() {
   return (
     <div className="modal-popup">
       <div className="modal-dialog large">
-        <div className="modal-content">
-          <div className="modal-header">
-            <h2>전자세금계산서</h2>
+        <div className="modal-content mypage-sub">
+          <div className="mypage-header">
+            <h2>전자영수증 확인</h2>
             <button className="modal-close"></button>
           </div>
-          <div className="modal-body">
+          <div className="mypage-body">
             <div className="pop-frame">
               <table className="receip-table col">
                 <colgroup>
