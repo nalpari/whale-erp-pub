@@ -460,12 +460,11 @@ table {
     }
   }
   td{
-    padding: 0px 16px;
+    padding: 14px 16px;
     text-align: center;
     border: 1px solid #EBEBEB;
     @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
     color: #222;
-    height: 62px;
   }
   &.bold{
     td{
