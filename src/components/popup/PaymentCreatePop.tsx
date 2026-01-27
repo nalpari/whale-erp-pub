@@ -9,7 +9,7 @@ export default function PaymentCreatePop() {
             <h2>결제수단 등록</h2>
             <button className="modal-close"></button>
           </div>
-          <div className="modal-body">
+          <div className="mypage-body">
             <div className="pop-frame">
               <div className="pay-create-guide">※ 본인명의 카드로 최대2개까지 등록이 가능합니다.</div>
               <table className="pop-table mb15">

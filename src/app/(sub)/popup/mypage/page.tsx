@@ -7,9 +7,9 @@ export default function MyPage() {
     <>
       <MyPageLayout />
       {/* 전자 영수증 확인 */}
-      {/* <ElectronicReceiptPop /> */}
+      <ElectronicReceiptPop />
       {/* 결제수단 등록 */}
-      {/* <PaymentCreatePop /> */}
+      <PaymentCreatePop />
     </>
   )
 }
