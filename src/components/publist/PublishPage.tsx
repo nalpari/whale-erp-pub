@@ -331,6 +331,16 @@ export default function PublishPage() {
                     <td></td>
                     <td className="c red">2026-01-06</td>
                   </tr>
+                  <tr>
+                    <td>마이페이지</td>
+                    <td></td>
+                    <td>
+                      <Link href={'/popup/mypage'}>MyPageLayout.tsx</Link>
+                    </td>
+                    <td>MyPageLayout</td>
+                    <td></td>
+                    <td className="c red">2026-01-26</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
