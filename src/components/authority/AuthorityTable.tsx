@@ -124,12 +124,16 @@ export default function AuthorityTable() {
                 </Tooltip>
               </button>
               <div className="default-txt">다른 권한 COPY</div>
-              <div className="mx-300">
+              <div className="hierarchy-select">
                 <select name="" id="" className="select-form">
                   <option value="">선택</option>
                 </select>
               </div>
-              
+              <div className="hierarchy-select">
+                <select name="" id="" className="select-form">
+                  <option value="">선택</option>
+                </select>
+              </div>
               <button className="btn-form basic">적용하기</button>
               <button className="btn-form gray">
                 <i className="check"></i>Read
