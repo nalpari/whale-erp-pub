@@ -88,6 +88,11 @@ export default function ProgramManagement() {
               <div className="hierarchy-txt">드래그 앤 드롭을 사용하여 동일 레벨 내 순서를 변경할 수 있습니다.</div>
             </div>
             <div className="data-header-right">
+              <div className="hierarchy-select">
+                <select name="" id="" className="select-form">
+                  <option value="">선택</option>
+                </select>
+              </div>
               <button className="btn-form gray s" onClick={handleAllClose}>
                 All Close
               </button>
