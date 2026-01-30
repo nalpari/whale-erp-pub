@@ -14,6 +14,9 @@ export default function AgGrid() {
     auth: string
     regDate: string
   }
+  const rowClassRules = {
+    'ag-no-data': "data.model === 'user02'",
+  }
   const rowData = [
     {
       make: 1,
@@ -115,6 +118,7 @@ export default function AgGrid() {
     <div className="erp-grid" style={{ width: '100%' }}>
       <AgGridReact
         rowData={rowData}
+        rowClassRules={rowClassRules}
         columnDefs={colDefs as ColDef<IRow>[]}
         domLayout="autoHeight"
         defaultColDef={defaultColDef}
