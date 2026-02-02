@@ -4,6 +4,7 @@ import AnimateHeight from 'react-animate-height'
 import DatePicker from '../ui/common/DatePicker'
 import { Tooltip } from 'react-tooltip'
 import Editor from '../editor/Editor'
+import Image from 'next/image'
 
 export default function MasterEdit() {
   const [slideboxOpen, setSlideboxOpen] = useState(true)
@@ -195,6 +196,37 @@ export default function MasterEdit() {
                               </div>
                             </div>
                           </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>LNB 로고</th>
+                    <td>
+                      <div className="filed-file mb10">
+                        <input type="file" className="file-input" id="file-input" />
+                        <label htmlFor="file-input" className="btn-form outline s">
+                          파일 찾기
+                        </label>
+                      </div>
+                      <div className="file-bx sumnail">
+                        <div className="file-guide">Drag & Drop으로 파일을 옮겨주세요.</div>
+                        <ul className="file-sumnail-list">
+                          {Array.from({ length: 10 }).map((_, index) => (
+                            <li className="file-item" key={index}>
+                              <div className="file-sumnail-btn">
+                                <div className="sumnail-img">
+                                  <Image src="/assets/images/contents/thumb_img.png" alt="sumnail" fill />
+                                </div>
+                                <div className="sumnail-info">
+                                  <div className="sumnail-info-tit">
+                                    복숭아 아이스티복숭아 아이스티복숭아 아이스티.jpg
+                                  </div>
+                                  <button className="file-delete"></button>
+                                </div>
+                              </div>
+                            </li>
+                          ))}
                         </ul>
                       </div>
                     </td>

@@ -40,11 +40,12 @@ export default function SendEmailPop() {
                         <textarea
                           name=""
                           id=""
-                          className="textarea-form"
+                          className="textarea-form err"
                           placeholder={`※ 이메일 주소 직접 입력, 복수의 이메일 주소를 입력할 경우 쉼표(,)로 구분
 예) khg@interplug.co.kr, hg123@interplug.co.kr`}
                         ></textarea>
                       </div>
+                      <div className="warning-txt mt5">* 수신번호 형식 혹은 구분자(쉼표)를 확인해 주세요.</div>
                     </td>
                   </tr>
                   <tr>
@@ -80,6 +81,7 @@ export default function SendEmailPop() {
                         </ul>
                       </div>
                       <div className="warning-txt mt5">* 업로드 실패 했습니다. 수정 후 다시 업로드 해주세요</div>
+                      <div className="success-txt mt5">* 정상적으로 업로드되었습니다</div>
                     </td>
                   </tr>
                   <tr>

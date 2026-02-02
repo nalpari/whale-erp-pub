@@ -86,7 +86,10 @@ table {
   @include fontDefinition($font-ds-14, $font-w-400, $line-h-140);
   color: #f30c0c;
 }
-
+.success-txt {
+  @include fontDefinition($font-ds-14, $font-w-400, $line-h-140);
+  color: #3a883a;
+}
 .slidebox-body {
   .default-table {
     th {
