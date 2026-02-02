@@ -5,9 +5,11 @@ import DatePicker from '../ui/common/DatePicker'
 import { Tooltip } from 'react-tooltip'
 import Editor from '../editor/Editor'
 import Image from 'next/image'
+import ReactSelect from '../ui/common/ReactSelect'
 
 export default function MasterEdit() {
   const [slideboxOpen, setSlideboxOpen] = useState(true)
+
   return (
     <div className="master-detail-data">
       <div className={`slidebox-wrap ${slideboxOpen ? '' : 'close'}`}>
@@ -57,6 +59,19 @@ export default function MasterEdit() {
                       <select name="" id="" className="select-form">
                         <option value="">전체</option>
                       </select>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    직원명 <span className="red">*</span>
+                  </th>
+                  <td>
+                    <div className="filed-flx">
+                      <div className="mx-500">
+                        <ReactSelect />
+                      </div>
+                      <span className="explain">react-select 컴포넌트 적용</span>
                     </div>
                   </td>
                 </tr>
