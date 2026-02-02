@@ -110,6 +110,7 @@ export default function PublishPage() {
                     <td></td>
                     <td className="c red">2025-12-24</td>
                   </tr>
+
                   <tr>
                     <td rowSpan={6}>MasterData</td>
                     <td>가맹점 초대</td>
@@ -331,6 +332,16 @@ export default function PublishPage() {
                     <td>PaymentCreatePop</td>
                     <td></td>
                     <td className="c red">2026-01-06</td>
+                  </tr>
+                  <tr>
+                    <td>이메일 발송 팝업</td>
+                    <td></td>
+                    <td>
+                      <Link href={'/popup/sendemail'}>SendEmailPop.tsx</Link>
+                    </td>
+                    <td>SendEmailPop</td>
+                    <td></td>
+                    <td className="c red">2026-02-02</td>
                   </tr>
                   <tr>
                     <td rowSpan={3}>고객지원</td>
