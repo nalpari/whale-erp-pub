@@ -344,6 +344,16 @@ export default function PublishPage() {
                     <td className="c red">2026-02-02</td>
                   </tr>
                   <tr>
+                    <td>BP선택 팝업</td>
+                    <td></td>
+                    <td>
+                      <Link href={'/popup/partnerselect'}>PartnerSelectPop.tsx</Link>
+                    </td>
+                    <td>PartnerSelectPop</td>
+                    <td></td>
+                    <td className="c red">2026-02-02</td>
+                  </tr>
+                  <tr>
                     <td rowSpan={3}>고객지원</td>
                     <td>요금안내/변경</td>
                     <td>
