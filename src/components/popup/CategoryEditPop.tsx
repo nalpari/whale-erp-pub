@@ -66,7 +66,10 @@ export default function CategoryEditPop() {
                     </th>
                     <td>
                       <div className="block">
-                        <input type="text" className="input-frame" />
+                        <div className="input-icon-frame err">
+                          <input type="text" />
+                          <button type="button" className="input-icon-btn del"></button>
+                        </div>
                       </div>
                     </td>
                   </tr>

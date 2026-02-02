@@ -147,10 +147,14 @@ export default function PayStub() {
                 <td>
                   <div className="filed-flx">
                     <div className="block">
-                      <input type="text" className="input-frame al-r" />
+                      <div className="input-icon-frame err">
+                        <input type="text" />
+                        <button type="button" className="input-icon-btn del"></button>
+                      </div>
                     </div>
                     <span className="won">원</span>
                   </div>
+                  <div className="warning-txt mt5">* 필수 입력 항목입니다.</div>
                 </td>
                 <th>국민연금</th>
                 <td>

@@ -126,6 +126,16 @@ export default function MasterSearch() {
                   </div>
                 </td>
               </tr>
+              <tr>
+                <th>수정일</th>
+                <td colSpan={5}>
+                  <div className="date-picker-wrap">
+                    <DatePicker />
+                    <span>~</span>
+                    <DatePicker />
+                  </div>
+                </td>
+              </tr>
             </tbody>
           </table>
           <div className="btn-filed">

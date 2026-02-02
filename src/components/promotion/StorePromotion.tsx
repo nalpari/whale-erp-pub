@@ -48,6 +48,7 @@ export default function StorePromotion() {
                       </select>
                     </div>
                   </div>
+                  <div className="warning-txt mt5">* 필수 입력 항목입니다.</div>
                 </td>
               </tr>
               <tr>
@@ -58,6 +59,7 @@ export default function StorePromotion() {
                       <option value="">전체</option>
                     </select>
                   </div>
+                  <div className="warning-txt mt5">* 필수 입력 항목입니다.</div>
                 </td>
               </tr>
               <tr>
@@ -66,8 +68,12 @@ export default function StorePromotion() {
                 </th>
                 <td>
                   <div className="mx-500">
-                    <input type="text" className="input-frame" />
+                    <div className="input-icon-frame err">
+                      <input type="text" />
+                      <button type="button" className="input-icon-btn del"></button>
+                    </div>
                   </div>
+                  <div className="warning-txt mt5">* 필수 입력 항목입니다.</div>
                 </td>
               </tr>
             </tbody>

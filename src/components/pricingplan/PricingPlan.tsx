@@ -37,8 +37,11 @@ export default function PricingPlan() {
                       </th>
                       <td>
                         <div className="filed-flx">
-                          <div className="mx-200">
-                            <input type="text" className="input-frame" />
+                          <div className="mx-300">
+                            <div className="input-icon-frame err">
+                              <input type="text" />
+                              <button type="button" className="input-icon-btn del"></button>
+                            </div>
                           </div>
                           <div className="toggle-wrap">
                             <span className="toggle-txt">제한없음</span>
@@ -56,8 +59,11 @@ export default function PricingPlan() {
                       </th>
                       <td>
                         <div className="filed-flx">
-                          <div className="mx-200">
-                            <input type="text" className="input-frame" disabled />
+                          <div className="mx-300">
+                            <div className="input-icon-frame err">
+                              <input type="text" disabled />
+                              {/* <button type="button" className="input-icon-btn del"></button> */}
+                            </div>
                           </div>
                           <div className="toggle-wrap">
                             <span className="toggle-txt">제한없음</span>

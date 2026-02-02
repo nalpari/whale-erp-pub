@@ -38,7 +38,10 @@ export default function InvitationForm() {
                 <td>
                   <div className="invitation-flx">
                     <div className="invitation-input">
-                      <input type="text" className="input-frame" />
+                      <div className="input-icon-frame err">
+                        <input type="text" />
+                        <button type="button" className="input-icon-btn del"></button>
+                      </div>
                     </div>
                     <div className="invitation-btn">
                       <button className="btn-form outline s">인증하기</button>
@@ -54,7 +57,10 @@ export default function InvitationForm() {
                 <td>
                   <div className="invitation-flx">
                     <div className="invitation-input">
-                      <input type="text" className="input-frame" />
+                      <div className="input-icon-frame err">
+                        <input type="text" />
+                        <button type="button" className="input-icon-btn del"></button>
+                      </div>
                     </div>
                     <div className="invitation-explain">※ 사업자등록증 상의 대표자명을 입력해 주세요.</div>
                     <div className="invitation-warning">※ 대표자 성명이 일치하지 않습니다.</div>
@@ -68,7 +74,10 @@ export default function InvitationForm() {
                 <td>
                   <div className="invitation-flx">
                     <div className="invitation-input">
-                      <input type="number " className="input-frame" />
+                      <div className="input-icon-frame err">
+                        <input type="text" />
+                        <button type="button" className="input-icon-btn del"></button>
+                      </div>
                     </div>
                     <div className="invitation-explain">※ 대표자님의 휴대폰 번호를 입력해 주세요.</div>
                     <div className="invitation-warning">※ 대표자 휴대폰 번호가 일치하지 않습니다.</div>
@@ -82,7 +91,10 @@ export default function InvitationForm() {
                 <td>
                   <div className="invitation-flx">
                     <div className="invitation-input">
-                      <input type="number " className="input-frame" />
+                      <div className="input-icon-frame err">
+                        <input type="text" />
+                        <button type="button" className="input-icon-btn del"></button>
+                      </div>
                     </div>
                     <div className="invitation-explain">※ 대표자님의 이메일 주소를 입력해 주세요.</div>
                     <div className="invitation-warning">※ 대표자 이메일 주소가 일치하지 않습니다.</div>

@@ -24,7 +24,7 @@ export default function WithdrawalPop() {
                   탈퇴 사유 입력 <span className="red">*</span>
                 </div>
                 <div className="pop-form-filed">
-                  <textarea className="textarea-form"></textarea>
+                  <textarea className="textarea-form err"></textarea>
                 </div>
               </div>
             </div>

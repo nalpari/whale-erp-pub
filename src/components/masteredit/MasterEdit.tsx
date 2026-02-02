@@ -92,10 +92,14 @@ export default function MasterEdit() {
                     <td>
                       <div className="filed-flx">
                         <div className="mx-500">
-                          <input type="text" className="input-frame" />
+                          <div className="input-icon-frame err">
+                            <input type="text" />
+                            <button type="button" className="input-icon-btn del"></button>
+                          </div>
                         </div>
                         <span className="explain">BMI1234</span>
                       </div>
+                      <div className="warning-txt mt5">* 필수 입력 항목입니다.</div>
                     </td>
                   </tr>
                   <tr>
@@ -103,7 +107,10 @@ export default function MasterEdit() {
                     <td>
                       <div className="filed-flx">
                         <div className="mx-500">
-                          <input type="text" className="input-frame" />
+                          <div className="input-icon-frame err">
+                            <input type="text" />
+                            <button type="button" className="input-icon-btn del"></button>
+                          </div>
                         </div>
                         <button className="tooltip-btn">
                           <span className="tooltip-icon" id="my-anchor-element"></span>
@@ -113,6 +120,7 @@ export default function MasterEdit() {
                           </Tooltip>
                         </button>
                       </div>
+                      <div className="warning-txt mt5">* 필수 입력 항목입니다.</div>
                     </td>
                   </tr>
                   <tr>
@@ -122,10 +130,14 @@ export default function MasterEdit() {
                     <td>
                       <div className="filed-flx">
                         <div className="mx-500">
-                          <input type="text" className="input-frame" />
+                          <div className="input-icon-frame err">
+                            <input type="text" />
+                            <button type="button" className="input-icon-btn del"></button>
+                          </div>
                         </div>
-                        <span className="explain">※ 숫자만 허용</span>
+                        <span className="explain">BMI1234</span>
                       </div>
+                      <div className="warning-txt mt5">* 필수 입력 항목입니다.</div>
                     </td>
                   </tr>
                   <tr>
@@ -141,9 +153,13 @@ export default function MasterEdit() {
                           <input type="text" className="input-frame" disabled />
                         </div>
                         <div className="block">
-                          <input type="text" className="input-frame" />
+                          <div className="input-icon-frame err">
+                            <input type="text" />
+                            <button type="button" className="input-icon-btn del"></button>
+                          </div>
                         </div>
                       </div>
+                      <div className="warning-txt mt5">* 필수 입력 항목입니다.</div>
                     </td>
                   </tr>
                   <tr>
@@ -312,7 +328,7 @@ export default function MasterEdit() {
                                   옵션 SET명 <span className="red">*</span>
                                 </div>
                                 <div className="block">
-                                  <input type="text" className="input-frame" />
+                                  <input type="text" className="input-frame " />
                                 </div>
                               </div>
                             </td>
