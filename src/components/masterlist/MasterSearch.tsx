@@ -27,8 +27,6 @@ export default function MasterSearch() {
               <col />
               <col width="120px" />
               <col />
-              <col width="120px" />
-              <col />
             </colgroup>
             <tbody>
               <tr>
@@ -48,52 +46,28 @@ export default function MasterSearch() {
                     </select>
                   </div>
                 </td>
-                <th>대표자명</th>
-                <td>
-                  <div className="data-filed">
-                    <input type="text" className="input-frame" />
-                  </div>
-                </td>
               </tr>
+              <tr></tr>
               <tr>
                 <th>운영여부</th>
                 <td>
-                  <div className="filed-check-flx">
-                    <div className="radio-form-box">
-                      <input type="radio" name="status" id="status-all" />
-                      <label htmlFor="status-all">전체</label>
-                    </div>
-                    <div className="radio-form-box">
-                      <input type="radio" name="status" id="status-consulting" />
-                      <label htmlFor="status-consulting">상담중</label>
-                    </div>
-                    <div className="radio-form-box">
-                      <input type="radio" name="status" id="status-active" />
-                      <label htmlFor="status-active">운영</label>
-                    </div>
-                    <div className="radio-form-box">
-                      <input type="radio" name="status" id="status-closed" />
-                      <label htmlFor="status-closed">종료</label>
-                    </div>
+                  <div className="radio-wrap">
+                    <button className="radio-btn">전체</button>
+                    <button className="radio-btn act">상담중</button>
+                    <button className="radio-btn">운영</button>
+                    <button className="radio-btn">종료</button>
                   </div>
                 </td>
                 <th>가입 방식</th>
                 <td>
-                  <div className="filed-check-flx">
-                    <div className="radio-form-box">
-                      <input type="radio" name="status" id="status-all" />
-                      <label htmlFor="status-all">전체</label>
-                    </div>
-                    <div className="radio-form-box">
-                      <input type="radio" name="status" id="status-consulting" />
-                      <label htmlFor="status-consulting">플랫폼 등록</label>
-                    </div>
-                    <div className="radio-form-box">
-                      <input type="radio" name="status" id="status-active" />
-                      <label htmlFor="status-active">직접 가입</label>
-                    </div>
+                  <div className="radio-wrap">
+                    <button className="radio-btn">전체</button>
+                    <button className="radio-btn act">플랫폼 등록</button>
+                    <button className="radio-btn">직접 가입</button>
                   </div>
                 </td>
+              </tr>
+              <tr>
                 <th>임시저장 여부</th>
                 <td>
                   <div className="filed-check-flx">
@@ -107,32 +81,39 @@ export default function MasterSearch() {
                     </div>
                   </div>
                 </td>
-              </tr>
-              <tr>
-                <th>서비스</th>
+                <th>대표자명</th>
                 <td>
                   <div className="data-filed">
-                    <select name="" id="" className="select-form">
-                      <option value="">전체</option>
-                    </select>
-                  </div>
-                </td>
-                <th>등록일</th>
-                <td colSpan={3}>
-                  <div className="date-picker-wrap">
-                    <DatePicker />
-                    <span>~</span>
-                    <DatePicker />
+                    <input type="text" className="input-frame" />
                   </div>
                 </td>
               </tr>
               <tr>
                 <th>수정일</th>
-                <td colSpan={5}>
+                <td>
                   <div className="date-picker-wrap">
                     <DatePicker />
                     <span>~</span>
                     <DatePicker />
+                  </div>
+                </td>
+
+                <th>등록일</th>
+                <td>
+                  <div className="date-picker-wrap">
+                    <DatePicker />
+                    <span>~</span>
+                    <DatePicker />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>서비스</th>
+                <td colSpan={3}>
+                  <div className="data-filed">
+                    <select name="" id="" className="select-form">
+                      <option value="">전체</option>
+                    </select>
                   </div>
                 </td>
               </tr>

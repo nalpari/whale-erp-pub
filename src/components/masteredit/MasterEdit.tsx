@@ -34,19 +34,10 @@ export default function MasterEdit() {
                 <tr>
                   <th>운영여부</th>
                   <td>
-                    <div className="filed-check-flx">
-                      <div className="radio-form-box">
-                        <input type="radio" name="operationStatus" id="operationStatus-consulting" />
-                        <label htmlFor="operationStatus-consulting">상담중</label>
-                      </div>
-                      <div className="radio-form-box">
-                        <input type="radio" name="operationStatus" id="operationStatus-running" />
-                        <label htmlFor="operationStatus-running">운영</label>
-                      </div>
-                      <div className="radio-form-box">
-                        <input type="radio" name="operationStatus" id="operationStatus-ended" />
-                        <label htmlFor="operationStatus-ended">종료</label>
-                      </div>
+                    <div className="radio-wrap">
+                      <button className="radio-btn">전체</button>
+                      <button className="radio-btn act">처리전</button>
+                      <button className="radio-btn">처리완료</button>
                     </div>
                   </td>
                 </tr>

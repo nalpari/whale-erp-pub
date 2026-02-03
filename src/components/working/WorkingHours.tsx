@@ -379,15 +379,9 @@ export default function WorkingHours() {
                       <th>토요일 격주 근무 여부</th>
                       <td>
                         <div className="filed-flx">
-                          <div className="filed-check-flx">
-                            <div className="radio-form-box">
-                              <input type="radio" id="every-sat" />
-                              <label htmlFor="every-sat">매주 토요일</label>
-                            </div>
-                            <div className="radio-form-box">
-                              <input type="radio" id="biweek-sat" />
-                              <label htmlFor="biweek-sat">토요일 격주</label>
-                            </div>
+                          <div className="radio-wrap">
+                            <button className="radio-btn">매주 토요일</button>
+                            <button className="radio-btn act">토요일 격주</button>
                           </div>
                           <div className="filed-flx ml10">
                             <div className="filed-flx g8">
@@ -405,15 +399,9 @@ export default function WorkingHours() {
                       <th>일요일 격주 근무 여부</th>
                       <td>
                         <div className="filed-flx">
-                          <div className="filed-check-flx">
-                            <div className="radio-form-box">
-                              <input type="radio" id="every-sun" />
-                              <label htmlFor="every-sun">매주 일요일</label>
-                            </div>
-                            <div className="radio-form-box">
-                              <input type="radio" id="biweek-sun" />
-                              <label htmlFor="biweek-sun">일요일 격주</label>
-                            </div>
+                          <div className="radio-wrap">
+                            <button className="radio-btn">매주 일요일</button>
+                            <button className="radio-btn act">일요일 격주</button>
                           </div>
                           <div className="filed-flx ml10">
                             <div className="filed-flx g8">

@@ -87,15 +87,9 @@ export default function SendEmailPop() {
                   <tr>
                     <th>발송방식</th>
                     <td>
-                      <div className="filed-check-flx">
-                        <div className="radio-form-box">
-                          <input type="radio" name="sendMethod" id="sendMethod-sms" defaultChecked />
-                          <label htmlFor="sendMethod-sms">SMS</label>
-                        </div>
-                        <div className="radio-form-box">
-                          <input type="radio" name="sendMethod" id="sendMethod-mms" />
-                          <label htmlFor="sendMethod-mms">MMS</label>
-                        </div>
+                      <div className="radio-wrap">
+                        <button className="radio-btn">SMS</button>
+                        <button className="radio-btn act">MMS</button>
                       </div>
                     </td>
                   </tr>

@@ -22,15 +22,9 @@ export default function StaffInvitationPop() {
                       직원 소속 <span className="red">*</span>
                     </th>
                     <td>
-                      <div className="filed-check-flx">
-                        <div className="radio-form-box">
-                          <input type="radio" name="operationStatus" id="operationStatus-consulting" />
-                          <label htmlFor="operationStatus-consulting">본사</label>
-                        </div>
-                        <div className="radio-form-box">
-                          <input type="radio" name="operationStatus" id="operationStatus-running" />
-                          <label htmlFor="operationStatus-running">가맹점</label>
-                        </div>
+                      <div className="radio-wrap">
+                        <button className="radio-btn">본사</button>
+                        <button className="radio-btn act">가맹점</button>
                       </div>
                     </td>
                   </tr>
@@ -324,15 +318,9 @@ export default function StaffInvitationPop() {
                           </div>
                           <div className="work-time-td">
                             <div className="biweek-wrap">
-                              <div className="filed-check-flx mb10">
-                                <div className="radio-form-box">
-                                  <input type="radio" name="satType" id="satType-every" />
-                                  <label htmlFor="satType-every">매주 토요일</label>
-                                </div>
-                                <div className="radio-form-box">
-                                  <input type="radio" name="satType" id="satType-bi" />
-                                  <label htmlFor="satType-bi">토요일 격주</label>
-                                </div>
+                              <div className="radio-wrap mb10">
+                                <button className="radio-btn">매주 토요일</button>
+                                <button className="radio-btn act">토요일 격주</button>
                               </div>
                               <div className="filed-flx g8">
                                 <div className="explain">토요일 첫 근무일</div>
@@ -424,15 +412,9 @@ export default function StaffInvitationPop() {
                           </div>
                           <div className="work-time-td">
                             <div className="biweek-wrap">
-                              <div className="filed-check-flx mb10">
-                                <div className="radio-form-box">
-                                  <input type="radio" name="satType" id="satType-every" />
-                                  <label htmlFor="satType-every">매주 일요일</label>
-                                </div>
-                                <div className="radio-form-box">
-                                  <input type="radio" name="satType" id="satType-bi" />
-                                  <label htmlFor="satType-bi">일요일 격주</label>
-                                </div>
+                              <div className="radio-wrap mb10">
+                                <button className="radio-btn">매주 일요일</button>
+                                <button className="radio-btn act">일요일 격주</button>
                               </div>
                               <div className="filed-flx g8">
                                 <div className="explain">일요일 첫 근무일</div>

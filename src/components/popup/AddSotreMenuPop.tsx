@@ -4,7 +4,7 @@ import { Tooltip } from 'react-tooltip'
 export default function AddSotreMenuPop() {
   return (
     <div className="modal-popup">
-      <div className="modal-dialog ">
+      <div className="modal-dialog large">
         <div className="modal-content">
           <div className="modal-header">
             <h2>점포 메뉴 추가</h2>
@@ -12,8 +12,8 @@ export default function AddSotreMenuPop() {
           </div>
           <div className="modal-body">
             <div className="pop-guide">
-              선택한 마스터용 카테고리 모든 마스터용 카테고리를 점포용 카테고리로 추가할 수 있습니다. 추가를 진행할
-              점포를 선택해 주세요.
+              선택한 마스터용 카테고리 모든 마스터용 카테고리를 점포용 카테고리로 추가할 수 있습니다.
+              <br /> 추가를 진행할 점포를 선택해 주세요.
             </div>
             <table className="pop-table">
               <colgroup>
@@ -27,15 +27,9 @@ export default function AddSotreMenuPop() {
                   </th>
                   <td>
                     <div className="filed-flx">
-                      <div className="filed-check-flx">
-                        <div className="radio-form-box">
-                          <input type="radio" name="option" id="option-all" />
-                          <label htmlFor="option-all">선택한 카테고리만 추가</label>
-                        </div>
-                        <div className="radio-form-box">
-                          <input type="radio" name="option" id="option-all" />
-                          <label htmlFor="option-all">모든 마스터 카테고리 추가</label>
-                        </div>
+                      <div className="radio-wrap">
+                        <button className="radio-btn">선택한 카테고리만 추가</button>
+                        <button className="radio-btn act">모든 마스터 카테고리 추가</button>
                       </div>
                       <button className="tooltip-btn">
                         <span className="tooltip-icon" id="tooltip-btn-anchor-option"></span>
@@ -56,16 +50,11 @@ export default function AddSotreMenuPop() {
                   <th>운영여부 선택</th>
                   <td>
                     <div className="filed-flx">
-                      <div className="filed-check-flx">
-                        <div className="radio-form-box">
-                          <input type="radio" name="option" id="option-all" />
-                          <label htmlFor="option-all">운영</label>
-                        </div>
-                        <div className="radio-form-box">
-                          <input type="radio" name="option" id="option-all" />
-                          <label htmlFor="option-all">미운영</label>
-                        </div>
+                      <div className="radio-wrap">
+                        <button className="radio-btn">운영</button>
+                        <button className="radio-btn act">미운영</button>
                       </div>
+
                       <button className="tooltip-btn">
                         <span className="tooltip-icon" id="tooltip-btn-anchor-operation"></span>
                         <Tooltip className="tooltip-txt" anchorSelect="#tooltip-btn-anchor-operation" opacity={1}>

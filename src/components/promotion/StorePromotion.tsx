@@ -19,15 +19,9 @@ export default function StorePromotion() {
               <tr>
                 <th>시설물 및 장비 소유</th>
                 <td>
-                  <div className="filed-check-flx">
-                    <div className="radio-form-box">
-                      <input type="radio" name="operationStatus" id="operationStatus-consulting" />
-                      <label htmlFor="operationStatus-consulting">본사</label>
-                    </div>
-                    <div className="radio-form-box">
-                      <input type="radio" name="operationStatus" id="operationStatus-running" />
-                      <label htmlFor="operationStatus-running">가맹점 </label>
-                    </div>
+                  <div className="radio-wrap">
+                    <button className="radio-btn">본사</button>
+                    <button className="radio-btn act">가맹점</button>
                   </div>
                 </td>
               </tr>

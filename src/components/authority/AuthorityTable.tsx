@@ -40,19 +40,10 @@ export default function AuthorityTable() {
               <tr>
                 <th>권한 소유</th>
                 <td>
-                  <div className="filed-check-flx">
-                    <div className="radio-form-box">
-                      <input type="radio" name="authority-owner" id="authority-owner-01" />
-                      <label htmlFor="authority-owner-01">플렛폼</label>
-                    </div>
-                    <div className="radio-form-box">
-                      <input type="radio" name="authority-owner" id="authority-owner-02" />
-                      <label htmlFor="authority-owner-02">본사</label>
-                    </div>
-                    <div className="radio-form-box">
-                      <input type="radio" name="authority-owner" id="authority-owner-03" />
-                      <label htmlFor="authority-owner-03">가맹점</label>
-                    </div>
+                  <div className="radio-wrap">
+                    <button className="radio-btn">플렛폼</button>
+                    <button className="radio-btn act">본사</button>
+                    <button className="radio-btn">가맹점</button>
                   </div>
                 </td>
               </tr>
@@ -93,15 +84,9 @@ export default function AuthorityTable() {
                 </th>
                 <td>
                   <div className="filed-flx">
-                    <div className="filed-check-flx">
-                      <div className="radio-form-box">
-                        <input type="radio" name="authority-status" id="authority-status-01" />
-                        <label htmlFor="authority-status-01">운영</label>
-                      </div>
-                      <div className="radio-form-box">
-                        <input type="radio" name="authority-status" id="authority-status-02" />
-                        <label htmlFor="authority-status-02">미운영</label>
-                      </div>
+                    <div className="radio-wrap">
+                      <button className="radio-btn">운영</button>
+                      <button className="radio-btn act">미운영</button>
                     </div>
                     <div className="explain">※ ‘운영’인 경우에만 관리자에게 권한을 부여할 수 있습니다.</div>
                   </div>
