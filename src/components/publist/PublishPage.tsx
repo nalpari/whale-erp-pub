@@ -63,6 +63,16 @@ export default function PublishPage() {
                 </thead>
                 <tbody>
                   <tr>
+                    <td>Alert</td>
+                    <td></td>
+                    <td>
+                      <Link href={'/popup/alert'}>Alert.tsx</Link>
+                    </td>
+                    <td>Alert</td>
+                    <td></td>
+                    <td className="c red">2026-02-04</td>
+                  </tr>
+                  <tr>
                     <td>로그인</td>
                     <td></td>
                     <td>
