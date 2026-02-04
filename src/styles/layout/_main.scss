@@ -454,6 +454,17 @@
   color: #fff;
   padding: 0 24px;
   transition: all 0.15s ease;
+  &.use-plan {
+    background-color: #366fe3;
+    border: 1px solid #366fe3;
+    color: #fff;
+    cursor: default;
+    &:hover {
+      background-color: #366fe3;
+      border: 1px solid #366fe3;
+      color: #fff;
+    }
+  }
   .icon-arrow-right {
     display: block;
     width: 24px;

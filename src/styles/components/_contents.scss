@@ -1485,3 +1485,89 @@
   text-align: center;
   margin-top: 24px;
 }
+
+.rate-plan-wrap {
+  @include flex(15px);
+  .rate-plan-item {
+    flex: 1;
+    padding: 34px 32px;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    &.use {
+      border: 1px solid #366fe3;
+      background-color: #f5f8fd;
+    }
+  }
+}
+.rate-plan-header {
+  .plan-grade {
+    @include fontDefinition($font-ds-32, $font-w-700, $line-h-150);
+    color: #222;
+  }
+  .plan-function {
+    @include fontDefinition($font-ds-18, $font-w-600, $line-h-150);
+    color: #222;
+  }
+  .plan-explain {
+    @include fontDefinition($font-ds-16, $font-w-400, $line-h-150);
+    color: #222;
+    margin-top: 8px;
+    word-break: keep-all;
+  }
+}
+.rate-plan-cost {
+  margin-top: 34px;
+  .plan-btn-wrap {
+    margin-top: 16px;
+  }
+}
+.plan-cost-wrap {
+  @include flex(5px);
+  align-items: flex-end;
+  .plan-cost {
+    @include fontDefinition($font-ds-32, $font-w-700, 100%);
+    color: #222;
+  }
+  span {
+    @include fontDefinition($font-ds-15, $font-w-700, 100%);
+    color: #222;
+  }
+}
+
+.plan-list {
+  margin-top: 24px;
+  .plan-list-tit {
+    @include fontDefinition($font-ds-18, $font-w-700, $line-h-150);
+    color: #222;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #eee;
+  }
+}
+.plan-item-list {
+  margin-top: 6px;
+  .plan-list-item {
+    position: relative;
+    margin-top: 12px;
+    padding-left: 28px;
+    @include fontDefinition($font-ds-15, $font-w-400, $line-h-150);
+    color: #222;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 19px;
+      height: 19px;
+      background: url('/assets/images/contents/normal_plan.svg') no-repeat center;
+      background-size: cover;
+    }
+  }
+  &.additional {
+    .plan-list-item {
+      &:before {
+        background: url('/assets/images/contents/additional_plan.svg') no-repeat center;
+      }
+    }
+  }
+}
