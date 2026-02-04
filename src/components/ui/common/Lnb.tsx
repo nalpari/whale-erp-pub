@@ -11,16 +11,15 @@ export default function Lnb({
   setIsOpen,
   menuType = 'header',
 }: {
-  isOpen: boolean;
-  setIsOpen: (isOpen: boolean) => void;
-  menuType?: 'header' | 'support';
+  isOpen: boolean
+  setIsOpen: (isOpen: boolean) => void
+  menuType?: 'header' | 'support'
 }) {
   const [activeMenu, setActiveMenu] = useState<string | null>(null)
   const [activeSubMenu, setActiveSubMenu] = useState<string | null>(null)
 
   // 메뉴 리스트 설정
   const menuList = menuType === 'support' ? SupportMenu : HeaderMenu
-
 
   const handleMenuToggle = (id: string, isSubMenu: boolean, link: boolean, e: React.MouseEvent<HTMLAnchorElement>) => {
     if (link) {
@@ -51,12 +50,14 @@ export default function Lnb({
       </div>
       <div className="lnb-menu-info">
         <div className="lnb-menu-icon">
-          <Image src="/assets/images/ui/lnb_menu_img01.svg" alt="menu" fill />
+          {menuType === 'support' ? (
+            <Image src="/assets/images/ui/lnb_menu_img02.svg" alt="menu" fill />
+          ) : (
+            <Image src="/assets/images/ui/lnb_menu_img01.svg" alt="menu" fill />
+          )}
         </div>
         <div className="lnb_menu_name">{menuType === 'support' ? '고객지원' : '파트너 오피스'}</div>
-        {menuType !== 'support' && (
-          <div className="lnb-meu-grade">Standard</div>
-        )}
+        {menuType !== 'support' && <div className="lnb-meu-grade">Standard</div>}
       </div>
       <div className="lnb-body">
         <ul className="lnb-list">

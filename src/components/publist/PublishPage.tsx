@@ -93,6 +93,16 @@ export default function PublishPage() {
                     <td className="c red">2026-01-20</td>
                   </tr>
                   <tr>
+                    <td>Main</td>
+                    <td></td>
+                    <td>
+                      <Link href={'/'}>Main.tsx</Link>
+                    </td>
+                    <td>Main</td>
+                    <td></td>
+                    <td className="c red">2026-02-04</td>
+                  </tr>
+                  <tr>
                     <td rowSpan={3}>공통 모음</td>
                     <td>Grid list 공통</td>
                     <td>
