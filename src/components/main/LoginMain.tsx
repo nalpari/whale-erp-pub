@@ -285,6 +285,9 @@ export default function LoginMain() {
           <div className="login-main-item-cont">
             <div className="after-service-wrap">
               <div className="after-service-item">
+                <div className="after-service-icon">
+                  <Image src="/assets/images/main/service_icon01.png" alt="픽업오더" width={82} height={88} />
+                </div>
                 <div className="after-service-header">
                   <div className="after-service-tit-wrap">
                     <div className="after-service-tit">픽업오더</div>
@@ -330,6 +333,9 @@ export default function LoginMain() {
                 </div>
               </div>
               <div className="after-service-item">
+                <div className="after-service-icon">
+                  <Image src="/assets/images/main/service_icon02.png" alt="픽업오더" width={82} height={88} />
+                </div>
                 <div className="after-service-header">
                   <div className="after-service-tit-wrap">
                     <div className="after-service-tit">테이블 오더</div>
@@ -375,6 +381,9 @@ export default function LoginMain() {
                 </div>
               </div>
               <div className="after-service-item">
+                <div className="after-service-icon">
+                  <Image src="/assets/images/main/service_icon03.png" alt="픽업오더" width={82} height={88} />
+                </div>
                 <div className="after-service-header">
                   <div className="after-service-tit-wrap">
                     <div className="after-service-tit">모바일 오더</div>
@@ -420,6 +429,9 @@ export default function LoginMain() {
                 </div>
               </div>
               <div className="after-service-item">
+                <div className="after-service-icon">
+                  <Image src="/assets/images/main/service_icon04.png" alt="픽업오더" width={82} height={88} />
+                </div>
                 <div className="after-service-header">
                   <div className="after-service-tit-wrap">
                     <div className="after-service-tit">POS</div>
@@ -465,6 +477,9 @@ export default function LoginMain() {
                 </div>
               </div>
               <div className="after-service-item">
+                <div className="after-service-icon">
+                  <Image src="/assets/images/main/service_icon05.png" alt="픽업오더" width={82} height={88} />
+                </div>
                 <div className="after-service-header">
                   <div className="after-service-tit-wrap">
                     <div className="after-service-tit">KIOSK</div>
@@ -508,6 +523,9 @@ export default function LoginMain() {
                 </div>
               </div>
               <div className="after-service-item">
+                <div className="after-service-icon">
+                  <Image src="/assets/images/main/service_icon06.png" alt="픽업오더" width={82} height={88} />
+                </div>
                 <div className="after-service-header">
                   <div className="after-service-tit-wrap">
                     <div className="after-service-tit">재고 관리</div>
@@ -531,6 +549,9 @@ export default function LoginMain() {
                 </div>
               </div>
               <div className="after-service-item">
+                <div className="after-service-icon">
+                  <Image src="/assets/images/main/service_icon07.png" alt="픽업오더" width={82} height={88} />
+                </div>
                 <div className="after-service-header">
                   <div className="after-service-tit-wrap">
                     <div className="after-service-tit">발주 관리</div>
@@ -554,6 +575,9 @@ export default function LoginMain() {
                 </div>
               </div>
               <div className="after-service-item">
+                <div className="after-service-icon">
+                  <Image src="/assets/images/main/service_icon08.png" alt="픽업오더" width={82} height={88} />
+                </div>
                 <div className="after-service-header">
                   <div className="after-service-tit-wrap">
                     <div className="after-service-tit">레시피 관리</div>
@@ -580,6 +604,9 @@ export default function LoginMain() {
                 </div>
               </div>
               <div className="after-service-item">
+                <div className="after-service-icon">
+                  <Image src="/assets/images/main/service_icon09.png" alt="픽업오더" width={82} height={74} />
+                </div>
                 <div className="after-service-header">
                   <div className="after-service-tit-wrap">
                     <div className="after-service-tit">대기 순번 관리</div>
@@ -622,6 +649,9 @@ export default function LoginMain() {
                 </div>
               </div>
               <div className="after-service-item">
+                <div className="after-service-icon">
+                  <Image src="/assets/images/main/service_icon10.png" alt="픽업오더" width={82} height={88} />
+                </div>
                 <div className="after-service-header">
                   <div className="after-service-tit-wrap">
                     <div className="after-service-tit">예약 관리</div>
