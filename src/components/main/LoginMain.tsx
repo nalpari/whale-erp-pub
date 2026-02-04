@@ -27,12 +27,6 @@ export default function LoginMain() {
               {Array.from({ length: 3 }).map((_, index) => (
                 <SwiperSlide key={index}>
                   <div className="store-main-item">
-                    <div className="store-img">
-                      <Image src="/assets/images/main/store_img.png" alt="store-img" fill priority />
-                      {/* <div className="empty-img">
-                        <span>이미지 준비중</span>
-                      </div> */}
-                    </div>
                     <div className="store-main-info">
                       <div className="store-badge-wrap">
                         <div className="badge blue">운영</div>
@@ -65,11 +59,6 @@ export default function LoginMain() {
               ))}
               <SwiperSlide>
                 <div className="store-main-item">
-                  <div className="store-img">
-                    <div className="empty-img">
-                      <span>이미지 준비중</span>
-                    </div>
-                  </div>
                   <div className="store-main-info">
                     <div className="store-badge-wrap">
                       <div className="badge red">영업종료</div>

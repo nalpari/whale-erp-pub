@@ -383,6 +383,15 @@ export default function PublishPage() {
                     <td></td>
                     <td className="c red">2026-01-28</td>
                   </tr>
+                  <tr>
+                    <td>부가서비스 신청</td>
+                    <td>
+                      <Link href={'/after-service'}>AfterService.tsx</Link>
+                    </td>
+                    <td>RatePlan</td>
+                    <td></td>
+                    <td className="c red">2026-01-28</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
