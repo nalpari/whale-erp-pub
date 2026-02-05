@@ -410,6 +410,15 @@ export default function PublishPage() {
                     <td></td>
                     <td className="c red">2026-01-28</td>
                   </tr>
+                  <tr>
+                    <td>문의하기</td>
+                    <td>
+                      <Link href={'/contact'}>Contact.tsx</Link>
+                    </td>
+                    <td>Contact</td>
+                    <td></td>
+                    <td className="c red">2026-01-28</td>
+                  </tr>
                 </tbody>
               </table>
             </div>

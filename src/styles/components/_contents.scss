@@ -1604,3 +1604,62 @@
     }
   }
 }
+
+// 문의하기
+.contact-wrap {
+  border-top: 2px solid #222;
+}
+.contact-filed {
+  margin-top: 32px;
+  .filed-item {
+    flex: 1;
+    .filed-tit {
+      @include fontDefinition($font-ds-16, $font-w-600, $line-h-140);
+      color: #222;
+      margin-bottom: 8px;
+      .s {
+        font-weight: $font-w-400;
+        color: #505050;
+      }
+    }
+    .filed-error {
+      @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+      color: #f00;
+    }
+  }
+  .textarea-form {
+    height: 240px;
+  }
+}
+
+.contact-filed-flx {
+  @include flex(10px);
+  align-items: flex-start;
+}
+
+.contact-check-wrap {
+  @include flex(8px);
+  align-items: center;
+  .contact-btn {
+    min-width: 120px;
+    height: 42px;
+    padding: 0 5px;
+    border-radius: 6px;
+    @include fontDefinition($font-ds-15, $font-w-500, $line-h-140);
+    color: #9ba7ba;
+    transition: all 0.15s ease-in-out;
+    &:hover,
+    &.act {
+      background-color: #e5e9ed;
+      color: #5d748f;
+      border-color: #5d748f;
+    }
+  }
+}
+
+.contact-btn-wrap {
+  @include flex(8px);
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
