@@ -32,10 +32,21 @@
     &.xl {
       max-width: 1032px;
     }
-    &.mypage{
+    &.mypage {
       max-width: 1232px;
       .modal-content {
         border-radius: 30px;
+      }
+    }
+    &.notice {
+      max-width: 632px;
+      .modal-content {
+        .modal-header {
+          border-bottom: none;
+        }
+        .modal-body {
+          padding: 0 24px 24px;
+        }
       }
     }
     .modal-content {
@@ -47,7 +58,7 @@
       outline: 0 none;
       pointer-events: auto;
       border-radius: 8px;
-      &.mypage-sub{
+      &.mypage-sub {
         border-radius: 30px;
       }
       .modal-header {

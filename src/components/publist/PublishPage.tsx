@@ -374,7 +374,7 @@ export default function PublishPage() {
                     <td className="c red">2026-02-02</td>
                   </tr>
                   <tr>
-                    <td rowSpan={3}>고객지원</td>
+                    <td rowSpan={5}>고객지원</td>
                     <td>요금안내/변경</td>
                     <td>
                       <Link href={'/rate-plan'}>RatePlan.tsx</Link>
@@ -388,7 +388,25 @@ export default function PublishPage() {
                     <td>
                       <Link href={'/after-service'}>AfterService.tsx</Link>
                     </td>
-                    <td>RatePlan</td>
+                    <td>AfterService</td>
+                    <td></td>
+                    <td className="c red">2026-01-28</td>
+                  </tr>
+                  <tr>
+                    <td>공지사항</td>
+                    <td>
+                      <Link href={'/notice'}>Notice.tsx</Link>
+                    </td>
+                    <td>Notice</td>
+                    <td></td>
+                    <td className="c red">2026-01-28</td>
+                  </tr>
+                  <tr>
+                    <td>공지사항 팝업</td>
+                    <td>
+                      <Link href={'/popup/notice'}>NoticePop.tsx</Link>
+                    </td>
+                    <td>NoticePop</td>
                     <td></td>
                     <td className="c red">2026-01-28</td>
                   </tr>
