@@ -810,3 +810,20 @@
     }
   }
 }
+
+// 문의하기 성공 팝업
+.contact-success-wrap {
+  text-align: center;
+  .contact-name {
+    @include fontDefinition($font-ds-28, $font-w-600, $line-h-140);
+    color: #222;
+  }
+  .contact-txt {
+    margin-top: 12px;
+    span {
+      display: block;
+      @include fontDefinition($font-ds-16, $font-w-400, $line-h-150);
+      color: #222;
+    }
+  }
+}

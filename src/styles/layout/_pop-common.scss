@@ -49,6 +49,18 @@
         }
       }
     }
+    &.contact {
+      max-width: 492px;
+      .modal-content {
+        border-radius: 30px;
+        .modal-header {
+          border-bottom: none;
+        }
+        .modal-body {
+          padding: 0 24px 42px;
+        }
+      }
+    }
     .modal-content {
       flex: 1;
       position: relative;
