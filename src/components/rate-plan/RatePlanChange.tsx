@@ -23,7 +23,7 @@ export default function RatePlanChange() {
               </div>
               <div className="plan-list-wrap">
                 <div className="plan-list">
-                  <div className="plan-list-tit">Free 플랜 모든 기능 포함</div>
+                  <div className="plan-list-tit">매장운영 (기본기능)</div>
                   <ul className="plan-item-list">
                     <li className="plan-list-item">점포수 1개</li>
                     <li className="plan-list-item">직원수 5명</li>
@@ -96,7 +96,7 @@ export default function RatePlanChange() {
                   </ul>
                 </div>
                 <div className="plan-list ">
-                  <div className="plan-list-tit">Standard 플랜 모든 기능 포함</div>
+                  <div className="plan-list-tit">추가 기능</div>
                   <ul className="plan-item-list additional">
                     <li className="plan-list-item">직원 무제한</li>
                     <li className="plan-list-item">점포 무제한</li>
@@ -133,7 +133,7 @@ export default function RatePlanChange() {
                   </ul>
                 </div>
                 <div className="plan-list ">
-                  <div className="plan-list-tit">Standard 플랜 모든 기능 포함</div>
+                  <div className="plan-list-tit">추가 기능</div>
                   <ul className="plan-item-list additional">
                     <li className="plan-list-item">가맹점 관리</li>
                     <li className="plan-list-item">계약 관리</li>
