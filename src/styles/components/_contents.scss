@@ -1604,6 +1604,13 @@
     }
   }
 }
+.notice-empty {
+  padding: 45px 0;
+  text-align: center;
+  @include fontDefinition($font-ds-18, $font-w-400, $line-h-150);
+  color: #666;
+  border-bottom: 1px solid #eee;
+}
 
 // 문의하기
 .contact-wrap {

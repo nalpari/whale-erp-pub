@@ -57,6 +57,9 @@ export default function Notice() {
                   <span className="notice-date">2026.01.20</span>
                 </button>
               </li>
+              <li className="notice-list-item">
+                <div className="notice-empty">등록된 공지사항이 없습니다.</div>
+              </li>
             </ul>
             <Pagination />
           </div>
