@@ -140,8 +140,8 @@ export default function AuthorityTable() {
             </div>
             <div className="hierarchy-wrap">
               <ul className="hierarchy-list depth01">
-                <li className={`hierarchy-item ${openItems.has('depth-01') ? 'open' : ''}`}>
-                  <div className="hierarchy-depth">
+                <li className={`hierarchy-item ${openItems.has('depth-01') ? 'open' : ''} `}>
+                  <div className="hierarchy-depth filter">
                     <button className="order-btn"></button>
                     <div className="depth-inner">
                       <button
@@ -171,7 +171,7 @@ export default function AuthorityTable() {
                   <AnimateHeight duration={300} height={openItems.has('depth-01') ? 'auto' : 0}>
                     <ul className="hierarchy-list depth02">
                       <li className={`hierarchy-item ${openItems.has('depth-01-01') ? 'open' : ''}`}>
-                        <div className="hierarchy-depth">
+                        <div className="hierarchy-depth ">
                           <button className="order-btn"></button>
                           <div className="depth-inner">
                             <button
@@ -201,7 +201,7 @@ export default function AuthorityTable() {
                         <AnimateHeight duration={300} height={openItems.has('depth-01-01') ? 'auto' : 0}>
                           <ul className="hierarchy-list depth03">
                             <li className="hierarchy-item">
-                              <div className="hierarchy-depth">
+                              <div className="hierarchy-depth filter">
                                 <button className="order-btn"></button>
                                 <div className="depth-inner">
                                   <div className="depth-name">Product</div>
