@@ -171,7 +171,7 @@ export default function AuthorityTable() {
                   <AnimateHeight duration={300} height={openItems.has('depth-01') ? 'auto' : 0}>
                     <ul className="hierarchy-list depth02">
                       <li className={`hierarchy-item ${openItems.has('depth-01-01') ? 'open' : ''}`}>
-                        <div className="hierarchy-depth ">
+                        <div className="hierarchy-depth filter">
                           <button className="order-btn"></button>
                           <div className="depth-inner">
                             <button
