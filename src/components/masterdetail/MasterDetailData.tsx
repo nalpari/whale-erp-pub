@@ -222,6 +222,7 @@ export default function MasterDetailData() {
           </div>
         </AnimateHeight>
       </div>
+
       <div className={`slidebox-wrap ${slideboxOpen ? '' : 'close'}`}>
         <div className="slidebox-header">
           <h2>세트 메뉴 구성</h2>
@@ -364,6 +365,46 @@ export default function MasterDetailData() {
             </div>
           </div>
         </AnimateHeight>
+      </div>
+      <div className="contract-history-wrap">
+        <div className="contract-history-header">
+          <h2>계약 이력</h2>
+        </div>
+        <div className="contract-history-body">
+          <table className="part-paystub-table">
+            <colgroup>
+              <col />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>계약서 전송일시</th>
+                <th>계약서 열람일시</th>
+                <th>전자서명 일시</th>
+                <th>서명자 정보</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2025.01.01 21:10:11</td>
+                <td>2025.01.01 21:10:11</td>
+                <td>2025.01.01 21:10:11</td>
+                <td>홍길동(hs_admin)</td>
+              </tr>
+              <tr>
+                <td>2025.01.01 21:10:11</td>
+                <td>2025.01.01 21:10:11</td>
+                <td>2025.01.01 21:10:11</td>
+                <td>홍길동(hs_admin)</td>
+              </tr>
+              <tr>
+                <td>2025.01.01 21:10:11</td>
+                <td>2025.01.01 21:10:11</td>
+                <td>2025.01.01 21:10:11</td>
+                <td>홍길동(hs_admin)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
       <div className="detail-data-info-wrap">
         <table className="default-table">
