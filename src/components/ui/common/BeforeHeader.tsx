@@ -1,21 +1,28 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 
 export default function BeforeHeader() {
   const [isScrollDown, setIsScrollDown] = useState(false)
+  const [hasScrolled, setHasScrolled] = useState(false)
 
   useEffect(() => {
-    const handleWheel = (event: WheelEvent) => {
+    // 스크롤 위치 체크 (act 클래스용)
+    const handleScroll = () => {
       const currentScrollY = window.scrollY
 
-      // 스크롤 위치가 최상단(0)일 때는 동작하지 않음
-      if (currentScrollY === 0) {
-        return
+      if (currentScrollY > 0) {
+        setHasScrolled(true)
+      } else {
+        setHasScrolled(false)
+        // 스크롤이 0에 도착하면 off 클래스도 제거
+        setIsScrollDown(false)
       }
+    }
 
+    // 휠 방향 체크 (off 클래스용)
+    const handleWheel = (event: WheelEvent) => {
       if (event.deltaY > 0) {
         // 휠을 아래로 - off 클래스 추가
         setIsScrollDown(true)
@@ -25,20 +32,20 @@ export default function BeforeHeader() {
       }
     }
 
+    window.addEventListener('scroll', handleScroll, { passive: true })
     window.addEventListener('wheel', handleWheel, { passive: true })
 
     return () => {
+      window.removeEventListener('scroll', handleScroll)
       window.removeEventListener('wheel', handleWheel)
     }
   }, [])
 
   return (
-    <div className={`before-header ${isScrollDown ? 'off' : ''}`}>
+    <div className={`before-header ${hasScrolled ? 'act' : ''} ${isScrollDown ? 'off' : ''}`}>
       <div className="before-header-wrap">
         <div className="before-logo">
-          <Link href="/main">
-            <Image src="/assets/images/before_main/Logo.svg" alt="logo" fill />
-          </Link>
+          <Link href="/main"></Link>
         </div>
         <ul className="before-menu-list">
           <li className="before-menu-item">
