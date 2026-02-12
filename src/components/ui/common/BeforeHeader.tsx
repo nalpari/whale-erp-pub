@@ -85,7 +85,7 @@ export default function BeforeHeader() {
               <Link href="/introduction">도입문의</Link>
             </li>
             <li className="before-sub-menu-item">
-              <Link href="/main">공지사항</Link>
+              <Link href="/before-notice">공지사항</Link>
             </li>
           </ul>
         </div>

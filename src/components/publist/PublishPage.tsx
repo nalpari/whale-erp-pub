@@ -63,7 +63,7 @@ export default function PublishPage() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td rowSpan={2}>로그인 전</td>
+                    <td rowSpan={3}>로그인 전</td>
                     <td>메인</td>
                     <td>
                       <Link href={'/main'}>BeforeMain.tsx</Link>
@@ -76,6 +76,15 @@ export default function PublishPage() {
                     <td>도입문의</td>
                     <td>
                       <Link href={'/introduction'}>IntroductionInquiry.tsx</Link>
+                    </td>
+                    <td>IntroductionInquiry</td>
+                    <td></td>
+                    <td className="c red">2026-02-04</td>
+                  </tr>
+                  <tr>
+                    <td>공지사항</td>
+                    <td>
+                      <Link href={'/before-notice'}>BeforeNoticeList.tsx</Link>
                     </td>
                     <td>IntroductionInquiry</td>
                     <td></td>

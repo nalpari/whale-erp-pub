@@ -210,3 +210,49 @@
     color: #222;
   }
 }
+
+/********************** before-notice-list **********************/
+.before-notice-wrap {
+  max-width: 1580px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+.before-notice-list {
+  border-top: 1px solid #222;
+  .before-notice-btn {
+    @include flex(0px);
+    align-items: center;
+    width: 100%;
+    padding: 25.5px 8px;
+    background-color: #fff;
+    border-bottom: 1px solid #ebebeb;
+    .notice-tit {
+      @include fontDefinition($font-ds-18, $font-w-400, $line-h-140);
+      color: #222;
+    }
+    .notice-date {
+      @include fontDefinition($font-ds-16, $font-w-400, $line-h-140);
+      color: #505050;
+      margin-left: auto;
+    }
+  }
+  .before-notice-item {
+    &:hover,
+    &.act {
+      .before-notice-btn {
+        background-color: #f9fbfe;
+        .notice-tit {
+          color: #2563eb;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .before-notice-empty {
+    padding: 45px 0;
+    text-align: center;
+    @include fontDefinition($font-ds-18, $font-w-400, $line-h-150);
+    color: #666;
+    border-bottom: 1px solid #ebebeb;
+  }
+}
