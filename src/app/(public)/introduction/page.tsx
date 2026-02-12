@@ -1,5 +1,5 @@
-import IntroductionInquiry from '@/components/before/introduction/IntroductionInquiry'
+import IntroductionForm from '@/components/before/introduction/IntroductionForm'
 
 export default function IntroductionPage() {
-  return <IntroductionInquiry />
+  return <IntroductionForm />
 }

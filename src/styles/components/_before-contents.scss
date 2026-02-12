@@ -3,3 +3,188 @@
 .sub-wrap {
   padding-top: 110px;
 }
+.sub-wrap-inner {
+  padding: 120px 0 80px;
+}
+.sub-wrap-header {
+  text-align: center;
+  margin-bottom: 80px;
+  .sub-header-icon {
+    margin-bottom: 42px;
+  }
+  .sub-header-s-tit {
+    @include fontDefinition($font-ds-26, $font-w-700, $line-h-120);
+    color: #1c1c2c;
+    margin-bottom: 18px;
+  }
+  .sub-header-b-tit {
+    @include fontDefinition(52px, $font-w-300, $line-h-120);
+    color: #1c1c2c;
+    span {
+      display: block;
+      &.bold {
+        font-weight: $font-w-700;
+      }
+    }
+  }
+  .sub-header-desc {
+    @include fontDefinition($font-ds-18, $font-w-400, $line-h-150);
+    color: #1c1c2c;
+    margin-top: 15px;
+  }
+}
+.before {
+  input {
+    display: block;
+    width: 100%;
+    border: 1px solid #d0d5dd;
+    border-radius: 6px;
+    background-color: #fff;
+    height: 60px;
+    padding: 0 16px;
+    @include fontDefinition($font-ds-16, $font-w-400, $line-h-140);
+    color: #344054;
+    transition: all 0.15s ease-in-out;
+    &::placeholder {
+      color: #999;
+    }
+    &:focus {
+      border-color: #948ea5;
+    }
+  }
+  select {
+    display: block;
+    width: 100%;
+    border: 1px solid #d0d5dd;
+    border-radius: 6px;
+    background-color: #fff;
+    height: 60px;
+    padding: 0 16px;
+    @include fontDefinition($font-ds-16, $font-w-400, $line-h-140);
+    color: #344054;
+    transition: all 0.15s ease-in-out;
+    background-image: url('/assets/images/before_main/before_select_arr.svg');
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 24px 24px;
+    outline: none;
+    &::placeholder {
+      color: #999;
+    }
+    &:focus {
+      border-color: #948ea5;
+    }
+  }
+  textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #d0d5dd;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 20px 16px;
+    height: 140px;
+    @include fontDefinition($font-ds-16, $font-w-400, $line-h-140);
+    color: #344054;
+    transition: all 0.15s ease-in-out;
+    resize: none;
+    outline: none;
+    &::placeholder {
+      color: #999;
+    }
+    &:focus {
+      border-color: #948ea5;
+    }
+  }
+  .check-form-box {
+    label {
+      @include fontDefinition($font-ds-16, $font-w-400, $line-h-130);
+      color: #222;
+      span {
+        color: #2563eb;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+/********************** introduction-form **********************/
+.introduction-wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.introduction-form {
+  padding: 48px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  .introduction-line-wrap {
+    @include flex(32px);
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.introduction-item {
+  flex: 1;
+  .introduction-item-tit {
+    @include fontDefinition($font-ds-16, $font-w-600, $line-h-140);
+    color: #344054;
+    margin-bottom: 6px;
+    b {
+      @include fontDefinition($font-ds-16, $font-w-400, $line-h-140);
+      color: #344054;
+    }
+  }
+  .error-message {
+    @include fontDefinition($font-ds-15, $font-w-400, $line-h-140);
+    color: #f00;
+    margin-top: 10px;
+  }
+}
+.introduction-select {
+  @include flex(8px);
+  align-items: center;
+  margin-top: 10px;
+  .introduction-select-btn {
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+    text-align: center;
+    padding: 0 16px;
+    background-color: #f2f2f2;
+    height: 54px;
+    @include fontDefinition($font-ds-16, $font-w-600, 54px);
+    color: #a0a0a4;
+    transition: all 0.15s ease-in-out;
+    &.checked,
+    &:hover {
+      background-color: #505058;
+      color: #fff;
+    }
+  }
+}
+.introduction-check {
+  @include flex(10px);
+  align-items: center;
+  .introduction-check-btn {
+    margin-left: auto;
+    @include fontDefinition($font-ds-16, $font-w-600, $line-h-150);
+    color: #2563eb;
+    text-decoration: underline;
+  }
+}
+
+.introduction-btn-wrap {
+  @include flex(8px);
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  .introduction-btn {
+    border-radius: 6px;
+    background: linear-gradient(270deg, #2563eb 0%, #018fdc 100%);
+    box-shadow: 0 7px 18px 0 rgba(34, 103, 234, 0.2);
+    min-width: 103px;
+    height: 60px;
+    @include fontDefinition($font-ds-18, $font-w-700, 60px);
+    color: #fff;
+  }
+}
