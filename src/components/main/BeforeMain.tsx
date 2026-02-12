@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination } from 'swiper/modules'
+import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -49,8 +49,13 @@ export default function BeforeMain() {
               spaceBetween={235}
               className="mySwiper"
               navigation={true}
-              modules={[Navigation]}
-              speed={700}
+              autoplay={{
+                delay: 3500,
+                disableOnInteraction: false,
+              }}
+              loop={true}
+              modules={[Navigation, Autoplay]}
+              speed={1500}
             >
               <SwiperSlide>
                 <div className="section-swip-item">
@@ -130,7 +135,12 @@ export default function BeforeMain() {
                   pagination={{
                     clickable: true,
                   }}
-                  modules={[Pagination]}
+                  autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: false,
+                  }}
+                  loop={true}
+                  modules={[Pagination, Autoplay]}
                   speed={500}
                 >
                   <SwiperSlide>
@@ -223,7 +233,12 @@ export default function BeforeMain() {
                     clickable: true,
                     el: '.custom-pagination',
                   }}
-                  modules={[Pagination]}
+                  autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: false,
+                  }}
+                  loop={true}
+                  modules={[Pagination, Autoplay]}
                   speed={500}
                 >
                   <SwiperSlide>
@@ -275,9 +290,14 @@ export default function BeforeMain() {
               pagination={{
                 type: 'progressbar',
               }}
-              modules={[Pagination]}
+              modules={[Pagination, Autoplay]}
+              loop={true}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
               className="service-swiper"
-              speed={700}
+              speed={1000}
             >
               <SwiperSlide>
                 <div className="service-item">
