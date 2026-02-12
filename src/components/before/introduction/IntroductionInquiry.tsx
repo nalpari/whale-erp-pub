@@ -1,7 +1,9 @@
 export default function IntroductionInquiry({
   setIntroductionSuccess,
+  setPersonalinformationConset,
 }: {
   setIntroductionSuccess: (success: boolean) => void
+  setPersonalinformationConset: (conset: boolean) => void
 }) {
   return (
     <div className="introduction-wrap">
@@ -101,7 +103,9 @@ export default function IntroductionInquiry({
                     <span>(필수)</span>개인정보 수집 및 이용 동의
                   </label>
                 </div>
-                <button className="introduction-check-btn">전문보기</button>
+                <button className="introduction-check-btn" onClick={() => setPersonalinformationConset(true)}>
+                  전문보기
+                </button>
               </div>
             </div>
             <div className="error-message">개인정보 수집 및 이용 동의를 동의해 주세요.</div>

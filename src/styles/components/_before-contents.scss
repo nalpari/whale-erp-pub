@@ -179,15 +179,16 @@
   align-items: center;
   justify-content: center;
   margin-top: 24px;
-  .introduction-btn {
-    border-radius: 6px;
-    background: linear-gradient(270deg, #2563eb 0%, #018fdc 100%);
-    box-shadow: 0 7px 18px 0 rgba(34, 103, 234, 0.2);
-    min-width: 103px;
-    height: 60px;
-    @include fontDefinition($font-ds-18, $font-w-700, 60px);
-    color: #fff;
-  }
+}
+.introduction-btn {
+  border-radius: 6px;
+  background: linear-gradient(270deg, #2563eb 0%, #018fdc 100%);
+  box-shadow: 0 7px 18px 0 rgba(34, 103, 234, 0.2);
+  min-width: 103px;
+  padding: 0 24px;
+  height: 60px;
+  @include fontDefinition($font-ds-18, $font-w-700, 60px);
+  color: #fff;
 }
 
 /********************** introduction-success **********************/
@@ -255,4 +256,61 @@
     color: #666;
     border-bottom: 1px solid #ebebeb;
   }
+}
+
+/********************** personalinformation-wrap **********************/
+.personalinformation-wrap {
+  padding-top: 80px;
+}
+.personalinformation-inner {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+.personalinformation-tit {
+  @include fontDefinition(32px, $font-w-700, $line-h-150);
+  color: #344054;
+  text-align: center;
+  margin-bottom: 52px;
+}
+.personalinformation-content {
+  @include flex(24px);
+  flex-direction: column;
+}
+.personalinformation-content-item {
+  .personalinformation-content-item-top {
+    @include fontDefinition($font-ds-18, $font-w-400, $line-h-150);
+    color: #222;
+    span {
+      display: block;
+    }
+  }
+  .personalinformation-content-item-tit {
+    @include fontDefinition($font-ds-18, $font-w-700, $line-h-150);
+    color: #344054;
+    margin-bottom: 6px;
+  }
+  .personalinformation-content-item-desc {
+    @include fontDefinition($font-ds-16, $font-w-400, $line-h-150);
+    color: #505050;
+    span {
+      display: block;
+      b {
+        font-weight: $font-w-600;
+      }
+    }
+  }
+  .personalinformation-content-item-list {
+    margin-top: 15px;
+    .personalinformation-content-item-list-item {
+      @include fontDefinition($font-ds-16, $font-w-400, $line-h-150);
+      color: #888888;
+    }
+  }
+}
+.personalinformation-btn-wrap {
+  @include flex(8px);
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
 }
