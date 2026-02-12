@@ -132,6 +132,62 @@
   }
 }
 
+/********************** before-footer **********************/
+.before-footer {
+  width: 100%;
+  padding: 38px 0 32px;
+  background-color: #fff;
+  .before-footer-inner {
+    max-width: 1580px;
+    margin: 0 auto;
+  }
+}
+.footer-info-wrap {
+  @include flex(100px);
+  .footer-icon {
+    width: 80px;
+    height: 50px;
+    background: url('/assets/images/before_main/before_footer_logo.svg') no-repeat center center;
+    background-size: cover;
+  }
+  .footer-info-list {
+    @include flex(0px);
+    margin-bottom: 2px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .footer-info-item {
+      position: relative;
+      padding: 0 8px;
+      @include fontDefinition($font-ds-16, $font-w-400, $line-h-150);
+      color: #555;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+        &:before {
+          display: none;
+        }
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        width: 1px;
+        height: 8px;
+        background-color: #ddd;
+      }
+    }
+  }
+  .copyright {
+    margin-top: 8px;
+    @include fontDefinition($font-ds-16, $font-w-400, $line-h-160);
+    color: #888;
+  }
+}
 /********************** section01 **********************/
 .main-section01 {
   position: relative;
