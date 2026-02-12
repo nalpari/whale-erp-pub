@@ -2,12 +2,25 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 export default function BeforeHeader() {
+  const pathname = usePathname()
   const [isScrollDown, setIsScrollDown] = useState(false)
   const [hasScrolled, setHasScrolled] = useState(false)
+  const [subMenu, setSubMenu] = useState(false)
 
   useEffect(() => {
+    // main 페이지일 때는 subMenu false, 아니면 true
+    if (pathname !== '/main') {
+      setSubMenu(true)
+      setIsScrollDown(false)
+      setHasScrolled(false)
+      return
+    } else {
+      setSubMenu(false)
+    }
+
     // 스크롤 위치 체크 (act 클래스용)
     const handleScroll = () => {
       const currentScrollY = window.scrollY
@@ -39,10 +52,10 @@ export default function BeforeHeader() {
       window.removeEventListener('scroll', handleScroll)
       window.removeEventListener('wheel', handleWheel)
     }
-  }, [])
+  }, [pathname])
 
   return (
-    <div className={`before-header ${hasScrolled ? 'act' : ''} ${isScrollDown ? 'off' : ''}`}>
+    <div className={`before-header ${subMenu ? 'sub' : ''} ${hasScrolled ? 'act' : ''} ${isScrollDown ? 'off' : ''}`}>
       <div className="before-header-wrap">
         <div className="before-logo">
           <Link href="/main"></Link>
@@ -69,7 +82,7 @@ export default function BeforeHeader() {
               </Link>
             </li>
             <li className="before-sub-menu-item">
-              <Link href="/main">도입문의</Link>
+              <Link href="/introduction">도입문의</Link>
             </li>
             <li className="before-sub-menu-item">
               <Link href="/main">공지사항</Link>

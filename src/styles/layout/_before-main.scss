@@ -24,6 +24,24 @@
   &.off {
     top: -110px;
   }
+  &.sub {
+    background-color: #fff;
+    .before-header-wrap {
+      .before-logo {
+        a {
+          background: url('/assets/images/before_main/logo_act.svg') no-repeat center center;
+          background-size: cover;
+        }
+      }
+    }
+    .before-menu-list {
+      .before-menu-item {
+        a {
+          color: #252b32;
+        }
+      }
+    }
+  }
   &.act {
     background-color: #fff;
     box-shadow:
@@ -137,6 +155,7 @@
   width: 100%;
   padding: 38px 0 32px;
   background-color: #fff;
+  border-top: 1px solid #eee;
   .before-footer-inner {
     max-width: 1580px;
     margin: 0 auto;
