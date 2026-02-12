@@ -4,7 +4,7 @@
   padding-top: 110px;
 }
 .sub-wrap-inner {
-  padding: 120px 0 80px;
+  padding: 120px 0 0;
 }
 .sub-wrap-header {
   text-align: center;
@@ -110,6 +110,7 @@
 .introduction-wrap {
   max-width: 1000px;
   margin: 0 auto;
+  padding-bottom: 80px;
 }
 .introduction-form {
   padding: 48px 0;
@@ -186,5 +187,26 @@
     height: 60px;
     @include fontDefinition($font-ds-18, $font-w-700, 60px);
     color: #fff;
+  }
+}
+
+/********************** introduction-success **********************/
+.introduction-success-wrap {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 80px 0;
+  border-top: 1px solid #eee;
+}
+.introduction-success-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  .introduction-name {
+    @include fontDefinition($font-ds-24, $font-w-700, $line-h-150);
+    color: #2563eb;
+  }
+  .introduction-txt {
+    @include fontDefinition($font-ds-18, $font-w-400, $line-h-150);
+    color: #222;
   }
 }

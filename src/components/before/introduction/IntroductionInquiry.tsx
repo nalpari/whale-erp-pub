@@ -1,4 +1,8 @@
-export default function IntroductionInquiry() {
+export default function IntroductionInquiry({
+  setIntroductionSuccess,
+}: {
+  setIntroductionSuccess: (success: boolean) => void
+}) {
   return (
     <div className="introduction-wrap">
       <div className="introduction-form">
@@ -105,7 +109,9 @@ export default function IntroductionInquiry() {
         </div>
       </div>
       <div className="introduction-btn-wrap">
-        <button className="introduction-btn">제출</button>
+        <button className="introduction-btn" onClick={() => setIntroductionSuccess(true)}>
+          제출
+        </button>
       </div>
     </div>
   )

@@ -1,7 +1,12 @@
+'use client'
+import { useState } from 'react'
 import Image from 'next/image'
 import IntroductionInquiry from './IntroductionInquiry'
+import IntroductionSuccess from './IntroductionSuccess'
 
 export default function IntroductionForm() {
+  const [introductionSuccess, setIntroductionSuccess] = useState(false)
+
   return (
     <div className="sub-wrap">
       <div className="sub-wrap-inner">
@@ -16,7 +21,11 @@ export default function IntroductionForm() {
           </div>
           <div className="sub-header-desc">문의사항을 남겨 주시면 가장 적합한 방법을 안내 드리겠습니다.</div>
         </div>
-        <IntroductionInquiry />
+        {introductionSuccess ? (
+          <IntroductionSuccess />
+        ) : (
+          <IntroductionInquiry setIntroductionSuccess={setIntroductionSuccess} />
+        )}
       </div>
     </div>
   )
