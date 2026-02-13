@@ -236,6 +236,23 @@
   width: 100%;
   margin: 0 auto;
 }
+// 고래 움직임 애니메이션
+@keyframes whaleFloat {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-50%, -50%) translateY(-15px) rotate(-2deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(0) rotate(0deg);
+  }
+  75% {
+    transform: translate(-50%, -50%) translateY(-10px) rotate(2deg);
+  }
+}
+
 .erp-tit-wrap {
   position: relative;
   height: 418px;
@@ -244,6 +261,7 @@
   background-size: 765px 418px;
   .whale-img {
     @include absoluteCenter;
+    animation: whaleFloat 4s ease-in-out infinite;
   }
 }
 .erp-txt-wrap {
