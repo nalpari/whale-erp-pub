@@ -193,6 +193,20 @@ export default function BeforeMain() {
                   </div>
                 </div>
               </SwiperSlide>
+              <SwiperSlide>
+                <div className="section-swip-item">
+                  <div className="swip-item-head">
+                    <span className="s-tit">Smart Biz</span>
+                    <span className="b-tit">Whale ERP</span>
+                  </div>
+                  <div className="swip-item-img"></div>
+                  <div className="swip-item-info">
+                    <div className="info-txt">Introduction</div>
+                    <div className="info-tit">관리업무</div>
+                    <div className="info-desc">점포/시설 관리, 직원/근무관리 등 매장 운영 시스템 완비</div>
+                  </div>
+                </div>
+              </SwiperSlide>
             </Swiper>
           </div>
         </div>
@@ -375,6 +389,11 @@ export default function BeforeMain() {
               autoplay={{
                 delay: 3000,
                 disableOnInteraction: false,
+              }}
+              breakpoints={{
+                2300: {
+                  slidesPerView: 7.5,
+                },
               }}
               className="service-swiper"
               speed={1000}

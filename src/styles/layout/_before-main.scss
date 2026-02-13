@@ -367,6 +367,7 @@
 .section-swip-item {
   width: auto;
   .swip-item-head {
+    padding-left: 8px;
     margin-bottom: 24px;
     .s-tit {
       display: block;
@@ -386,6 +387,7 @@
     border-radius: 32px;
   }
   .swip-item-info {
+    padding-left: 8px;
     margin-top: 60px;
     .info-txt {
       @include fontDefinition($font-ds-24, $font-w-700, $line-h-150);
