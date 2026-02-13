@@ -318,6 +318,12 @@
   .mySwiper {
     position: relative;
     padding-bottom: 173px;
+    padding-left: 170px;
+    padding-right: 170px;
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
     .swiper-button-prev {
       top: unset;
       bottom: 0;
@@ -359,6 +365,7 @@
   }
 }
 .section-swip-item {
+  width: auto;
   .swip-item-head {
     margin-bottom: 24px;
     .s-tit {
@@ -373,7 +380,7 @@
     }
   }
   .swip-item-img {
-    width: 100%;
+    width: 370px;
     height: 370px;
     background-color: #fff;
     border-radius: 32px;
@@ -648,6 +655,7 @@
   margin-top: 120px;
   .service-swiper {
     padding-bottom: 62px;
+    margin-left: 170px;
     .swiper-pagination {
       top: unset;
       bottom: 0;
@@ -681,7 +689,7 @@
   }
   .service-arr {
     flex: none;
-    margin-left: auto;
+    margin-left: 112px;
     display: block;
     width: 24px;
     height: 24px;

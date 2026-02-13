@@ -113,7 +113,7 @@ export default function BeforeMain() {
         </div>
       </section>
       <section className="main-section02">
-        <div className="section-inner">
+        <div className="section02-inner">
           <div className="section02-txt-wrap">
             <div className="section02-txt-s-tit" ref={refs.section02.smallTit}>
               store management platform
@@ -352,7 +352,7 @@ export default function BeforeMain() {
         </div>
       </section>
       <section className="main-section05">
-        <div className="section-inner">
+        <div className="section05-inner">
           <div className="section05-head">
             <div className="head-tit" ref={refs.section05.headTit}>
               <span>오픈 예정 서비스</span>
@@ -365,7 +365,7 @@ export default function BeforeMain() {
           </div>
           <div className="section05-service-list" ref={refs.section05.serviceList}>
             <Swiper
-              slidesPerView={6}
+              slidesPerView={6.5}
               spaceBetween={30}
               pagination={{
                 type: 'progressbar',
