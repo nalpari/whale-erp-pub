@@ -143,7 +143,13 @@ export default function BeforeMain() {
                     <span className="s-tit">Smart Biz</span>
                     <span className="b-tit">Whale ERP</span>
                   </div>
-                  <div className="swip-item-img"></div>
+                  <div className="swip-item-img">
+                    <Image
+                      src="/assets/images/before_main/section02_swiper_img01.svg"
+                      alt="section-swip-item-img"
+                      fill
+                    />
+                  </div>
                   <div className="swip-item-info">
                     <div className="info-txt">Introduction</div>
                     <div className="info-tit">관리업무</div>
@@ -157,7 +163,13 @@ export default function BeforeMain() {
                     <span className="s-tit">Smart Biz</span>
                     <span className="b-tit">Whale ERP</span>
                   </div>
-                  <div className="swip-item-img"></div>
+                  <div className="swip-item-img">
+                    <Image
+                      src="/assets/images/before_main/section02_swiper_img02.svg"
+                      alt="section-swip-item-img"
+                      fill
+                    />
+                  </div>
                   <div className="swip-item-info">
                     <div className="info-txt">Introduction</div>
                     <div className="info-tit">재무관리</div>
@@ -171,7 +183,13 @@ export default function BeforeMain() {
                     <span className="s-tit">Smart Biz</span>
                     <span className="b-tit">Whale ERP</span>
                   </div>
-                  <div className="swip-item-img"></div>
+                  <div className="swip-item-img">
+                    <Image
+                      src="/assets/images/before_main/section02_swiper_img03.svg"
+                      alt="section-swip-item-img"
+                      fill
+                    />
+                  </div>
                   <div className="swip-item-info">
                     <div className="info-txt">Introduction</div>
                     <div className="info-tit">판매기능 지원</div>
@@ -185,21 +203,13 @@ export default function BeforeMain() {
                     <span className="s-tit">Smart Biz</span>
                     <span className="b-tit">Whale ERP</span>
                   </div>
-                  <div className="swip-item-img"></div>
-                  <div className="swip-item-info">
-                    <div className="info-txt">Introduction</div>
-                    <div className="info-tit">관리업무</div>
-                    <div className="info-desc">점포/시설 관리, 직원/근무관리 등 매장 운영 시스템 완비</div>
+                  <div className="swip-item-img">
+                    <Image
+                      src="/assets/images/before_main/section02_swiper_img01.svg"
+                      alt="section-swip-item-img"
+                      fill
+                    />
                   </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="section-swip-item">
-                  <div className="swip-item-head">
-                    <span className="s-tit">Smart Biz</span>
-                    <span className="b-tit">Whale ERP</span>
-                  </div>
-                  <div className="swip-item-img"></div>
                   <div className="swip-item-info">
                     <div className="info-txt">Introduction</div>
                     <div className="info-tit">관리업무</div>
@@ -239,17 +249,17 @@ export default function BeforeMain() {
                 >
                   <SwiperSlide>
                     <div className="device-item-img">
-                      <Image src="/assets/images/before_main/screen_pc.png" alt="device-item-img" fill />
+                      <Image src="/assets/images/before_main/screen_pc01.svg" alt="device-item-img" fill />
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="device-item-img">
-                      <Image src="/assets/images/before_main/screen_pc.png" alt="device-item-img" fill />
+                      <Image src="/assets/images/before_main/screen_pc02.png" alt="device-item-img" fill />
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="device-item-img">
-                      <Image src="/assets/images/before_main/screen_pc.png" alt="device-item-img" fill />
+                      <Image src="/assets/images/before_main/screen_pc03.png" alt="device-item-img" fill />
                     </div>
                   </SwiperSlide>
                 </Swiper>
@@ -337,17 +347,17 @@ export default function BeforeMain() {
                 >
                   <SwiperSlide>
                     <div className="device-item-img">
-                      <Image src="/assets/images/before_main/screen_mb.png" alt="device-item-img" fill />
+                      <Image src="/assets/images/before_main/screen_mb01.svg" alt="device-item-img" fill />
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="device-item-img">
-                      <Image src="/assets/images/before_main/screen_mb.png" alt="device-item-img" fill />
+                      <Image src="/assets/images/before_main/screen_mb02.png" alt="device-item-img" fill />
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="device-item-img">
-                      <Image src="/assets/images/before_main/screen_mb.png" alt="device-item-img" fill />
+                      <Image src="/assets/images/before_main/screen_mb03.png" alt="device-item-img" fill />
                     </div>
                   </SwiperSlide>
                 </Swiper>
