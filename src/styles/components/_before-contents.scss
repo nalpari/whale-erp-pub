@@ -434,3 +434,36 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+/********************** 프랜차이즈 컨텐츠 **********************/
+.franchise-wrap {
+  padding: 240px 0;
+  background-image: url('/assets/images/before_main/franchise_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .sub-category-content {
+    .sub-category-item {
+      &:last-child {
+        grid-column: span 3;
+        text-align: center;
+        .operation-icon {
+          justify-content: center;
+        }
+        .operation-tit {
+          @include flex(20px);
+          align-items: center;
+          justify-content: center;
+          margin-top: 12px;
+          .operation-btn {
+            position: relative;
+            top: 0;
+            right: 0;
+          }
+        }
+        .operation-desc {
+          margin-top: 9px;
+        }
+      }
+    }
+  }
+}

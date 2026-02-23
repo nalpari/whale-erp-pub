@@ -63,7 +63,7 @@ export default function PublishPage() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td rowSpan={3}>로그인 전</td>
+                    <td rowSpan={6}>로그인 전</td>
                     <td>메인</td>
                     <td>
                       <Link href={'/main'}>BeforeMain.tsx</Link>
@@ -78,6 +78,24 @@ export default function PublishPage() {
                       <Link href={'/store-operation'}>StoreOperation.tsx</Link>
                     </td>
                     <td>StoreOperation</td>
+                    <td></td>
+                    <td className="c red">2026-02-23</td>
+                  </tr>
+                  <tr>
+                    <td>재무관리</td>
+                    <td>
+                      <Link href={'/financial'}>FinancialManagement.tsx</Link>
+                    </td>
+                    <td>FinancialManagement</td>
+                    <td></td>
+                    <td className="c red">2026-02-23</td>
+                  </tr>
+                  <tr>
+                    <td>프랜차이즈</td>
+                    <td>
+                      <Link href={'/franchise'}>Franchise.tsx</Link>
+                    </td>
+                    <td>Franchise</td>
                     <td></td>
                     <td className="c red">2026-02-23</td>
                   </tr>
