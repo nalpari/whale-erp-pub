@@ -72,8 +72,8 @@ export default function BeforeHeader() {
           <li className={`before-menu-item ${pathname === '/franchise' ? 'act' : ''}`}>
             <Link href="/franchise">프랜차이즈</Link>
           </li>
-          <li className="before-menu-item">
-            <Link href="/main">요금안내</Link>
+          <li className={`before-menu-item ${pathname === '/pricing-info' ? 'act' : ''}`}>
+            <Link href="/pricing-info">요금안내</Link>
           </li>
         </ul>
         <div className="before-sub-menu">
