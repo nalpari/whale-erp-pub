@@ -493,6 +493,16 @@ export default function PublishPage() {
                     <td></td>
                     <td className="c red">2026-01-28</td>
                   </tr>
+                  <tr>
+                    <td>공통 팝업 테이블</td>
+                    <td></td>
+                    <td>
+                      <Link href={'/popup/commonpoptable'}>CommonPopTable.tsx</Link>
+                    </td>
+                    <td>CommonPopTable</td>
+                    <td></td>
+                    <td className="c red">2026-02-24</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
