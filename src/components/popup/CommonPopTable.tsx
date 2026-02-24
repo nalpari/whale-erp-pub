@@ -1,7 +1,4 @@
 'use client'
-import { Tooltip } from 'react-tooltip'
-import AgGrid from '../ui/AgGrid'
-import Pagination from '../ui/Pagination'
 import MasterSearch from '../masterlist/MasterSearch'
 import MasterList from '../masterlist/MasterList'
 
