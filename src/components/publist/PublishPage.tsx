@@ -503,6 +503,16 @@ export default function PublishPage() {
                     <td></td>
                     <td className="c red">2026-02-24</td>
                   </tr>
+                  <tr>
+                    <td>회원가입</td>
+                    <td></td>
+                    <td>
+                      <Link href={'/signup'}>Signup.tsx</Link>
+                    </td>
+                    <td>Signup</td>
+                    <td></td>
+                    <td className="c red">2026-02-26</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
