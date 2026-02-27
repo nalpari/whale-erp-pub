@@ -11,11 +11,27 @@ export default function MasterSearch() {
         <button className="btn-form basic">가맹점 초대</button>
       </div>
       <div className="search-result-wrap">
-        <div className="search-result">
+        {/* <div className="search-result">
           검색결과 <span>128건</span>
-        </div>
+        </div> */}
         <ul className="search-result-list">
-          <li></li>
+          <li className="search-result-item">
+            <div className="search-result-item-txt">
+              <span>주식회사 따름인</span> (본사)
+            </div>
+            <button className="search-result-item-btn"></button>
+          </li>
+          <li className="search-result-item">
+            <div className="search-result-item-txt">
+              <span>을지로3가점</span> (매장(가맹점))
+            </div>
+            <button className="search-result-item-btn"></button>
+          </li>
+          <li className="search-result-item">
+            <div className="search-result-item-txt">
+              <span>128건</span>
+            </div>
+          </li>
         </ul>
         <button className="search-filed-btn" onClick={() => setSearchOpen(!searchOpen)}></button>
       </div>
