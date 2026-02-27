@@ -47,7 +47,7 @@
     position: relative;
     padding: 0 10px;
     .search-result-item-txt {
-      @include fontDefinition($font-ds-16, $font-w-400, $line-h-140);
+      @include fontDefinition($font-ds-16, $font-w-400, $line-h-120);
       color: #222;
       span {
         font-weight: 600;
