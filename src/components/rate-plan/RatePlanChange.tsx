@@ -82,7 +82,7 @@ export default function RatePlanChange() {
                   <span>/월</span>
                 </div>
                 <div className="plan-btn-wrap">
-                  <button className="service-btn block">
+                  <button className="service-btn block" disabled>
                     구독 하기 <i className="icon-subscribe"></i>
                   </button>
                 </div>
@@ -116,7 +116,7 @@ export default function RatePlanChange() {
                   <span>/월</span>
                 </div>
                 <div className="plan-btn-wrap">
-                  <button className="service-btn block">
+                  <button className="service-btn block" disabled>
                     구독 하기 <i className="icon-subscribe"></i>
                   </button>
                 </div>
