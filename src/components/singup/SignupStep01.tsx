@@ -92,10 +92,12 @@ export default function SignupStep01({ setSignupStep }: { setSignupStep: (step: 
         <div className="signup-step01-content-wrap">
           <div className="signup-step01-item">
             <div className="signup-step01-item-tit">Business Partner 코드를 확인합니다.</div>
-            <div className="signup-step01-item-input">
-              <input type="text" className="input-frame" placeholder="Business Partner 코드를 입력해 주세요." />
+            <div className="signup-step01-item-input-wrap">
+              <div className="signup-step01-item-input">
+                <input type="text" className="input-frame" placeholder="Business Partner 코드를 입력해 주세요." />
+              </div>
+              <div className="signup-message error mt10">Business Partner 코드를 다시 확인해서 입력해 주세요.</div>
             </div>
-            <div className="signup-error-message">Business Partner 코드를 다시 확인해서 입력해 주세요.</div>
             <div className="signup-step01-item-desc">
               <span>초대 이메일에 기제된 Business Partner 코드를 입력해 주세요.</span>
               <span>

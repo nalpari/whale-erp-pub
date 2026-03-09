@@ -525,7 +525,13 @@
       color: #ff4d4f;
     }
   }
-
+  .signup-step01-item-input {
+    input {
+      height: 60px;
+      @include fontDefinition($font-ds-16, $font-w-400, 60px);
+      color: #222;
+    }
+  }
   .signup-step01-item-desc {
     margin-top: 24px;
     @include fontDefinition($font-ds-16, $font-w-400, $line-h-150);
@@ -547,13 +553,6 @@
     @include fontDefinition($font-ds-16, $font-w-600, $line-h-150);
     color: #222;
     margin-bottom: 6px;
-  }
-  .signup-step01-item-input {
-    input {
-      height: 60px;
-      @include fontDefinition($font-ds-16, $font-w-400, 60px);
-      color: #222;
-    }
   }
 }
 
